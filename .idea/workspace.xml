@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:增加首页最新评论和留言，邮件回复留言">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/cheese.log" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/cheese.log" afterDir="false" />
-    </list>
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +28,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+  </component>
   <component name="ProjectId" id="28msti9xNR11VxnG7VoH763c7a7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -179,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652010433974</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1.0.2-日常优化">
+      <created>1652060485335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652060485335</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,7 @@
     <MESSAGE value="✨ v 1.0.2" />
     <MESSAGE value="1.0.2" />
     <MESSAGE value="v1.0.2:增加首页最新评论和留言，邮件回复留言" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.2:增加首页最新评论和留言，邮件回复留言" />
+    <MESSAGE value="1.0.2-日常优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.2-日常优化" />
   </component>
 </project>
