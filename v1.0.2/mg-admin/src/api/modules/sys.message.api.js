@@ -17,3 +17,6 @@ export const dirMessageUpdate = (data) =>
 
 export const messageReply = (data) =>
   post("/mg/api/private/message/replyMsg", data);
+
+export const messageReply = (data) =>
+  post("/mg/api/private/message/replyMsg", data);

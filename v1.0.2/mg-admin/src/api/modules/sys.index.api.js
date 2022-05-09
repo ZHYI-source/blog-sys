@@ -6,3 +6,6 @@ export const getArticleGroup = (data) =>
 //查询当日最新评论和留言
 export const queryNowMsgAndComments = (data) =>
   post("/mg/api/public/admin/home/queryNowMsgAndComments", data);
+//查询当日最新评论和留言
+export const queryNowMsgAndComments = (data) =>
+  post("/mg/api/public/admin/home/queryNowMsgAndComments", data);

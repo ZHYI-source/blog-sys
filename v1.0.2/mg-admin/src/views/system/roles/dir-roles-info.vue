@@ -29,7 +29,7 @@
               <template slot-scope="scope">
                 <mk-tool-button @view="goView(scope.row)"
                                 @edit="goEdit(scope.row)"
-                                :dis-delete="!permBtn.deleteButton && scope.row.role_name==='admin'"
+                                :dis-delete="!permBtn.deleteButton || scope.row.role_name==='admin'"
                                 :dis-edit="!permBtn.updateButton"
                                 edit-text="修改/权限"
                                 @delete="goDelete(scope.row)">

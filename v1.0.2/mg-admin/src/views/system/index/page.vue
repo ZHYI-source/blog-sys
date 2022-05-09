@@ -134,6 +134,13 @@ export default {
         this.comments=res.comments
         this.message=res.message
       })
+      this.getNowMsgAndCom()
+    },
+    getNowMsgAndCom(){
+      queryNowMsgAndComments({}).then(res=>{
+        this.comments=res.comments
+        this.message=res.message
+      })
     },
     goMenu(type) {
       switch (type) {
@@ -145,6 +152,9 @@ export default {
           break
         case 'c':
           this.$router.push({path: '/dir-friends-info'})
+          break
+        case 'd':
+          window.open('http://www.zhouyi.run/#/','_blank')
           break
         case 'd':
           window.open('http://www.zhouyi.run/#/','_blank')

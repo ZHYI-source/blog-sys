@@ -25,7 +25,7 @@
           type="warning">
         </el-alert>
         <el-divider/>
-        <mk-get-button @save="save" :dis-save="form.role_name==='admin'"  @close="close(true)"/>
+        <mk-get-button @save="save"   @close="close(true)"/>
       </el-form>
     </section>
   </section>

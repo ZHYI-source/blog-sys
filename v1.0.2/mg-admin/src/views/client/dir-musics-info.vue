@@ -2,7 +2,7 @@
   <section>
     <d2-container type="full" v-if="!show.edit&&!show.view">
       <section class="data-list-box">
-        <mk-search-form :model="query" @search="goPage(1)">
+        <mk-search-form :model="query" v-if="permBtn.queryButton"  @search="goPage(1)">
           <el-form-item class="inline-item" prop="name">
             <el-input v-model.trim="query.params.name" @clear="goPage(1)" @keyup.native.enter="goPage(1)"
                       clearable placeholder="输入音乐名称搜索"
@@ -13,7 +13,7 @@
           <table-field-filter :fields="fields" @showChange="updataKey +=1"/>
           <mk-table-button
             dis-delete
-            :dis-add="false"
+            :dis-add="!permBtn.createButton"
             @add="goEdit"
           >
             <el-button size="mini" icon="el-icon-upload" @click="exportEcx">导出</el-button>
@@ -28,6 +28,8 @@
                              :width="field.width" :fixed="field.fixed">
               <template slot-scope="scope">
                 <mk-tool-button @view="goView(scope.row)"
+                                :dis-delete="!permBtn.deleteButton"
+                                :dis-edit="!permBtn.updateButton"
                                 @edit="goEdit(scope.row)"
                                 @delete="goDelete(scope.row)">
                 </mk-tool-button>
@@ -60,6 +62,7 @@ import {exportExecl} from "@/libs/util.export";
 import {dirMusicsDelete, dirMusicsList} from "@/api/modules/sys.musics.api";
 import GetMusicsInfo from "./get-musics-info";
 import ViewMusicsInfo from "./view-musics-info";
+import util from "@/libs/util";
 
 
 export default {
@@ -97,6 +100,12 @@ export default {
         //
         item: []
       },
+      permBtn:{
+        createButton:false,
+        queryButton:false,
+        deleteButton:false,
+        updateButton:false,
+      },
       //汇总数据
       totals: [],
       //加载中效果
@@ -127,8 +136,32 @@ export default {
   mounted() {
     this.getWinHeight()
     this.getDataList();
+    this.getPerms()
   },
   methods: {
+    getPerms() {
+      // let perms = this.$store.state.d2admin.perms.permsArr
+      let perms =JSON.parse(util.cookies.get('permMenus'))
+      if (perms.includes('*')) {
+        this.permBtn.createButton = true;
+        this.permBtn.queryButton = true;
+        this.permBtn.deleteButton = true;
+        this.permBtn.updateButton = true;
+      } else {
+        if (perms.includes('POST /api/private/musics/create')) {
+          this.permBtn.createButton = true;
+        }
+        if (perms.includes('POST /api/private/musics/list')) {
+          this.permBtn.queryButton = true;
+        }
+        if (perms.includes('POST /api/private/musics/update')) {
+          this.permBtn.updateButton = true;
+        }
+        if (perms.includes('POST /api/private/musics/delete')) {
+          this.permBtn.deleteButton = true;
+        }
+      }
+    },
     //导出
     exportEcx() {
       exportExecl(this, this.fields, this.datas, '列表', new Date().toLocaleDateString() + '导出的列表')
