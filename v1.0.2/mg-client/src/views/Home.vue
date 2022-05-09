@@ -25,7 +25,7 @@
       </div>
       <!--文章列表-->
       <main class="site-main  grid-line" :class="{'search':hideSlogan}" v-loading="loading">
-        <section-title v-if="!hideSlogan">{{sectionTitle}}</section-title>
+        <section-title class="section-titless" v-if="!hideSlogan">{{sectionTitle}}</section-title>
         <template v-for="(item,index) in postList">
           <post class="post-i" :style="{'animation-delay':0.2+'s'}" :post="item" :key="item.id"></post>
         </template>
@@ -224,8 +224,6 @@ export default {
       line-height: 25px;
     }
   }
-
-
   .search-result {
     padding: 15px 20px;
     text-align: center;
@@ -254,13 +252,15 @@ export default {
 }
 
 .site-main {
-  padding-top: 80px;
+  padding-top: 25px;
 
   &.search {
     padding-top: 0;
   }
 }
-
+.section-titless {
+  margin-bottom: 15px;
+}
 .more {
   margin: 50px 0;
 
@@ -289,7 +289,7 @@ export default {
   }
 
   .site-main {
-    padding-top: 15px;
+    padding-top: 25px;
   }
 
   .site-content {

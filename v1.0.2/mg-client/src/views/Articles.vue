@@ -18,10 +18,14 @@
             </div>
           </header>
           <!-- 正文输出 -->
-          <div class="entry-content " v-if="articleData.editType==='mce'" v-highlight
-               v-html="articleData.article_content">
+          <div class="entry-content "
+               v-if="articleData.editType==='mce'"
+               ref="temp"
+               v-html="articleData.article_content"
+               @click="previewImg($event)"
+          >
           </div>
-          <mk-md-editor class="md-edit" v-else mode="preview"   v-model="articleData.article_content"/>
+          <mk-md-editor class="md-edit" v-else mode="preview" v-model="articleData.article_content"/>
           <!-- 文章底部 -->
           <section-title>
             <footer class="post-footer">
@@ -80,7 +84,6 @@
               </template>
             </comment>
           </div>
-
         </article>
       </main>
     </div>
@@ -93,25 +96,33 @@ import sectionTitle from '@/components/section-title'
 import comment from '@/components/comment'
 import menuTree from '@/components/menu-tree'
 import commentMessageEditor from 'comment-message-editor'
-import {dirArticle, getArticleDetail, getCommentsCreate, getCommentsList} from "../api/article";
+import {getArticleDetail, getCommentsCreate, getCommentsList} from "../api/article";
 import {marked} from 'marked';
 import hljs from "highlight.js"
 // https://highlightjs.org/static/demo/
 import 'highlight.js/styles/base16/atelier-forest-light.css'
+
 import MkMdEditor from "../components/md-editor";
+import Vue from 'vue';
 
 export default {
   name: 'articles',
-  // 定义自定义指令 v-highlight 代码高亮
-  directives: {
-    highlight: {
-      update(el) {
-        let blocks = el.querySelectorAll("pre code");
-        blocks.forEach((block) => {
-          hljs.highlightBlock(block);
-        });
-      },
-    },
+  watch: {
+    'articleData.article_content': function () {
+      this.$nextTick(() => {
+        if (this.articleData.editType === 'mce') {
+          //延时 解决 v-html 取不到dom
+          setTimeout(() => {
+            const template = this.$refs.temp
+            let blocks = template.querySelectorAll("pre code");
+            blocks.forEach((block) => {
+              //高亮
+              hljs.highlightBlock(block);
+            });
+          }, 100)
+        }
+      })
+    }
   },
   data() {
     return {
@@ -124,7 +135,9 @@ export default {
       comments: [],
       menus: [],
       articleData: {},
-      cateName: ''
+      cateName: '',
+      currImgUrl: '',
+      isShowImg: false
     }
   },
   components: {
@@ -178,6 +191,15 @@ export default {
         this.cateName = this.articleData.cate.name
       })
     },
+
+    // 预览解析的图片  $event.target.currentSrc为base64的图片地址
+    previewImg($event) {
+      if ($event.target.currentSrc) {
+        this.currImgUrl = $event.target.currentSrc
+        window.open(this.currImgUrl, '_blank')
+      }
+    },
+
     //加载文章评论
     getComment(id) {
       let p = {
@@ -231,17 +253,20 @@ export default {
       this.menus = arr
     }
   },
-  mounted() {
-    // this.createMenus()
-    this.curLink = window.location.href
-    window.scroll(0, 0)
-  },
   created() {
     let arId = this.$route.params.id
     this.article_id = this.$route.params.id
     this.getDataDetail(arId)
     this.getComment(arId)
-  }
+  },
+  mounted() {
+    // this.createMenus()
+    this.curLink = window.location.href
+    window.scroll(0, 0)
+
+
+  },
+
 }
 </script>
 <style scoped lang="less">

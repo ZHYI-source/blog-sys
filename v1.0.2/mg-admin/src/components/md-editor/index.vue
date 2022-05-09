@@ -97,7 +97,7 @@ export default {
         headers: {'Content-Type': 'multipart/form-data','authorization':util.cookies.get('token')}
       }
       // 添加请求头
-      axios.post('http://localhost:3001/api/private/upload', param, config)
+      axios.post( `${process.env.VUE_APP_API}/api/private/upload`, param, config)
         .then(response => {
           if (response.data.meta.status === 200) {
             insertImage({

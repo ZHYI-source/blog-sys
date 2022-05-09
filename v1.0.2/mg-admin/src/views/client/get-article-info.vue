@@ -7,7 +7,7 @@
           <el-form-item label="博文内容" prop="article_content">
           </el-form-item>
         </mk-get-row>
-        <el-tabs v-model="activeName" type="border-card">
+        <el-tabs  v-model="activeName" @tab-click="changeType" type="border-card">
           <el-tab-pane label="Markdown" name="md">
             <mk-md-editor v-model="form.article_content"/>
           </el-tab-pane>
@@ -158,7 +158,6 @@ export default {
       form: {
         isPublish: true,
         isRecommend: true,
-        activeName:'md',
         article_cover:'http://zhouyi.run:5222/api/public/admin/getFiles?id=e52cfbc48528687fd6100e33e40f49ae.jpg&&mimetype=image/jpeg'
       },
       isAdd: true,
@@ -171,6 +170,13 @@ export default {
     }
   },
   methods: {
+    changeType(val){
+      if (val.index==='1'){
+        this.form.editType = 'mce'
+      }else {
+        this.form.editType = 'md'
+      }
+    },
     headerUpdate() {
       if (this.updateData && this.updateData.id) {
         this.form = this.updateData
