@@ -19,22 +19,9 @@
 - 服务端server内的`db.js`文件填写数据库信息，监听 5220端口，启动服务：`nodemon index.js（热加载） / node index.js`
 
 ### DEMO 
-1.  [前端web端 ZY-Blog](http://zhouyi.run/#/)
 
-2.  [博客管理端 ZY-admin](http://zhouyi.run:5221/#/login?redirect=%2F)
+1.  [前端web端 ZY-Blog](http://www.zhouyi.run/#/)
 
-> 前端项目`web`端截图
+2.  [博客管理端 ZY-admin](http://zhouyi.run:5221/#/index)
 
-![输入图片说明](DOC/img/%E9%A6%96%E9%A1%B5%20-%20ZYblog%20-%20Google%20Chrome%202022_2_20%2017_20_55.png)
-
-![输入图片说明](DOC/img/%E9%A6%96%E9%A1%B5%20-%20ZYblog%20-%20Google%20Chrome%202022_2_20%2017_21_55.png)
-
-![输入图片说明](DOC/img/%E9%A6%96%E9%A1%B5%20-%20ZYblog%20-%20Google%20Chrome%202022_2_20%2017_23_46.png)
-
-
-> 前端项目管理`admin`端截图
-
-![输入图片说明](DOC/img/ZY%20-%20%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%201%20-%20Microsoft%E2%80%8B%20Edge%202022_2_20%2017_24_59.png)
-
-![输入图片说明](DOC/img/ZY%20-%20%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%201%20-%20Microsoft%E2%80%8B%20Edge%202022_2_20%2017_25_54.png)
-
+ 
