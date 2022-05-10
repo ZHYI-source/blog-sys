@@ -2,6 +2,7 @@ const db = require("../models");
 const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const Cate = db.cate;
+const Op = db.Op;
 
 // Create and Save a new Cate
 exports.create = (req, res) => {
@@ -29,6 +30,12 @@ exports.create = (req, res) => {
 // Retrieve all Cate from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
+    pm.params.sort_name?pm.params.sort_name = {
+        [Op.substring]: `%${pm.params.sort_name}%`
+    }:pm.params.sort_name=''
+
+
     DAO.list(Cate, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

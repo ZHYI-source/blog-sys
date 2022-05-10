@@ -3,6 +3,7 @@ const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const Users = db.users;
 const Roles = db.roles;
+const Op = db.Op;
 
 Users.hasOne(Roles, {foreignKey: 'id', sourceKey: 'roleId'});
 Roles.belongsTo(Users, {foreignKey: 'id', sourceKey: 'roleId'});
@@ -44,6 +45,18 @@ exports.findAll = (req, res) => {
     pm.include = [
         {model: Roles, attributes: [['role_name','name'], 'id',]},
     ]
+
+    pm.params.nickName?pm.params.nickName = {
+        [Op.substring]: `%${pm.params.nickName}%`
+    }:pm.params.nickName=''
+
+
+    pm.params.username?pm.params.username = {
+        [Op.substring]: `%${pm.params.username}%`
+    }:pm.params.username=''
+
+
+
     DAO.list(Users, pm, list => {
         logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

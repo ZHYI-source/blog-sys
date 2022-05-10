@@ -2,6 +2,7 @@ const db = require("../models");
 const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const Tags = db.tags;
+const Op = db.Op;
 
 // Create and Save a new tag
 exports.create = (req, res) => {
@@ -30,6 +31,12 @@ exports.create = (req, res) => {
 // Retrieve all tag from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
+    pm.params.tag_name?pm.params.tag_name = {
+        [Op.substring]: `%${pm.params.tag_name}%`
+    }:pm.params.tag_name=''
+
+
     DAO.list(Tags, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

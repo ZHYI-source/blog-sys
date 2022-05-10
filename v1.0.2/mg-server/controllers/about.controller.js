@@ -2,6 +2,7 @@ const db = require("../models");
 const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const About = db.about;
+const Op = db.Op;
 
 // Create and Save a new About
 exports.create = (req, res) => {
@@ -21,6 +22,7 @@ exports.create = (req, res) => {
 // Retrieve all About from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
     DAO.list(About, pm, list => {
         res.sendResult(list)
     })

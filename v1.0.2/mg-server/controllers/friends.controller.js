@@ -2,6 +2,7 @@ const db = require("../models");
 const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const Friends = db.friends;
+const Op = db.Op;
 
 // Create and Save a new Friends
 exports.create = (req, res) => {
@@ -32,8 +33,12 @@ exports.create = (req, res) => {
 // Retrieve all Friends from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
+    pm.params.siteName?pm.params.siteName = {
+        [Op.substring]: `%${pm.params.siteName}%`
+    }:pm.params.siteName=''
+
     DAO.list(Friends, pm, list => {
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
     })
 };
@@ -42,7 +47,6 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const pm = req.body;
     DAO.findOne(Friends,pm,data=>{
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };
@@ -53,7 +57,6 @@ exports.update = (req, res) => {
     // 请求验证
     if (!pm.id)  return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
     DAO.update(Friends,pm,{id:pm.id},data=>{
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 

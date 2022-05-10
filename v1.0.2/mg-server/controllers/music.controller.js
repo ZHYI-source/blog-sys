@@ -1,6 +1,7 @@
 const db = require("../models");
 const DAO = require("../dao/DAO");
 const Music = db.music;
+const Op = db.Op;
 
 // Create and Save a new Music
 exports.create = (req, res) => {
@@ -24,6 +25,10 @@ exports.create = (req, res) => {
 // Retrieve all Music from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+    pm.params.name?pm.params.name = {
+        [Op.substring]: `%${pm.params.name}%`
+    }:pm.params.name=''
+
     DAO.list(Music, pm, list => {
         res.sendResult(list)
     })

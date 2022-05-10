@@ -4,6 +4,7 @@ const DAO = require("../dao/DAO");
 const Roles = db.roles;
 const Menus = db.menus;
 const rolesMenus = db.rolesMenus;
+const Op = db.Op;
 
 
 //角色和菜单是多对多的
@@ -67,6 +68,11 @@ exports.findAll = (req, res) => {
     pm.include = [
         {model: Menus,},
     ]
+
+    pm.params.role_name?pm.params.role_name = {
+        [Op.substring]: `%${pm.params.role_name}%`
+    }:pm.params.role_name=''
+
 
     DAO.list(Roles, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);

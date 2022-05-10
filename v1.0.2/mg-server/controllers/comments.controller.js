@@ -44,6 +44,7 @@ exports.create = (req, res) => {
 // Retrieve all comment from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
     DAO.list(comments, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

@@ -10,17 +10,21 @@ exports.create = (req, res) => {
     // 请求验证
     if (!pm.email) return res.sendResult({data: '', code: 605, message: "留言邮箱不能为空！"})
     if (!pm.content) return res.sendResult({data: '', code: 605, message: "留言描述不能为空！"})
-
     // Create a Message
     const newMessage = {
         email: pm.email,
         status: false,
         content: pm.content,
     };
-
     DAO.create(Message, newMessage, data => {
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
-        res.sendResult(data)
+        //留言成功后 发送言邮件通知
+        let p = {
+            email: '1840354092@qq.com',
+            content: `您收到了一份留言：${pm.content},-----快去查看`
+        }
+        sendMailer(p).then(info => {
+            res.sendResult(data)
+        })
     })
 };
 
@@ -69,7 +73,7 @@ exports.replyMsg = (req, res) => {
     sendMailer({email: pm.email, content: pm.content}).then(info => {
         //去修改状态
         // pm.status = true
-        Message.update({status:true}, {
+        Message.update({status: true}, {
             where: {
                 id: pm.id
             }

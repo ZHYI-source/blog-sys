@@ -7,6 +7,7 @@ const Cate = db.cate;
 const Tags = db.tags;
 const ArticleTags = db.ArticleTags;
 const Comments = db.comments;
+const Op = db.Op;
 
 //博文和标签是多对多的
 //addTags、getTags、setTags 操作中间表的方法 会自动创建
@@ -70,12 +71,16 @@ exports.create = async (req, res) => {
 // Retrieve all user from the database.
 exports.findAll = (req, res) => {
     const pm = req.body
+    pm.params.article_title?pm.params.article_title = {
+        [Op.substring]: `%${pm.params.article_title}%`
+    }:pm.params.article_title=''
     pm.raw = false //是否开启原生查询   true 结果：tag.tag_name  false 结果：'tag':{"tag_name": "标签",}
     pm.include = [
         {model: Tags, attributes: [['id', 'tagId'],['tag_name', 'name'], ['tag_desc', 'desc']]},
         {model: Cate, attributes: [['id', 'cateId'],['sort_name', 'name'], ['sort_desc', 'desc']]},
         {model: Comments, attributes: [['id', 'commentId'], ['content', 'commentContent']]},
     ]
+
     DAO.list(Article, pm, data => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)

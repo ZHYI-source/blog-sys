@@ -3,6 +3,7 @@ const path = require("path");
 const dbConfig = require("../config/db.config.js");
 const _ = require('lodash');
 const Sequelize = require("sequelize");
+const { Op } = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
     dialect: dbConfig.dialect,
@@ -20,6 +21,7 @@ const db = {};
 
 db.Sequelize = Sequelize;//引入
 db.sequelize = sequelize;//实例
+db.Op = Op; //操作符
 
 
 // fs.readdirSync(__dirname)

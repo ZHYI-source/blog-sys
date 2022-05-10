@@ -2,6 +2,7 @@ const db = require("../models");
 const logger = require("../utils/utils.logger").logger();
 const DAO = require("../dao/DAO");
 const Socials = db.socials;
+const Op = db.Op;
 
 // Create and Save a new Socials
 exports.create = (req, res) => {
@@ -30,12 +31,12 @@ exports.create = (req, res) => {
         console.log(err)
     })
 
-
 };
 
 // Retrieve all Socials from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
     DAO.list(Socials, pm, list => {
         logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
