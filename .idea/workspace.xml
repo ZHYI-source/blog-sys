@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="1.0.2">
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.1/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
       <workItem from="1651995197414" duration="4009000" />
       <workItem from="1652010367184" duration="156000" />
       <workItem from="1652091771408" duration="661000" />
-      <workItem from="1652148962085" duration="123000" />
+      <workItem from="1652148962085" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="✨ v 1.0.2">
       <created>1651834197567</created>
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652091831896</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.0.2">
+      <created>1652149091035</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652149091035</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,10 +234,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="✨ v 1.0.2" />
-    <MESSAGE value="1.0.2" />
     <MESSAGE value="v1.0.2:增加首页最新评论和留言，邮件回复留言" />
     <MESSAGE value="1.0.2-日常优化" />
     <MESSAGE value="✨1.0.2 前台代码高亮 后台文件上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨1.0.2 前台代码高亮 后台文件上传" />
+    <MESSAGE value="1.0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.2" />
   </component>
 </project>
