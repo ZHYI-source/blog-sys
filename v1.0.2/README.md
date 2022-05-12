@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://gitee.com/Z568_568/mango-blog-system.git">
-    <img src="./doc/logo.png" alt="Logo" width="95" height="130">
+    <img src="./doc/logo.png" alt="Logo" width="100" height="80">
   </a>
 
 <h3 align="center">"Mango-Blog-System"</h3>
@@ -57,7 +57,7 @@
 
 ##### 🥯前端cliect
 
-> 技术栈：Vue2 + 动画库
+> 技术栈：Gblog
 
 
 
