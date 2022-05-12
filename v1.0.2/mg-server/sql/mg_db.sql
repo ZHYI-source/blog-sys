@@ -11,7 +11,7 @@
  Target Server Version : 50736
  File Encoding         : 65001
 
- Date: 29/04/2022 20:11:25
+ Date: 12/05/2022 14:08:12
 */
 
 SET NAMES utf8mb4;
@@ -233,16 +233,16 @@ CREATE TABLE `mg_message`  (
   `content` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '留言内容',
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
+  `status` tinyint(1) NOT NULL COMMENT '回复状态',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of mg_message
 -- ----------------------------
-INSERT INTO `mg_message` VALUES ('05de8f90-4a4c-4011-a9ef-d4af05fb0cf1', '1840354092@qq.com', '123465', '2022-04-20 23:19:31', '2022-04-20 23:19:31');
-INSERT INTO `mg_message` VALUES ('3d0c08eb-4da0-44e3-8406-985c023946e0', '1840354092@qq.com', '1236fdsflkd发电量数据粉红色的艰苦奋斗是:rage:', '2022-04-20 23:21:07', '2022-04-28 20:44:56');
-INSERT INTO `mg_message` VALUES ('8017ec04-7aac-44bd-8945-053e07f2e2c1', '1840354092@qq.com', '123465', '2022-04-20 23:19:56', '2022-04-20 23:19:56');
-INSERT INTO `mg_message` VALUES ('8cb46963-8dc4-46ce-af00-859be07de463', '1840354092@qq.com', '你撒娇和水果和反馈是否规范打算开个饭店', '2022-04-20 23:18:28', '2022-04-20 23:18:28');
+INSERT INTO `mg_message` VALUES ('0fc7c331-3180-479a-9610-93f136f61902', '1840354092@qq.com', '今天天气真好', '2022-05-10 10:46:47', '2022-05-10 10:46:47', 0);
+INSERT INTO `mg_message` VALUES ('f833f16b-4ecd-4f8a-a79a-25f96aef5728', '1840354092@qq.com', '``` js\n{key: \'syncs\', name: \'同步状态\', show: true, width: \'80\', enableSort: false, align: \"center\", fixed: \'right\'},\n{key: \'status\', name: \'投保状态\', show: true, width: \'80\', enableSort: false, align: \"center\", fixed: \'right\'},\n{key: \'toolButton\', name: \'操作\', show: true, width: \'120\', enableSort: false, align: \"center\", fixed: \'right\'},\n```', '2022-05-09 17:28:39', '2022-05-09 22:52:21', 1);
+INSERT INTO `mg_message` VALUES ('fc295785-4133-4b4c-8126-6503f5e6ea43', '1840354092@qq.com', '132465', '2022-05-10 14:15:29', '2022-05-10 14:15:29', 0);
 
 -- ----------------------------
 -- Table structure for mg_roles
