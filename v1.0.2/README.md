@@ -19,7 +19,7 @@
     <img src="./doc/logo.png" alt="Logo" width="100" height="80">
   </a>
 
-<h3 align="center">"Mango-Blog-System"</h3>
+<h3 align="center">"MG'Blog"</h3>
   <p align="center">
     一个 "开箱即用" 个人博客全栈系统项目！
     <br />
