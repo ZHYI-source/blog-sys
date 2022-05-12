@@ -55,7 +55,7 @@ app.use(function (err, req, res, next) {
     const pm =req.body
     if (err.name === 'UnauthorizedError') {
         logger.error(`${req.method} ${req.baseUrl + req.path} *** 响应：${JSON.stringify({data:null, code:err.status || 401, message:err.message || 'token错误'})}`);
-        res.send({data:null, code:err.status || 401, message:err.message || 'token错误'})
+        res.status(401).send({data:null, code:err.status || 401, message:err.message || 'token错误'})
     }
 })
 
@@ -65,7 +65,7 @@ mount(app, path.join(process.cwd(), '/routes'), true)
 
 // 处理无响应 如果没有路径处理就返回 Not Found
 app.use(function (req, res, next) {
-    res.sendResult({data:null, code:404, message:'Not Found'})
+    res.status(404).sendResult({data:null, code:404, message:'Not Found'})
 })
 app.listen(process.env.DEV_PORT, () => {
     console.log(chalk.bold.green(`项目启动成功: ${process.env.DEV_URL}:${process.env.DEV_PORT}`));
