@@ -10,7 +10,7 @@
         </mk-get-row>
         <mk-get-row>
           <el-form-item label="密码" prop="password">
-            <el-input v-model="form.password" size="mini" class="input-one" clearable placeholder="请输入密码"></el-input>
+            <el-input v-model="form.password" :disabled="!isAdd" size="mini" class="input-one" clearable placeholder="请输入密码"></el-input>
           </el-form-item>
         </mk-get-row>
         <mk-get-row>
@@ -20,7 +20,7 @@
         </mk-get-row>
         <mk-get-row>
           <el-form-item label="角色" prop="roleId">
-            <mk-select-role  class="input-one" v-model="form.roleId"/>
+            <mk-select-role class="input-one" v-model="form.roleId"/>
           </el-form-item>
         </mk-get-row>
         <mk-get-row>
@@ -73,7 +73,7 @@ export default {
     return {
       commonKey: 0,
       form: {
-        state:true
+        state: true
       },
       isAdd: true,
       rules: {
@@ -94,11 +94,21 @@ export default {
     save() {
       this.$refs['formAdd'].validate((valid) => {
         if (valid) {
+          let p = {}
+          this.isAdd ? p = this.form : p = {
+            username: this.form.username,
+            nickName: this.form.nickName,
+            roleId: this.form.roleId,
+            state: this.form.state,
+            id: this.form.id,
+            createdAt: this.form.createdAt,
+            updatedAt: this.form.updatedAt,
+          }
           let _FUC = ''
           _FUC = this.isAdd ? dirUsersCreate : dirUsersUpdate
-          _FUC(this.form).then(res => {
-            this.$toast.success(this.isAdd ?'添加成功！':'修改成功！')
-            this.$emit('close',true);
+          _FUC(p).then(res => {
+            this.$toast.success(this.isAdd ? '添加成功！' : '修改成功！')
+            this.$emit('close', true);
           }).catch(err => {
             console.log(err)
           })

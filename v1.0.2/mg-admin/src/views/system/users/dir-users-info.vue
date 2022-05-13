@@ -2,8 +2,8 @@
   <section>
     <d2-container type="full" v-if="!show.edit&&!show.view">
       <section class="data-list-box">
-        <mk-search-form :model="query" v-if="permBtn.queryButton"  @search="goPage(1)">
-          <el-form-item class="inline-item"  prop="username">
+        <mk-search-form :model="query" v-if="permBtn.queryButton" @search="goPage(1)">
+          <el-form-item class="inline-item" prop="username">
             <el-input v-model.trim="query.params.username" @clear="goPage(1)" @keyup.native.enter="goPage(1)"
                       clearable placeholder="输入用户名搜索"
                       size="mini"></el-input>
@@ -37,6 +37,7 @@
                                 :dis-delete="!permBtn.deleteButton"
                                 :dis-edit="!permBtn.updateButton"
                                 @delete="goDelete(scope.row)">
+                  <el-button size="mini" v-if="permBtn.resetButton" @click="resetPwd(scope.row)" type="primary">重置密码</el-button>
                 </mk-tool-button>
               </template>
             </el-table-column>
@@ -65,6 +66,21 @@
                        :data-size="temp.dataSize" @go="goPage(1)" @changePageSize="changePageSize"/>
       </section>
     </d2-container>
+    <el-dialog
+      title="重置密码"
+      :visible.sync="show.reset"
+      width="30%"
+    >
+      <el-form :model="resetPwdData" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+        <el-form-item label="密码" prop="password">
+          <el-input  class="input-one" placeholder="请输入密码" v-model="resetPwdData.password"></el-input>
+        </el-form-item>
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+    <el-button @click="show.reset = false" size="mini">取 消</el-button>
+    <el-button type="primary" @click="saveResetPwd('ruleForm')" size="mini">确 定</el-button>
+  </span>
+    </el-dialog>
   </section>
 </template>
 
@@ -73,19 +89,26 @@
 import Tools from "@/libs/utils.tool";
 import {exportExecl} from "@/libs/util.export";
 
-import {dirUsersDelete, dirUsersList} from "@/api/modules/sys.users.api";
+import {dirUsersDelete, dirUsersList, dirUsersReset} from "@/api/modules/sys.users.api";
 import GetUsersInfo from "./get-users-info";
 import ViewUsersInfo from "./view-users-info";
 
 
 export default {
   name: 'dir-users-info',
-  components:{ViewUsersInfo, GetUsersInfo,},
+  components: {ViewUsersInfo, GetUsersInfo,},
   data() {
     return {
       show: {
         edit: false,
-        view: false
+        view: false,
+        reset: false,
+      },
+      resetPwdData:{},
+      rules: {
+        password: [
+          {required: true, message: '请输入新密码', trigger: 'blur'},
+        ],
       },
       updateData: {},
       type: '',
@@ -102,11 +125,12 @@ export default {
           order: 'desc',
         }
       },
-      permBtn:{
-        createButton:false,
-        queryButton:false,
-        deleteButton:false,
-        updateButton:false,
+      permBtn: {
+        createButton: false,
+        queryButton: false,
+        deleteButton: false,
+        updateButton: false,
+        resetButton: false,
       },
       //返回数据列表
       datas: [],
@@ -130,7 +154,7 @@ export default {
       item_data: {},
       //列表渲染数据列
       fields: [
-        {key: 'toolButton', name: '操作', show: true, align: "center", width: '220', enableSort: false, fixed: 'right'},
+        {key: 'toolButton', name: '操作', show: true, align: "center", width: '280', enableSort: false, fixed: 'right'},
         {key: 'id', name: 'ID', show: true, align: "center", enableSort: false, fixed: false},
         {key: 'username', name: '用户名', show: true, align: "center", enableSort: false, fixed: false},
         {key: 'password', name: '密码', show: true, align: "center", enableSort: false, fixed: false},
@@ -160,6 +184,7 @@ export default {
         this.permBtn.queryButton = true;
         this.permBtn.deleteButton = true;
         this.permBtn.updateButton = true;
+        this.permBtn.resetButton = true;
       } else {
         if (perms.includes('POST /api/private/users/create')) {
           this.permBtn.createButton = true;
@@ -172,6 +197,9 @@ export default {
         }
         if (perms.includes('POST /api/private/users/delete')) {
           this.permBtn.deleteButton = true;
+        }
+        if (perms.includes('POST /api/private/users/reset')) {
+          this.permBtn.resetButton = true;
         }
       }
     },
@@ -245,6 +273,28 @@ export default {
       this.query.sort.order = row.order === 'ascending' ? 'asc' : 'desc'
       this.query.sort.prop = row.prop
       this.getDataList()
+    },
+    saveResetPwd(formName){
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          this.show.reset = false
+          dirUsersReset(this.resetPwdData).then(res=>{
+            this.$toast.success('重置密码成功')
+            this.getDataList()
+          }).catch(err=>{
+            console.log(err)
+            this.$toast.error('重置密码错误')
+          })
+        } else {
+          console.log('error submit!!');
+          return false;
+        }
+      });
+    },
+    resetPwd(data) {
+      this.show.reset = true
+      this.resetPwdData.password=''
+      this.resetPwdData.id=data.id
     },
     //添加编辑
     goEdit(data) {

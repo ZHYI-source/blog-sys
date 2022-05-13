@@ -106,7 +106,6 @@ export default {
       })
     },
     getValue(val){
-
       let tempTags = []
       for (const valElement of val) {
         tempTags.push(valElement.id)

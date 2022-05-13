@@ -32,7 +32,6 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const pm = req.body;
     DAO.findOne(About,pm,data=>{
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };
@@ -42,7 +41,6 @@ exports.update = (req, res) => {
     const pm = req.body;
     // 请求验证
     DAO.update(About,pm,{id:pm.id},data=>{
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 
@@ -54,7 +52,6 @@ exports.delete = (req, res) => {
     // 请求验证
     if (!pm.id)  return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
     DAO.delete(About,{id:pm.id},data=>{
-        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 

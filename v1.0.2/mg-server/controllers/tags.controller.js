@@ -24,16 +24,12 @@ exports.create = (req, res) => {
             res.sendResult(data)
         })
     })
-
-
 };
 
 // Retrieve all tag from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
-
     DAO.list(Tags, pm, list => {
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
     })
 };
@@ -42,7 +38,6 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const pm = req.body;
     DAO.findOne(Tags,pm,data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };

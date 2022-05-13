@@ -55,6 +55,7 @@ export default {
   created() {
     if (this.updateData && this.updateData.id) {
       this.form = this.updateData
+      console.log(this.updateData)
       let menusId = []
       for (const argument of this.updateData.menus) {
         menusId.push(argument.id)
@@ -82,6 +83,7 @@ export default {
     save() {
       this.$refs['formAdd'].validate((valid) => {
         if (valid) {
+          console.log(this.form)
           let _FUC = ''
           _FUC = this.isAdd ? dirRolesCreate : dirRolesUpdate
           _FUC(this.form).then(res => {

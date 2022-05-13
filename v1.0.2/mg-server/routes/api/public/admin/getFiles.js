@@ -19,7 +19,7 @@ router.get("/",
             //设置请求的返回头type,content的type类型列表见上面
             res.setHeader("Content-Type", mimetype);
             //格式必须为 binary 否则会出错
-            var content = fs.readFileSync(filePath, "binary");
+            let content = fs.readFileSync(filePath, "binary");
             if (!content) {
                 res.sendResult({data:'',code:400,message:"资源不存在"});
             }

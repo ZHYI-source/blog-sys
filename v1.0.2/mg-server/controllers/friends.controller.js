@@ -34,9 +34,6 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const pm = req.body;
 
-    pm.params.siteName?pm.params.siteName = {
-        [Op.substring]: `%${pm.params.siteName}%`
-    }:pm.params.siteName=''
 
     DAO.list(Friends, pm, list => {
         res.sendResult(list)

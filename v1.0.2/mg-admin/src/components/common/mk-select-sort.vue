@@ -96,8 +96,7 @@ export default {
     getData(){
       let that = this
       dirSortList().then(res=>{
-        let datas = res.data || []
-        that.list = datas
+        that.list = res.data || []
       })
     },
     getValue(val){

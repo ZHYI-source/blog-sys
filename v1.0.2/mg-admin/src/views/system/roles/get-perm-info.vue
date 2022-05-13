@@ -2,7 +2,6 @@
   <section>
     <section class="mk-add-pop">
       <el-form ref="formAdd" :model="form" :rules="rules" label-width="100px">
-
         <mk-get-row>
           <el-form-item label="ID" prop="id">
             <el-input v-model="form.id" disabled size="mini" class="input-one" clearable placeholder="请输入ID"></el-input>
@@ -56,17 +55,8 @@ export default {
       form: {},
       isAdd: true,
       rules: {
-
-        id: [{required: true, message: '请输入ID', trigger: 'blur'},],
-
         role_name: [{required: true, message: '请输入角色名称', trigger: 'blur'},],
-
         role_desc: [{required: true, message: '请输入角色描述', trigger: 'blur'},],
-
-        createdAt: [{required: true, message: '请输入CREATEDAT', trigger: 'blur'},],
-
-        updatedAt: [{required: true, message: '请输入UPDATEDAT', trigger: 'blur'},],
-
       }
     }
   },
@@ -78,13 +68,15 @@ export default {
             roleId:this.form.id,
             menuIds:this.form.menuIds
           }
-          dirRolesCreatePermission(p).then(res => {
-            console.log(res)
-            this.$toast.success('分配成功！')
-            this.$emit('close',true);
-          }).catch(err => {
-            console.log(err)
-          })
+          console.log(p)
+
+          // dirRolesCreatePermission(p).then(res => {
+          //   console.log(res)
+          //   this.$toast.success('分配成功！')
+          //   this.$emit('close',true);
+          // }).catch(err => {
+          //   console.log(err)
+          // })
         } else {
           console.log('error submit!!');
           return false;

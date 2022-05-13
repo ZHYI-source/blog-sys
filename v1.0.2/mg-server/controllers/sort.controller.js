@@ -31,13 +31,8 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const pm = req.body;
 
-    pm.params.sort_name?pm.params.sort_name = {
-        [Op.substring]: `%${pm.params.sort_name}%`
-    }:pm.params.sort_name=''
-
 
     DAO.list(Cate, pm, list => {
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
     })
 };
@@ -46,7 +41,6 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const pm = req.body;
     DAO.findOne(Cate,pm,data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };
@@ -57,7 +51,6 @@ exports.update = (req, res) => {
     // 请求验证
     if (!pm.id)  return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
     DAO.update(Cate,pm,{id:pm.id},data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 
@@ -69,7 +62,6 @@ exports.delete = (req, res) => {
     // 请求验证
     if (!pm.id)  return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
     DAO.delete(Cate,{id:pm.id},data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 
@@ -79,7 +71,6 @@ exports.delete = (req, res) => {
 exports.deleteAll = (req, res) => {
     const pm = req.body;
     DAO.deleteAll(Cate,data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };
@@ -89,7 +80,6 @@ exports.query = (req, res) => {
     const pm = req.body;
     let sql = 'SELECT * FROM `mg_sort`'
     DAO.doQuery(sql,data=>{
-        // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
         res.sendResult(data)
     })
 };

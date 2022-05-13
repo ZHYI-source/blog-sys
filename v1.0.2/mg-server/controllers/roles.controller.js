@@ -69,6 +69,8 @@ exports.findAll = (req, res) => {
         {model: Menus,},
     ]
 
+
+
     DAO.list(Roles, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

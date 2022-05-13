@@ -208,6 +208,7 @@ const frameIn = [
             'POST /api/private/users/list',
             'POST /api/private/users/delete',
             'POST /api/private/users/update',
+            'POST /api/private/users/reset',
           ],
         },
         component: _import('system/users/dir-users-info')

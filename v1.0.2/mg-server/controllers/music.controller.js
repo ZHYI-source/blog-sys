@@ -25,6 +25,7 @@ exports.create = (req, res) => {
 // Retrieve all Music from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
+
     DAO.list(Music, pm, list => {
         res.sendResult(list)
     })
