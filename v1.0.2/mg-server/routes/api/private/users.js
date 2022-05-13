@@ -11,7 +11,7 @@ const Users = require("../../../controllers/users.controller");
  * @param {string} nickName - 请输入昵称
  * @param {number} verificationCode - 请输入验证码
  * @returns {object} 200 - An array of user info
- * @returns {object} 500 - 请求失败
+ * @returns {object} 605 - 请求失败
  * @returns {Error}  default - Unexpected error
  */
 router.post("/create", Users.create);
@@ -22,7 +22,7 @@ router.post("/create", Users.create);
  * @param {number} id - 请输入用户ID
  * @param {string} authorization - 请输入token
  * @returns {object} 200 - An array of user info
- * @returns {object} 500 - 请求失败
+ * @returns {object} 605 - 请求失败
  * @returns {Error}  default - Unexpected error
  */
 router.post("/delete", Users.delete);
@@ -32,7 +32,7 @@ router.post("/delete", Users.delete);
  * @group 用户管理 - list of users
  * @param {object} query - 请按固定查询规范
  * @returns {object} 200 - An array of user info
- * @returns {object} 500 - 请求失败
+ * @returns {object} 605 - 请求失败
  * @returns {Error}  default - Unexpected error
  */
 router.post("/list", Users.findAll);
@@ -45,17 +45,28 @@ router.post("/list", Users.findAll);
  * @param {string} nickName - 请输入昵称
  * @param {number} verificationCode - 请输入验证码
  * @returns {object} 200 - An array of user info
- * @returns {object} 500 - 请求失败
+ * @returns {object} 605 - 请求失败
  * @returns {Error}  default - Unexpected error
  */
 router.post("/update", Users.update);
+/**
+ * 更新用户信息列表
+ * @route POST /api/private/users/update
+ * @group 用户管理 - list of users
+ * @param {string} password.query.required - 请输入密码
+ * @param {string} id.query.required - 请输入密码
+ * @returns {object} 200 - An array of user info
+ * @returns {object} 605 - 请求失败
+ * @returns {Error}  default - Unexpected error
+ */
+router.post("/reset", Users.reset);
 
 /**
  * 删除全部用户信息
  * @route POST /api/private/users/deleteAll
  * @group 用户管理 - list of users
  * @returns {object} 200 - An array of user info
- * @returns {object} 500 - 请求失败
+ * @returns {object} 605 - 请求失败
  * @returns {Error}  default - Unexpected error
  */
 router.post("/deleteAll", Users.deleteAll);

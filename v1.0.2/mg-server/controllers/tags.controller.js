@@ -32,11 +32,6 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const pm = req.body;
 
-    pm.params.tag_name?pm.params.tag_name = {
-        [Op.substring]: `%${pm.params.tag_name}%`
-    }:pm.params.tag_name=''
-
-
     DAO.list(Tags, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

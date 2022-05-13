@@ -69,11 +69,6 @@ exports.findAll = (req, res) => {
         {model: Menus,},
     ]
 
-    pm.params.role_name?pm.params.role_name = {
-        [Op.substring]: `%${pm.params.role_name}%`
-    }:pm.params.role_name=''
-
-
     DAO.list(Roles, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)

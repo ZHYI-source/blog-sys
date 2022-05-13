@@ -25,10 +25,6 @@ exports.create = (req, res) => {
 // Retrieve all Music from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
-    pm.params.name?pm.params.name = {
-        [Op.substring]: `%${pm.params.name}%`
-    }:pm.params.name=''
-
     DAO.list(Music, pm, list => {
         res.sendResult(list)
     })
