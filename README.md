@@ -113,5 +113,5 @@
  <img src="doc/img/1.2.png" width = "300" height = "150" alt="图片名称" align=center />
  <img src="doc/img/1.3.png" width = "300" height = "150" alt="图片名称" align=center />
 
- <img src="doc/img/m%20(1).jpg" width = "300" height = "150" alt="图片名称" align=center />
+ <img src="doc/img/m%20(1).jpg" width = "150"   alt="图片名称" align=center />
 
