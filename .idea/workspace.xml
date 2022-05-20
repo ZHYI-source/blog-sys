@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/img/m (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/img/m (2).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/img/m (3).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/img/m (4).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/img/mini.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/img/smwx.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -87,7 +81,7 @@
       <workItem from="1652170916979" duration="1477000" />
       <workItem from="1652334956637" duration="5540000" />
       <workItem from="1652403855957" duration="5638000" />
-      <workItem from="1653034645905" duration="883000" />
+      <workItem from="1653034645905" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="✨ v 1.0.2">
       <created>1651834197567</created>
@@ -327,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653035063618</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="✨ 1.0.2 微信小程序端已上线">
+      <created>1653035542024</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1653035542024</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
