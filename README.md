@@ -98,10 +98,8 @@
             4.1 访客：editor  123456   超级管理员：admin  123456
 ```
 
-
 #### 🥯v1.0.2 项目截图
 
- 
  <img src="doc/img/1.png" width = "300" height = "150" alt="图片名称" align=center />
  <img src="doc/img/2.png" width = "300" height = "150" alt="图片名称" align=center />
  <img src="doc/img/3.png" width = "300" height = "150" alt="图片名称" align=center />
@@ -118,3 +116,7 @@
  <img src="doc/img/m%20(3).jpg" width = "150"   alt="图片名称" align=center />
  <img src="doc/img/m%20(4).jpg" width = "150"   alt="图片名称" align=center />
 
+#### 🥯v1.0.2 赞赏作者
+
+ <img src="doc/img/vx.jpg" width = "150" height = "150" alt="图片名称" align=center />
+ <img src="doc/img/zfb.jpg" width = "150" height = "150" alt="图片名称" align=center />
