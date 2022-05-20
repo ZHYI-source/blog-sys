@@ -114,4 +114,7 @@
  <img src="doc/img/1.3.png" width = "300" height = "150" alt="图片名称" align=center />
 
  <img src="doc/img/m%20(1).jpg" width = "150"   alt="图片名称" align=center />
+ <img src="doc/img/m%20(2).jpg" width = "150"   alt="图片名称" align=center />
+ <img src="doc/img/m%20(3).jpg" width = "150"   alt="图片名称" align=center />
+ <img src="doc/img/m%20(4).jpg" width = "150"   alt="图片名称" align=center />
 
