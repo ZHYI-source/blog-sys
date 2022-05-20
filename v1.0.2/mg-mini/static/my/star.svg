@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.004" height="91.7" viewBox="0 0 94.004 91.7">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffaf3c"/>
+      <stop offset="1" stop-color="#ff771c"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="蒙版" d="M0,36.667A36.667,36.667,0,1,0,36.667,0,36.666,36.666,0,0,0,0,36.667Z" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="ico出入境" transform="translate(0.189)">
+    <rect id="矩形" width="90" height="90" fill="none"/>
+    <g id="编组_37" data-name="编组 37" transform="translate(7.729 9.167)">
+      <g id="路径_路径蒙版" data-name="路径 + 路径蒙版" transform="translate(0.605)">
+        <path id="蒙版-2" data-name="蒙版" d="M0,36.667A36.667,36.667,0,1,0,36.667,0,36.666,36.666,0,0,0,0,36.667Z" fill="url(#linear-gradient)"/>
+        <g id="路径_路径蒙版-2" data-name="路径 + 路径蒙版" clip-path="url(#clip-path)">
+          <path id="路径" d="M7.638,17.249c-.694-1.729-2.983-4.685-6.8-8.786-1.02-1.1-.954-1.938-.59-4.438l.042-.282C.533,2.03.949,1.017,6.583.1,9.445-.362,10.2.808,11.241,2.429c.115.179.231.356.349.532A5.576,5.576,0,0,0,14.425,5.3c.5.231,1.117.521,1.948,1,1.969,1.151,1.969,2.451,1.969,5.3v.323c0,4.555-1.639,7.02-2.279,7.81A25.875,25.875,0,0,1,7.684,24.7c1.539-2.94.362-6.43-.046-7.448Z" transform="translate(47.849 41.429)" fill="#ff771c" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <path id="路径-2" data-name="路径" d="M31.059,0A42.3,42.3,0,0,1,49.444,4.175C46.385,6.106,41.99,9.127,40.181,11.6c-.67.916-1.246,1.784-1.779,2.582-1.766,2.656-2.616,3.841-4.245,4.045a18.165,18.165,0,0,1-3.037-.043c-3.076-.2-7.285-.469-8.632,3.181-.855,2.313-1.005,8.593,1.762,11.852a2.894,2.894,0,0,1,.228,2.565,5.027,5.027,0,0,1-1.444,2.461,13.635,13.635,0,0,1-2.073-2.127c-1.553-1.8-3.491-4.045-6-4.739-.911-.252-1.912-.46-2.883-.664-2.718-.569-5.8-1.215-6.511-2.738A10.678,10.678,0,0,1,5.053,23.7a15.717,15.717,0,0,0-1.01-6.644A6.394,6.394,0,0,0,0,13.506,42.408,42.408,0,0,1,31.06,0Z" transform="translate(7.015 -2.589)" fill="#ff771c" style="mix-blend-mode: multiply;isolation: isolate"/>
+        </g>
+      </g>
+      <path id="路径-3" data-name="路径" d="M8.618,0C3.19,1.726-.006,3.857,0,6.17c.016,5.839,20.434,10.63,45.6,10.7S91.165,12.263,91.148,6.423c-.006-2.248-3.036-4.34-8.2-6.068" transform="translate(0 62.935) rotate(-42)" fill="none" stroke="#ff771c" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10" opacity="0.817" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

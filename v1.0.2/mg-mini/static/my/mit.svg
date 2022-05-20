@@ -1,0 +1,14 @@
+<svg id="icon_社会救助_" data-name="icon_社会救助 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3ca5ff"/>
+      <stop offset="1" stop-color="#1c6cfe"/>
+    </linearGradient>
+  </defs>
+  <g id="编组_8" data-name="编组 8" transform="translate(4.468 15.382)">
+    <g id="合作_握手_友谊_和谐_和平_共赢_面性" data-name="合作 握手 友谊 和谐 和平 共赢 面性" transform="translate(0 0)">
+      <path id="形状" d="M44.883,86.117a8.715,8.715,0,0,1-12.268-.06L0,53.417l39.105-37.67L52.517,2.495a8.715,8.715,0,0,1,12.308.057L90.571,28.469a8.715,8.715,0,0,1,.006,12.278L71.118,60.372Z" transform="translate(16.644 0.373)" fill="url(#linear-gradient)"/>
+      <path id="形状结合" d="M55.06,88.243h0a8.668,8.668,0,0,1-6.072-2.465L2.642,40.747a8.714,8.714,0,0,1,0-12.5L29.209,2.461a8.715,8.715,0,0,1,12.208.068L55.533,16.537,42.08,29.362l.625.558a18.294,18.294,0,0,0,23.964.352L92.2,55.29l-7.072,6.941L70.945,48.741a2.8,2.8,0,0,0-3.927.069,2.715,2.715,0,0,0,.068,3.867l14.1,13.416-5.515,5.412L60.946,57.5a2.8,2.8,0,0,0-3.927.068,2.715,2.715,0,0,0,.068,3.868L71.739,75.369l-6.082,5.968L50.946,67.345a2.8,2.8,0,0,0-3.926.068,2.715,2.715,0,0,0,.067,3.867L61.722,85.2l-.559.548A8.665,8.665,0,0,1,55.06,88.243Z" transform="translate(0 0)" fill="#2b99ff" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

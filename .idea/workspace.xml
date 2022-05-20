@@ -19,9 +19,404 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/home.js" afterDir="false" />
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="1.0.2">
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/api/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/api/mini.article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/api/mini.cate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/api/mini.friends.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/api/mini.website.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/assets/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/assets/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/assets/marked.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/abnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/accesslog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/actionscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/angelscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/apache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/applescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/arcade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/arduino.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/armasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/asciidoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/aspectj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/autohotkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/autoit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/avrasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/awk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/axapta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/bash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/bnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/brainfuck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/c-like.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/cal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/capnproto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ceylon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/clean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/clojure-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/cmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/coffeescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/coq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/cos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/cpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/crmsh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/crystal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/csharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/csp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/delphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dsconfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/dust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ebnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/elm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/erb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/erlang-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/fix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/flix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/fsharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gams.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gauss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/glsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/go.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/golo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/gradle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/hsp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/htmlbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/inform7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/irpf90.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/isbl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/javascript.old.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/jboss-cli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/julia-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/kotlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/lasso.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/latex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ldif.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/leaf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/less.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/lisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/livecodeserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/llvm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/lsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/makefile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mathematica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/matlab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/maxima.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mercury.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mipsasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mizar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/mojolicious.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/monkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/moonscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/n1ql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/nginx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/nim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/nix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/nsis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/objectivec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ocaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/openscad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/oxygene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/parser3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/pf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/pgsql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/php-template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/plaintext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/pony.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/processing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/prolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/protobuf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/puppet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/purebasic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/python-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/q.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/qml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/reasonml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/rib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/roboconf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/routeros.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/rsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/ruleslanguage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/sas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/scala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/scilab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/smali.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/smalltalk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/sml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/sqf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/stan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/stata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/step21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/subunit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/swift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/taggerscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/tap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/thrift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/tp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/twig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/typescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vbnet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vbscript-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/vim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/x86asm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/xl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/lib/languages/zephir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/a11y-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/a11y-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/agate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/an-old-hope.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/androidstudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/arduino-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/arta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/ascetic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-cave-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-cave-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-dune-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-dune-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-estuary-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-estuary-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-forest-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-forest-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-heath-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-heath-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-lakeside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-lakeside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-plateau-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-plateau-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-savanna-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-savanna-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-seaside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-seaside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-sulphurpool-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atelier-sulphurpool-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atom-one-dark-reasonable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atom-one-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/atom-one-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/brown-paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/brown-papersq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/codepen-embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/color-brewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/darcula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/docco.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/dracula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/far.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/github-gist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/gml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/googlecode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/gradient-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/gradient-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/grayscale.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/gruvbox-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/gruvbox-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/hopscotch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/hybrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/ir-black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/isbl-editor-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/isbl-editor-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/kimbie.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/kimbie.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/lightfair.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/lioshi.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/magula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/mono-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/monokai-sublime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/night-owl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/nnfx-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/nnfx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/nord.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/obsidian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/ocean.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/paraiso-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/paraiso-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/pojoaque.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/pojoaque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/purebasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/qtcreator_dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/qtcreator_light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/railscasts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/rainbow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/routeros.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/school-book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/school-book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/shades-of-purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/solarized-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/solarized-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/srcery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/sunburst.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/tomorrow-night-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/tomorrow-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/vs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/vs2015.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/xcode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/xt256.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/highlight.js/styles/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/libs/CssHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/libs/MpHtmlParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/libs/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/libs/handler.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/libs/trees.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/cmder-MDParserHighlight/parser/parser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/common/timeLine/timeLine.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/common/timeLine/timeLine.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/fengrui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/audio/audio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/audio/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/audio/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/emoji/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/highlight/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/highlight/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/highlight/prism.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/img-cache/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/markdown/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/markdown/marked.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/mp-html.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/node/node.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/style/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/components/mp-html/style/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/config/server.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/article/mg-article-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/article/mg-article-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/find/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/index/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/me/about.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/me/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/me/me.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/message/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/music/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/record/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/topic/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/pages/weblist/weblist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/ab_me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/about_me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/class.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/dashang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/ew.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/flink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/fx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/gitee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/global.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/gz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/hb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/select_class.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/select_find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/select_index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/select_me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/select_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/ts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/zhuye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/image/zs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/about.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/bg15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/cache.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/customer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/exit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/f5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/mit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/nologin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/poster.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/static/my/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/style/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/style/style-view-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/uni.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/utils/utils.log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/utils/utils.request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/utils/utils.toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-mini/utils/utils.tool.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,21 +455,6 @@
       <recent name="C:\Users\lk\Desktop\all-blog-sys\DOC" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +474,8 @@
       <workItem from="1652148962085" duration="853000" />
       <workItem from="1652170916979" duration="1477000" />
       <workItem from="1652334956637" duration="5540000" />
-      <workItem from="1652403855957" duration="5623000" />
+      <workItem from="1652403855957" duration="5638000" />
+      <workItem from="1653034645905" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="✨ v 1.0.2">
       <created>1651834197567</created>
@@ -320,7 +701,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652434253117</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="✨ 1.0.2 用户重置密码">
+      <created>1652434273889</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652434273889</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

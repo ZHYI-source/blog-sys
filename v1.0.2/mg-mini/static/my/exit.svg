@@ -1,0 +1,10 @@
+<svg id="我的服务_健康码" data-name="我的服务/健康码" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="水土保持生态文明工程信息查询" transform="translate(4.995 9.244)">
+    <g id="icon" transform="translate(0 0)">
+      <circle id="椭圆形" cx="42" cy="42" r="42" transform="translate(13.005 13.2)" fill="#fd616c" opacity="0.95"/>
+      <circle id="椭圆形备份_8" data-name="椭圆形备份 8" cx="14.4" cy="14.4" r="14.4" transform="translate(40.605 0)" fill="#fd616c" opacity="0.779" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <circle id="椭圆形备份_10" data-name="椭圆形备份 10" cx="14.4" cy="14.4" r="14.4" transform="translate(24.942 55.929) rotate(60)" fill="#fd616c" opacity="0.779" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <circle id="椭圆形备份_13" data-name="椭圆形备份 13" cx="14.4" cy="14.4" r="14.4" transform="translate(110.009 70.329) rotate(120)" fill="#fd616c" opacity="0.779" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

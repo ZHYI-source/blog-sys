@@ -1,0 +1,122 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "MG'blog",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/article/mg-article-view",
+      "style": {
+        "navigationBarTitleText": "文章详情",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/article/mg-article-list",
+      "style": {
+        "navigationBarTitleText": "文章列表",
+        "backgroundColor": "#ffffff",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {
+        "navigationBarTitleText": "留言",
+        "backgroundColor": "#ffffff",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/record/index",
+      "style": {
+        "navigationBarTitleText": "记录",
+        "backgroundColor": "#ffffff",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/topic/index",
+      "style": {
+        "navigationBarTitleText": "文章分类"
+      }
+    },
+    {
+      "path": "pages/find/index",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/me/me",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
+        // 隐藏系统导航栏
+        "disableScroll": true,
+        "navigationBarBackgroundColor": "#172d3a"
+      }
+    },
+    {
+      "path": "pages/me/about",
+      "style": {
+        "navigationBarTitleText": "关于作者"
+      }
+    },
+    {
+      "path": "pages/weblist/weblist",
+      "style": {
+        "navigationBarTitleText": "书中枫叶"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#dd524d",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/index.png",
+        "selectedIconPath": "static/image/select_index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/topic/index",
+        "iconPath": "static/image/class.png",
+        "selectedIconPath": "static/image/select_class.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/find/index",
+        "iconPath": "static/image/find.png",
+        "selectedIconPath": "static/image/select_find.png",
+        "text": "发现"
+
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/image/me.png",
+        "selectedIconPath": "static/image/select_me.png",
+        "text": "我的"
+
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "MG'blog",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  }
+}

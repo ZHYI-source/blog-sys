@@ -1,4 +1,4 @@
-# 🔥🥯🥯 Mango-Blog-System ⭐⭐
+# 🔥 MG'blog ⭐⭐
 
 #### 🛠介绍
 芒果快熟’个人博客系统，前端vue2+axios || 后端express,mysql,sequelize
@@ -31,30 +31,6 @@
 </p>
 
 ***
-
-#### 功能列表
-
-- [x] 登录
-- [x] 用户管理
-- [x] 文章管理
-- [x] 分类管理
-- [x] 标签管理
-- [x] 评论管理
-- [x] 归档管理
-
-
-#### 系统设计
-##### 🥯后端server
-
-> 技术栈：Node.js + Express.js + Mysql + Sequelize + 其他插件
-
-##### 🥯前端admin
-
-> 技术栈：D2前端框架 + 富文本+其他插件
-
-##### 🥯前端cliect
-
-> 技术栈：Gblog
-
+ 
 
 

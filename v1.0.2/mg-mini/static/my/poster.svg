@@ -1,0 +1,19 @@
+<svg id="图片_照片" data-name="图片/照片" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.23" x2="0.667" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00cb47"/>
+      <stop offset="1" stop-color="#0ab655"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.583" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3cdb42"/>
+      <stop offset="1" stop-color="#39ea5b"/>
+    </linearGradient>
+  </defs>
+  <g id="图片_照片-2" data-name="图片/照片">
+    <g id="图标_S_视频_下载中心_Copy_3" data-name="图标 / S / 视频 / 下载中心 Copy 3" transform="translate(16 20)">
+      <rect id="Mask_Copy_2" data-name="Mask Copy 2" width="80" height="70" rx="9" transform="translate(9)" fill="url(#linear-gradient)"/>
+      <path id="三角形_copy" data-name="三角形 copy" d="M0,3.466a5,5,0,0,1,8.358-3.7L75.15,60.3A5,5,0,0,1,71.792,69H9a9,9,0,0,1-9-9Z" transform="translate(0 10)" fill="url(#linear-gradient-2)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <circle id="Oval_33_Copy_2" data-name="Oval 33 Copy 2" cx="6.5" cy="6.5" r="6.5" transform="translate(61 15)" fill="#02921a"/>
+    </g>
+  </g>
+</svg>

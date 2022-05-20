@@ -1,0 +1,43 @@
+.time-content {
+		padding: 30rpx;
+		box-sizing: border-box;
+		margin: 0 auto;
+		.time-line-box {
+			border-left: 2rpx dashed #d81e06;
+			padding-bottom: 50rpx;
+			padding-left: 50rpx;
+			box-sizing: border-box;
+			position: relative;
+			&::before {
+				content: "";
+				width: 20rpx;
+				height: 20rpx;
+				position: absolute;
+				top: 20px;
+				left: -12rpx;
+				border-radius: 50%;
+				background-color: #d81e06;
+			}
+
+			.time-line-item {
+				min-height: 80rpx;
+				background-color: #eee;
+				border-radius: 10rpx;
+				position: relative;
+				border: 1rpx solid #eee;
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05), ;
+				&::before {
+					content: "";
+					width: 0;
+					height: 0;
+					position: absolute;
+					top: 15px;
+					left: -21px;
+					border: 20rpx solid;
+					border-color: transparent #f1f1f1 transparent transparent;
+
+				}
+
+			}
+		}
+	}
