@@ -23,7 +23,7 @@
 
 #### 🥯 v1.0.2 小程序预览
 
-  <img src="doc/img/smwx.png" width = "500" height = "150" alt="图片名称" align=center />
+  <img src="doc/img/smwx.png" width = "400" height = "150" alt="图片名称" align=center />
 
 
 #### 🥯 v1.0.2 介绍
