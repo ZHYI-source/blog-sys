@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_5_6_18_46____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2022_5_6_18_46____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,7 @@
   </component>
   <component name="ProjectId" id="28msti9xNR11VxnG7VoH763c7a7" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="新增" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,20 +48,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/v1.0.1/zy-blog-admin" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\Desktop\all-blog-sys\v1.0.1\zy-blog-admin" />
       <recent name="C:\Users\lk\Desktop\all-blog-sys\doc\img" />
       <recent name="C:\Users\lk\Desktop\all-blog-sys\v1.0.2\doc" />
       <recent name="C:\Users\Tom\Desktop\all-blog-sys\doc" />
       <recent name="C:\Users\Tom\Desktop\all-blog-sys\doc\img" />
-      <recent name="C:\Users\lk\Desktop\all-blog-sys\DOC" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -401,5 +402,11 @@
     <MESSAGE value="✨ 1.0.2 用户重置密码" />
     <MESSAGE value="✨ 1.0.2 微信小程序端已上线" />
     <option name="LAST_COMMIT_MESSAGE" value="✨ 1.0.2 微信小程序端已上线" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1653136659733">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1653136659733" />
   </component>
 </project>
