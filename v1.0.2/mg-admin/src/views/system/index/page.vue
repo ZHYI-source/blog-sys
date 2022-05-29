@@ -7,12 +7,12 @@
       <br/>
       <div class="bubbling1">" 及时当勉励，岁月不待人. "</div>
     </section>
-    <section style="margin-top: 40px">
+    <section style="margin-top: 40px" v-if="show.btn">
       <el-card class="box-card"  >
         <div slot="header" class="clearfix">
           <span>快捷通道</span>
         </div>
-        <el-button-group v-if="show.btn" style="margin-bottom: 10px">
+        <el-button-group  style="margin-bottom: 10px">
           <el-button type="primary" icon="el-icon-edit" @click="goMenu('a')">博文编写</el-button>
           <el-button type="primary" icon="el-icon-s-tools" @click="goMenu('b')">站点管理</el-button>
           <el-button type="primary" icon="el-icon-s-custom" @click="goMenu('c')">友链管理</el-button>
