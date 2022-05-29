@@ -13,10 +13,10 @@ const cors = require('cors')// 解决跨域
 const dotenv = require('dotenv')
 dotenv.config()
 
-const sslOptions = {
-    key: fs.readFileSync('public/ssl/zhouyi.run.key'),
-    cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
-}
+// const sslOptions = {
+//     key: fs.readFileSync('public/ssl/zhouyi.run.key'),
+//     cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
+// }
 //处理请求参数解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))

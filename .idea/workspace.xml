@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:接口权限">
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:接口权限 更新sql文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,7 @@
       <workItem from="1653034645905" duration="2812000" />
       <workItem from="1653813142659" duration="318000" />
       <workItem from="1653813565614" duration="127000" />
+      <workItem from="1653814561039" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="✨ v 1.0.2">
       <created>1651834197567</created>
@@ -406,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653813195869</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="v1.0.2:接口权限 更新sql文件">
+      <created>1653814582682</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1653814582682</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,13 +448,14 @@
     <MESSAGE value="✨ 1.0.2 微信小程序端已上线" />
     <MESSAGE value="v1.0.1:增加依赖" />
     <MESSAGE value="v1.0.2:接口权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.2:接口权限" />
+    <MESSAGE value="v1.0.2:接口权限 更新sql文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.2:接口权限 更新sql文件" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1653813202682">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1653814587543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653813202682" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653814587543" />
     <state x="582" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1653813160913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
