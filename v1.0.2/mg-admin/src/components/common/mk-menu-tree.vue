@@ -43,10 +43,17 @@ export default {
         return false
       }
     },
+
     roleId: {
       type: String,
       default() {
         return ''
+      }
+    },
+    perms: {
+      type: Array,
+      default() {
+        return []
       }
     }
   },
@@ -68,8 +75,15 @@ export default {
         // console.log(val)
         //回填
         // this.assignedPermissions = val
+      },
+    },
+      'perms': {
+        immediate: true,
+        handler: function (val) {
+          //回填
+          this.menuKey=[Array.from(new Set(val))]
+        }
       }
-    }
   },
   data() {
     return {
@@ -96,17 +110,24 @@ export default {
       dirMenusList(this.query).then(res => {
         this.menuList = this.listToTree(res.data)
       })
+      if (!this.roleId){
+        this.assignedPermissions.push(2,93) //添加默认增加角色详情和首页
+        return
+      }
       dirRolesOne({params: {id: this.roleId}}).then(role => {
         let arr = []
         this.roleMenus = role.menus
         for (const roleElement of role.menus) {
           if (roleElement.lever === 3) {
-
           }
           arr.push(roleElement.id)
         }
-        this.assignedPermissions = arr
+        if (arr.includes(93)&&arr.includes(2)){
+          arr.push(2,93)
+        }
+        this.assignedPermissions = Array.from(new Set(arr))
       })
+
     },
     listToTree(list) {
       let map = {}, node, tree = [], i;
@@ -127,8 +148,8 @@ export default {
     },
     selectTree(data, node) {
       let menuKeyArr = []
-      menuKeyArr = [...node.checkedKeys, ...node.halfCheckedKeys]
-      this.menuKey = menuKeyArr
+      menuKeyArr = [...node.checkedKeys, ...node.halfCheckedKeys,...this.assignedPermissions]
+      this.menuKey = Array.from(new Set(menuKeyArr))
       this.$emit('getValue', this.menuKey)
     }
   }

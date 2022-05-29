@@ -36,7 +36,7 @@ import MkGetRow from "@/components/common/mk-get-row";
 import MkGetButton from "@/components/common/mk-get-button";
 import MkBackList from "@/components/common/mk-back-list";
 
-import {dirRolesCreate, dirRolesUpdate} from "@/api/modules/sys.roles.api";
+import {dirRolesCreate, dirRolesOne, dirRolesUpdate} from "@/api/modules/sys.roles.api";
 import MkMenuTree from "@/components/common/mk-menu-tree";
 import {dirMenusList} from "@/api/modules/sys.menus.api";
 import util from "@/libs/util";
@@ -55,13 +55,16 @@ export default {
   created() {
     if (this.updateData && this.updateData.id) {
       this.form = this.updateData
-      console.log(this.updateData)
+      // console.log("123",this.updateData)
       let menusId = []
-      for (const argument of this.updateData.menus) {
-        menusId.push(argument.id)
-      }
-      this.$set(this.form, 'menuIds', menusId)
-      this.isAdd = false
+      dirRolesOne({params: {id: this.updateData.id}}).then(role => {
+        for (const argument of role.menus) {
+          menusId.push(argument.id)
+        }
+        this.$set(this.form, 'menuIds', menusId)
+        this.isAdd = false
+      })
+
     }
   },
   data() {

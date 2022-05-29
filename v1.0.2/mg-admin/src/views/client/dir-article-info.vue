@@ -131,7 +131,6 @@ import {exportExecl} from "@/libs/util.export";
 import util from "@/libs/util";
 import ViewArticleInfo from "@/views/client/view-article-info";
 
-
 export default {
   name: 'dir-article-info',
   components: {ViewArticleInfo, GetArticleInfo},

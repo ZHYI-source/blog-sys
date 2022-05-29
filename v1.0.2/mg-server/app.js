@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const chalk = require('chalk'); // https://www.npmjs.com/package/chalk
 const logger = require("./utils/utils.logger").logger();
+const https = require('https')
+const fs = require('fs')
 // 路由加载
 const mount = require('mount-routes')
 const app = express()
@@ -11,6 +13,10 @@ const cors = require('cors')// 解决跨域
 const dotenv = require('dotenv')
 dotenv.config()
 
+const sslOptions = {
+    key: fs.readFileSync('public/ssl/zhouyi.run.key'),
+    cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
+}
 //处理请求参数解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
@@ -49,13 +55,18 @@ const admin_passport = require('./utils/utils.permission')
 
 // 设置 passport 验证路径 ('/api/private/' 开头的都需要进行token)
 app.use('/api/private/*', admin_passport.tokenAuth)
+app.use('/api/private/*', admin_passport.permissionAuth)
 
 //token 有效性中间件
 app.use(function (err, req, res, next) {
-    const pm =req.body
+    const pm = req.body
     if (err.name === 'UnauthorizedError') {
-        logger.error(`${req.method} ${req.baseUrl + req.path} *** 响应：${JSON.stringify({data:null, code:err.status || 401, message:err.message || 'token错误'})}`);
-        res.status(401).send({data:null, code:err.status || 401, message:err.message || 'token错误'})
+        logger.error(`${req.method} ${req.baseUrl + req.path} *** 响应：${JSON.stringify({
+            data: null,
+            code: err.status || 401,
+            message: err.message || 'token错误'
+        })}`);
+        res.send({data: null, code: err.status || 401, message: err.message || 'token错误'})
     }
 })
 
@@ -65,12 +76,15 @@ mount(app, path.join(process.cwd(), '/routes'), true)
 
 // 处理无响应 如果没有路径处理就返回 Not Found
 app.use(function (req, res, next) {
-    res.status(404).sendResult({data:null, code:404, message:'Not Found'})
+    res.status(404).sendResult({data: null, code: 404, message: 'Not Found'})
 })
 app.listen(process.env.DEV_PORT, () => {
     console.log(chalk.bold.green(`项目启动成功: ${process.env.DEV_URL}:${process.env.DEV_PORT}`));
     console.log(chalk.bold.green(`接口文档地址: ${process.env.DEV_URL}:${process.env.DEV_PORT}/swagger`));
-
 })
+// https.createServer(sslOptions, app).listen(process.env.DEV_PORT,() => {
+//     console.log(chalk.bold.green(`项目启动成功: ${process.env.DEV_URL}:${process.env.DEV_PORT}`));
+//     console.log(chalk.bold.green(`接口文档地址: ${process.env.DEV_URL}:${process.env.DEV_PORT}/swagger`));
+// })
 //apiPost接口文档：https://docs.apipost.cn/preview/85df1005c24df829/b25c320b5df19b98
 module.exports = app

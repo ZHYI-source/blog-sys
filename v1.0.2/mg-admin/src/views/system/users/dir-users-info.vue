@@ -73,8 +73,9 @@
     >
       <el-form :model="resetPwdData" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
         <el-form-item label="密码" prop="password">
-          <el-input  class="input-one" placeholder="请输入密码" v-model="resetPwdData.password"></el-input>
+          <el-input class="input-one" placeholder="请输入密码" clearable v-model.trim="resetPwdData.password"></el-input>
         </el-form-item>
+
       </el-form>
       <span slot="footer" class="dialog-footer">
     <el-button @click="show.reset = false" size="mini">取 消</el-button>
@@ -104,7 +105,9 @@ export default {
         view: false,
         reset: false,
       },
-      resetPwdData:{},
+      resetPwdData:{
+        password:''
+      },
       rules: {
         password: [
           {required: true, message: '请输入新密码', trigger: 'blur'},
