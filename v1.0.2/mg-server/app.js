@@ -55,7 +55,8 @@ const admin_passport = require('./utils/utils.permission')
 
 // 设置 passport 验证路径 ('/api/private/' 开头的都需要进行token)
 app.use('/api/private/*', admin_passport.tokenAuth)
-app.use('/api/private/*', admin_passport.permissionAuth)
+//接口权限，有同学需要可以打开哈
+// app.use('/api/private/*', admin_passport.permissionAuth)
 
 //token 有效性中间件
 app.use(function (err, req, res, next) {
