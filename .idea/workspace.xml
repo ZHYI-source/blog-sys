@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:接口权限 更新sql文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <workItem from="1653034645905" duration="2812000" />
       <workItem from="1653813142659" duration="318000" />
       <workItem from="1653813565614" duration="127000" />
-      <workItem from="1653814561039" duration="143000" />
+      <workItem from="1653814561039" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="✨ v 1.0.2">
       <created>1651834197567</created>
@@ -415,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1653814582682</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="v1.0.2:接口权限 更新sql文件">
+      <created>1653814716302</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1653814716302</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
