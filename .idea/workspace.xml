@@ -19,42 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:更新mini tags接口文件">
-      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/web/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/layout/header-aside/components/panel-search/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/layout/header-aside/components/panel-search/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/libs/utils.request.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/libs/utils.request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/store/modules/d2admin/modules/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/store/modules/d2admin/modules/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/client/dir-article-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/client/dir-article-info.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/login/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/login/page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/cheese.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/about.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/about.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/article.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/article.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/code.generation.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/code.generation.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/comments.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/comments.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/friends.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/friends.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/login.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/login.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/menus.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/menus.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/message.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/message.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/roles.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/roles.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/socials.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/socials.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/sort.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/sort.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/tags.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/tags.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/users.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/website.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/website.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/dao/DAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/dao/DAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/dao/POST_DAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/dao/POST_DAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/captcha.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/captcha.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/getFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/getFiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.permission.js" afterDir="false" />
-    </list>
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,13 +98,6 @@
       <workItem from="1653814561039" duration="717000" />
       <workItem from="1654319169029" duration="225000" />
       <workItem from="1654320486613" duration="87000" />
-    </task>
-    <task id="LOCAL-00001" summary="✨ v 1.0.2">
-      <created>1651834197567</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1651834197567</updated>
     </task>
     <task id="LOCAL-00002" summary="✨ v 1.0.2">
       <created>1651834345906</created>
@@ -477,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654319223610</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="v1.0.2：更新日志持久化管理，验证码校验和token有效期修复">
+      <created>1654658129597</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1654658129597</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,6 +477,7 @@
     <MESSAGE value="v1.0.2:接口权限" />
     <MESSAGE value="v1.0.2:接口权限 更新sql文件" />
     <MESSAGE value="v1.0.2:更新mini tags接口文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.2:更新mini tags接口文件" />
+    <MESSAGE value="v1.0.2：更新日志持久化管理，验证码校验和token有效期修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.2：更新日志持久化管理，验证码校验和token有效期修复" />
   </component>
 </project>
