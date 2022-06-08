@@ -44,8 +44,12 @@ service.interceptors.response.use(
           // [ 示例 ] status === 200 代表没有错误
           return dataAxios
         case 605:
-          // [ 示例 ] status === 605 请求错误
+          // [ 示例 ] status === 605 业务错误
           errorCreate(`[ code: 605 ] ${dataAxios.meta.msg}: ${response.config.url}`)
+          break
+        case 604:
+          // [ 示例 ] status === 604 接口权限错误
+          errorCreate(`[ code: 604 ] ${dataAxios.meta.msg}: ${response.config.url}`)
           break
         default:
           // 不是正确的 code
@@ -62,7 +66,7 @@ service.interceptors.response.use(
         error.message = '请求错误';
         break
       case 401:
-        error.message = '未授权，请登录';
+        error.message = '账户已过期，请重新登录';
         break
       case 403:
         error.message = '拒绝访问';

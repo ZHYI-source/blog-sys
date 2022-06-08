@@ -1,8 +1,31 @@
 var log4js = require('log4js');
 
 log4js.configure({
-  appenders: { cheese: { type: 'file', filename: 'cheese.log' } },
-  categories: { default: { appenders: ['cheese'], level: 'error' } }
+    appenders: {
+        console: { type: 'console' },
+        info: {
+            type: 'file',
+            filename: 'logs/info.log'
+        },
+        error: {
+            type: 'file',
+            filename: 'logs/error.log'
+        }
+    },
+    categories: {
+        default: {
+            appenders: [ 'console','info' ],
+            level: 'debug'
+        },
+        info: {
+            appenders: ['info'],
+            level: 'info'
+        },
+        error: {
+            appenders: [ 'error', 'console' ],
+            level: 'error'
+        }
+    }
 });
 
 // logger.trace("Entering cheese testing");
@@ -11,16 +34,39 @@ log4js.configure({
 // logger.warn("Cheese is quite smelly.");
 // logger.error("Cheese is too ripe!");
 // logger.fatal("Cheese was breeding ground for listeria.");
-exports.logger = function (level) {
-    var logger = log4js.getLogger("cheese");
-    logger.level = 'debug';
-    return logger;
-};
+// exports.logger = function (level) {
+//     var logger = log4js.getLogger("失败");
+//     logger.level = 'debug';
+//     return logger;
+// };
 
-// 配合 express 使用的方法
-exports.use = function (app, level) {
-    app.use(log4js.connectLogger(log4js.getLogger('logInfo'), {
-        level: 'debug',
-        format: ':method :url :status'
-    }));
-};
+/**
+ * 日志输出 level为bug
+ * @param { string } content
+ */
+exports.debug = ( content ) => {
+    let logger = log4js.getLogger('debug')
+    logger.level = 'debug'
+    logger.debug(content)
+}
+
+/**
+ * 日志输出 level为info
+ * @param { string } content
+ */
+exports.info = ( content ) => {
+    let logger = log4js.getLogger('info')
+    logger.level = 'info'
+    logger.info(content)
+}
+
+/**
+ * 日志输出 level为error
+ * @param { string } content
+ */
+exports.error = ( content ) => {
+    let logger = log4js.getLogger('error')
+    logger.level = 'error'
+    logger.error(content)
+}
+

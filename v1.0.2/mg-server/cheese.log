@@ -1,4 +1,0 @@
-[2022-05-29T16:55:04.382] [INFO] cheese - 【通过】 admin 请求 POST /api/private/roles/list/ *** 权限验证通过
-[2022-05-29T16:55:12.928] [INFO] cheese - 【通过】 admin 请求 POST /api/private/menus/list/ *** 权限验证通过
-[2022-05-29T16:55:14.608] [INFO] cheese - 【通过】 admin 请求 POST /api/private/code/list/ *** 权限验证通过
-[2022-05-29T16:55:15.894] [INFO] cheese - 【通过】 admin 请求 POST /api/private/friends/list/ *** 权限验证通过

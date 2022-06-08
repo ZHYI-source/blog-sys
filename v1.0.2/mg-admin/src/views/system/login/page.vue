@@ -212,7 +212,7 @@ export default {
     getCodeSvg() {
       getLoginCaptcha().then(res => {
         this.formLogin.codeSvg = res.codeSvg || ''
-        this.codeText = res.codeText || ''
+        this.formLogin.key = res.key || ''
       })
     },
 
@@ -233,20 +233,15 @@ export default {
     submit() {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
-          if (aes.de(this.codeText) !== this.formLogin.code) {
-            this.$message.error('验证码错误，请重新输入')
-            this.getCodeSvg()
-            return
-          }
           getLogin({
             username: this.formLogin.username,
-            password: this.formLogin.password
+            password: aes.en(this.formLogin.password),
+            code:this.formLogin.code,
           }).then(res => {
             util.cookies.set('uuid', res.userInfo.id)
             util.cookies.set('token', res.token)
             //设置用户名称
             this.$store.dispatch('d2admin/user/set', {name: res.userInfo.nickName}, {root: true})
-
             let roleId = res.userInfo.roleId
             //存储角色信息
             util.cookies.set('roleId', roleId)

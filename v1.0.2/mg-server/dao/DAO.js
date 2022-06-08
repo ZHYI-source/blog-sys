@@ -5,7 +5,7 @@
  */
 const utilsTools = require("../utils/utils.tools");
 const db = require("../models/index");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 
 //整理统一返回格式
 function resExtra(data, code = 200, message = '操作成功！') {
@@ -54,7 +54,7 @@ function queryConditions(conditions, count) {
     }
     return queryCon
 }
-
+//***
 const sqlOpt = {
     /**
      * 查询数据总条数
@@ -92,7 +92,6 @@ const sqlOpt = {
             }
         }*/
         if (!model) return cb(resExtra('', 605, '模型不存在'));
-
         model.findAndCountAll(queryConditions(conditions, 'count')).then(countAll => {
             model.findAll(queryConditions(conditions)).then(data => {
                 cb(resExtra({

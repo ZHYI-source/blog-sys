@@ -1,5 +1,5 @@
 const db = require("../models");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 const DAO = require("../dao/DAO");
 const {sendMailer} = require("../utils/utils.nodemailer");
 const Message = db.message;

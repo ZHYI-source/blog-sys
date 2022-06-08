@@ -114,8 +114,10 @@ function fillterMenus(_this, arr, isRoot) {
 }
 
 export const setAsideMenu = (_this) => {
+  console.log("okkk")
   let roleId = util.cookies.get('roleId')
-  if (roleId) {
+  let token = util.cookies.get('token')
+  if (token&&roleId) {
     // 获取角色
     dirRolesOne({params: {id: roleId}}).then(role => {
       let roleId = role.id

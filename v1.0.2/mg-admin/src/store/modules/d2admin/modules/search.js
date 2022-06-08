@@ -41,6 +41,7 @@ export default {
       const fillterPool = []
       const push = function (menu, titlePrefix = []) {
         let roleId = util.cookies.get('roleId')
+        if (!roleId)return
         dirRolesOne({params: {id: roleId}}).then(roleData => {
           let perMenu = roleData.menus
           menu[0].children.forEach(m => {

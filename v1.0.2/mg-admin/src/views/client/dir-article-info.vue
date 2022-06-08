@@ -111,7 +111,6 @@
               :fixed="field.fixed"
             ></el-table-column>
           </template>
-
         </mk-el-table>
         <mk-pagination :current-page="query.offset" :page-size="query.limit"
                        :data-size="temp.dataSize" @go="goPage" @changePageSize="changePageSize"/>

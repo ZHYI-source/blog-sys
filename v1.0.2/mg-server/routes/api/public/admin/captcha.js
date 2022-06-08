@@ -1,10 +1,11 @@
 let express = require('express');
 let router = express.Router();
 let svgCaptcha = require('svg-captcha');
+
 let {aes} = require('../../../../utils/utils.crypto');
 /**
  * 获取验证码
- * @route GET /api/public/v1/captcha
+ * @route GET /api/public/admin/captcha
  * @group 登录 - login
  * @returns {object} 200 - svg格式验证码
  * @returns {object} 500 - 获取验证码错误
@@ -25,9 +26,9 @@ router.get("/",
             let captcha = svgCaptcha.createMathExpr(options)
             let resData={
                 codeSvg: captcha.data,
-                codeText: aes.en(captcha.text) ,
-                key: new Date().getTime()
             }
+            //存储到session
+            req.session.code =captcha.text
             res.sendResult({data:resData, code:200, message:"获取验证码成功"});
         } catch (err) {
             next(err)

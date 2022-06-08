@@ -4,7 +4,7 @@ const Users = db.users
 const Roles = db.roles
 const Menus = db.menus
 const rolesMenus = db.rolesMenus
-const logger = require("./utils.logger").logger();
+const logger = require("./utils.logger");
 /**
  * token验证函数
  *

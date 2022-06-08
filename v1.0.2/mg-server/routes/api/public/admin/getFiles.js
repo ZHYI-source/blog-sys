@@ -2,7 +2,7 @@ let express = require('express');
 let fs = require('fs');
 var path = require("path");
 let router = express.Router();
-const logger = require("../../../../utils/utils.logger").logger();
+const logger = require("../../../../utils/utils.logger");
 /**
  *@author ZY
  *@date 2022/3/6 17:58

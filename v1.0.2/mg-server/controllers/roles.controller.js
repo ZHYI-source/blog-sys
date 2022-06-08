@@ -1,5 +1,5 @@
 const db = require("../models");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 const DAO = require("../dao/DAO");
 const Roles = db.roles;
 const Menus = db.menus;
@@ -68,9 +68,6 @@ exports.findAll = (req, res) => {
     pm.include = [
         {model: Menus,},
     ]
-
-
-
     DAO.list(Roles, pm, list => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
@@ -94,6 +91,7 @@ exports.update = async (req, res) => {
     const pm = req.body;
     // 请求验证
     if (!pm.id) return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
+    if (!pm.menuIds) return res.sendResult({data: '', code: 605, message: "权限ID不能为空！"})
 
     let ms = await Menus.findAll({where: {id: pm['menuIds']}})
     Roles.findByPk(pm.id).then(function (post) {

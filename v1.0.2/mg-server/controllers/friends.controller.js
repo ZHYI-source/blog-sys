@@ -1,5 +1,5 @@
 const db = require("../models");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 const DAO = require("../dao/DAO");
 const Friends = db.friends;
 const Op = db.Op;
@@ -24,7 +24,6 @@ exports.create = (req, res) => {
     Friends.findOne({where:{'siteName':pm.siteName}}).then(singleFriends=>{
         if (singleFriends&&singleFriends.id)  return  res.sendResultAto(null,605,'友链已存在！')
         DAO.create(Friends, newFriend, data => {
-            logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
             res.sendResult(data)
         })
     })
@@ -33,9 +32,8 @@ exports.create = (req, res) => {
 // Retrieve all Friends from the database.
 exports.findAll = (req, res) => {
     const pm = req.body;
-
-
     DAO.list(Friends, pm, list => {
+        logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(list)}`);
         res.sendResult(list)
     })
 };

@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-const logger = require("../../../../utils/utils.logger").logger();
+const logger = require("../../../../utils/utils.logger");
 const Login = require("../../../../controllers/login.controller");
 /**
  * 登录
@@ -12,16 +12,30 @@ const Login = require("../../../../controllers/login.controller");
  * @returns {object} 500 - 登录失败错误
  * @returns {Error}  default - Unexpected error
  */
-router.post("/", function (req,res){
+
+router.post("/", function (req, res) {
     const pm = req.body;
     // 请求验证+
-    if (!pm.username)  return res.sendResult({data: '', code: 500, message: "用户名不能为空！"})
+    if (!pm.username) return res.sendResult({data: '', code: 605, message: "用户名不能为空！"})
 
-    if (!pm.password)  return res.sendResult({data: '', code: 500, message: "密码不能为空！"})
+    if (!pm.password) return res.sendResult({data: '', code: 605, message: "密码不能为空！"})
 
-    Login.login(pm,(data,err)=>{
-        if (err) return res.sendResultAto(null,401,err)
-        res.sendResultAto(data,200,'登录成功')
+    if (!pm.code) return res.sendResult({data: '', code: 605, message: "验证码不能为空！"})
+
+    if (!req.session.code) return res.sendResult({data: '', code: 605, message: "验证码已失效！"})
+
+    if (req.session.code !== pm.code) return res.sendResult({data: '', code: 605, message: "验证码错误！"})
+
+   let clientIp = req.headers['x-forwarded-for'] ||
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
+
+    logger.info(`【IP】${clientIp}【登录】 username:${pm.username}- password:${pm.password}`)
+
+    Login.login(pm, (data, err) => {
+        if (err) return res.sendResultAto(null, 401, err)
+        res.sendResultAto(data, 200, '登录成功')
     })
 
 });

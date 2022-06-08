@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const chalk = require('chalk'); // https://www.npmjs.com/package/chalk
-const logger = require("./utils/utils.logger").logger();
+const logger = require("./utils/utils.logger");
 const https = require('https')
 const fs = require('fs')
 // 路由加载
@@ -12,7 +12,18 @@ const cors = require('cors')// 解决跨域
 //访问 .env文件
 const dotenv = require('dotenv')
 dotenv.config()
-
+const session = require('express-session')
+//用来设置签名密钥
+app.use(session({
+    secret: "WickYo",	// 对cookie进行签名
+    name: "session",	// cookie名称，默认为connect.sid
+    resave: false,	// 强制将会话保存回会话容器
+    rolling: false,	// 强制在每个response上设置会话标识符cookie
+    cookie: {
+        // 5分钟验证码过期
+        maxAge: 300000
+    }
+}))
 // const sslOptions = {
 //     key: fs.readFileSync('public/ssl/zhouyi.run.key'),
 //     cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
@@ -58,6 +69,7 @@ app.use('/api/private/*', admin_passport.tokenAuth)
 //接口权限，有同学需要可以打开哈
 // app.use('/api/private/*', admin_passport.permissionAuth)
 
+
 //token 有效性中间件
 app.use(function (err, req, res, next) {
     const pm = req.body
@@ -67,7 +79,7 @@ app.use(function (err, req, res, next) {
             code: err.status || 401,
             message: err.message || 'token错误'
         })}`);
-        res.send({data: null, code: err.status || 401, message: err.message || 'token错误'})
+        res.status(401).send({data: null, code: err.status || 401, message: err.message || 'token错误'})
     }
 })
 

@@ -5,7 +5,7 @@
  */
 const utilsTools = require("../utils/utils.tools");
 const db = require("../models/index");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 
 //整理统一返回格式
 function resExtra(data, code = 200, message = '操作成功！') {

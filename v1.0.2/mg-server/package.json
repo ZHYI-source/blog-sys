@@ -6,11 +6,13 @@
   "dependencies": {
     "body-parser": "^1.20.0",
     "chalk": "^4.0.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-jwt": "^6.1.1",
+    "express-session": "^1.17.3",
     "express-swagger-generator": "^1.1.17",
     "install": "^0.13.0",
     "jsonwebtoken": "^8.5.1",
@@ -20,7 +22,7 @@
     "multer": "^1.4.4",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.5",
-    "npm": "^8.6.0",
+    "npm": "^8.12.1",
     "sequelize": "^6.18.0",
     "svg-captcha": "^1.4.0"
   },

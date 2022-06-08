@@ -1,5 +1,5 @@
 const db = require("../models");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 const DAO = require("../dao/DAO");
 const POST_DAO = require("../dao/POST_DAO");
 const Article = db.article;

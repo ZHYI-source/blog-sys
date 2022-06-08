@@ -71,7 +71,6 @@ export default {
     },
     // 根据 pool 更新 fuse 实例
     fuse() {
-
       return new Fuse(this.pool, {
         shouldSort: true,
         tokenize: true,

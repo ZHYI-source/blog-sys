@@ -1,5 +1,5 @@
 const db = require("../models");
-const logger = require("../utils/utils.logger").logger();
+const logger = require("../utils/utils.logger");
 const {aes} = require("../utils/utils.crypto");
 const DAO = require("../dao/DAO");
 const Users = db.users;
@@ -50,7 +50,6 @@ exports.findAll = (req, res) => {
     pm.params.nickName ? pm.params.nickName = {
         [Op.substring]: `%${pm.params.nickName}%`
     } : pm.params.nickName = ''
-
 
     pm.params.username ? pm.params.username = {
         [Op.substring]: `%${pm.params.username}%`
