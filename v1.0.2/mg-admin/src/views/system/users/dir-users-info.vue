@@ -63,7 +63,7 @@
 
         </mk-el-table>
         <mk-pagination :current-page="query.offset" :page-size="query.limit"
-                       :data-size="temp.dataSize" @go="goPage(1)" @changePageSize="changePageSize"/>
+                       :data-size="temp.dataSize" @go="goPage" @changePageSize="changePageSize"/>
       </section>
     </d2-container>
     <el-dialog

@@ -16,7 +16,8 @@
         </mk-get-row>
         <mk-get-row>
           <el-form-item label="权限">
-            <mk-menu-tree v-model="form.menuIds" :roleId='form.id'/>
+       <mk-menu-tree v-model="form.menuIds" :roleId='form.id'/>
+<!--            <get-perm-info v-model="form.menuIds"/>-->
           </el-form-item>
         </mk-get-row>
         <el-alert
@@ -40,10 +41,11 @@ import {dirRolesCreate, dirRolesOne, dirRolesUpdate} from "@/api/modules/sys.rol
 import MkMenuTree from "@/components/common/mk-menu-tree";
 import {dirMenusList} from "@/api/modules/sys.menus.api";
 import util from "@/libs/util";
+import GetPermInfo from "@/views/system/roles/get-perm-info";
 
 export default {
   name: 'get-roles-info',
-  components: {MkMenuTree, MkBackList, MkGetButton, MkGetRow},
+  components: {GetPermInfo, MkMenuTree, MkBackList, MkGetButton, MkGetRow},
   props: {
     updateData: {
       type: Object,
@@ -61,10 +63,11 @@ export default {
         for (const argument of role.menus) {
           menusId.push(argument.id)
         }
+        // console.log(menusId)
         this.$set(this.form, 'menuIds', menusId)
+        this.form.testId='123'
         this.isAdd = false
       })
-
     }
   },
   data() {

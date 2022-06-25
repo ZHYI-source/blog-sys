@@ -6,6 +6,7 @@
 import * as echarts from 'echarts';
 
 export default {
+  name:'mk-chart',
   props: {
     className: {
       type: String,

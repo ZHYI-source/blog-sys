@@ -3,7 +3,7 @@ const VueFilenameInjector = require('@d2-projects/vue-filename-injector')
 const ThemeColorReplacer = require('webpack-theme-color-replacer')
 const forElementUI = require('webpack-theme-color-replacer/forElementUI')
 const cdnDependencies = require('./dependencies-cdn')
-const { chain, set, each } = require('lodash')
+const {chain, set, each} = require('lodash')
 
 // 拼接路径
 const resolve = dir => require('path').join(__dirname, dir)
@@ -17,7 +17,9 @@ const publicPath = process.env.VUE_APP_PUBLIC_PATH || '/'
 
 // 设置不参与构建的库
 const externals = {}
-cdnDependencies.forEach(pkg => { externals[pkg.name] = pkg.library })
+cdnDependencies.forEach(pkg => {
+  externals[pkg.name] = pkg.library
+})
 
 // 引入文件的 cdn 链接
 const cdn = {
@@ -32,7 +34,6 @@ const pages = undefined
 //   subpage: './src/subpage.js'
 // }
 
-
 module.exports = {
   // 根据你的实际情况更改这里
   publicPath,
@@ -40,6 +41,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/mg': {
+        // target: 'http://zhouyi.run:5222',
         target: 'http://localhost:5222', //本地服务器
         changeOrigin: true,
         pathRewrite: {
@@ -47,6 +49,13 @@ module.exports = {
         },
         // logLevel:'debug' // 打印代理以后的地址
       },
+      '/req_ip': {
+        target: 'http://pv.sohu.com', //获取Ip地址
+        changeOrigin: true,
+        pathRewrite: {
+          '^/req_ip': ''
+        }
+      }
     }
   },
 

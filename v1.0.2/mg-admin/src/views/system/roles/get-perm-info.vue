@@ -1,101 +1,167 @@
 <template>
-  <section>
-    <section class="mk-add-pop">
-      <el-form ref="formAdd" :model="form" :rules="rules" label-width="100px">
-        <mk-get-row>
-          <el-form-item label="ID" prop="id">
-            <el-input v-model="form.id" disabled size="mini" class="input-one" clearable placeholder="请输入ID"></el-input>
-          </el-form-item>
-        </mk-get-row>
-        <mk-get-row>
-          <el-form-item label="角色名称" prop="role_name">
-            <el-input v-model="form.role_name" disabled size="mini" class="input-one" clearable placeholder="请输入角色名称"></el-input>
-          </el-form-item>
-        </mk-get-row>
-        <mk-get-row>
-          <el-form-item label="权限选择">
-            <mk-menu-tree v-model="form.menuIds"/>
-          </el-form-item>
-        </mk-get-row>
-        <el-divider/>
-        <mk-get-button @save="save" @close="close(true)"/>
-      </el-form>
-    </section>
-  </section>
-
+  <div class="menu-tree">
+    <div class="block">
+      <el-tree
+        :data="menuList"
+        ref="tree"
+        node-key="id"
+        show-checkbox
+        highlight-current
+        check-strictly
+        @check="selectTree"
+        :default-expanded-keys="assignedPermissions"
+        :default-checked-keys="assignedPermissions"
+        :default-expand-all="expandAllVale"
+      >
+          <span class="custom-tree-node" slot-scope="{ node, data }">
+            <span>{{ node.data.title }}</span>
+            <el-tag style="margin-left: 8px" size="mini" v-show="node.data.authority">{{
+                node.data.authority
+              }}</el-tag>
+          </span>
+      </el-tree>
+    </div>
+  </div>
 </template>
 
 <script>
-import MkGetRow from "@/components/common/mk-get-row";
-import MkGetButton from "@/components/common/mk-get-button";
-import MkBackList from "@/components/common/mk-back-list";
-import {dirRolesCreate, dirRolesCreatePermission, dirRolesUpdate} from "@/api/modules/sys.roles.api";
-import MkMenuTree from "@/components/common/mk-menu-tree";
+import {dirMenusList} from "@/api/modules/sys.menus.api";
+import {dirRolesOne} from "@/api/modules/sys.roles.api";
 
 export default {
-  name: 'get-perm-info',
-  components: {MkMenuTree, MkBackList, MkGetButton, MkGetRow},
+  name: 'mk-menu-tree',
   props: {
-    updateData: {
-      type: Object,
+    expandAll: {
+      type: Boolean,
       default() {
-        return {};
+        return false
       }
     },
-  },
-  created() {
-    if (this.updateData && this.updateData.id) {
-      this.form = this.updateData
-      this.isAdd = false
+    disabled: {
+      type: Boolean,
+      default() {
+        return false
+      }
+    },
+
+    roleId: {
+      type: String,
+      default() {
+        return ''
+      }
+    },
+    perms: {
+      type: Array,
+      default() {
+        return []
+      }
     }
   },
+  model: {
+    prop: 'perms',
+    event: 'getValue'
+  },
+  watch: {
+    'expandAll': {
+      immediate: true,
+      handler: function (val) {
+        //回填
+        this.expandAllVale = val
+      }
+    },
+    'perms': {
+      immediate: true,
+      handler: function (val) {
+        console.log('回填的val',val)
+        //回填
+        this.assignedPermissions=val
+        console.log(this)
+      }
+    }
+  },
+
   data() {
     return {
-      commonKey: 0,
-      form: {},
-      isAdd: true,
-      rules: {
-        role_name: [{required: true, message: '请输入角色名称', trigger: 'blur'},],
-        role_desc: [{required: true, message: '请输入角色描述', trigger: 'blur'},],
+      assignedPermissions: [],
+      expandAllVale: false,
+      menuList: [],
+      roleMenus: [],
+      menuKey: [],
+      query: {
+        params: {
+          id: ''
+        },
+        limit: 300
       }
     }
   },
+  created() {
+    this.getDataList(this.roleId)
+  },
+  mounted() {
+  },
   methods: {
-    save() {
-      this.$refs['formAdd'].validate((valid) => {
-        if (valid) {
-          let p= {
-            roleId:this.form.id,
-            menuIds:this.form.menuIds
-          }
-          console.log(p)
-
-          // dirRolesCreatePermission(p).then(res => {
-          //   console.log(res)
-          //   this.$toast.success('分配成功！')
-          //   this.$emit('close',true);
-          // }).catch(err => {
-          //   console.log(err)
-          // })
-        } else {
-          console.log('error submit!!');
-          return false;
-        }
-      });
-    },
-    close(show) {
-      if (show) {
-        this.$toast.confirmSave().then(() => {
-          this.$emit('close');
-        });
-      } else {
-        this.$emit('close');
+    getDataList() {
+      dirMenusList(this.query).then(res => {
+        this.menuList = this.listToTree(res.data)
+      })
+      if (!this.roleId){
+        this.assignedPermissions.push(2,93) //添加默认增加角色详情和首页
+        return
       }
+      // dirRolesOne({params: {id: this.roleId}}).then(role => {
+      //   let arr = []
+      //   this.roleMenus = role.menus
+      //   for (const roleElement of role.menus) {
+      //     if (roleElement.lever === 3) {
+      //     }
+      //     arr.push(roleElement.id)
+      //   }
+      //   if (arr.includes(93)&&arr.includes(2)){
+      //     arr.push(2,93)
+      //   }
+      //   this.assignedPermissions = Array.from(new Set(arr))
+      // })
+    },
+    listToTree(list) {
+      let map = {}, node, tree = [], i;
+      for (i = 0; i < list.length; i++) {
+        map[list[i].id] = list[i];
+        list[i].children = [];
+      }
+      for (i = 0; i < list.length; i += 1) {
+        node = list[i];
+        if (node.pid !== 1) {
+          map[node.pid].children.push(node);
+        } else {
+          // delete
+          tree.push(node);
+        }
+      }
+      return tree;
+    },
+    selectTree(data, node) {
+      let menuKeyArr = []
+      menuKeyArr = [...node.checkedKeys, ...node.halfCheckedKeys,...this.assignedPermissions]
+      console.log('权限表',menuKeyArr)
+      this.menuKey = Array.from(new Set(menuKeyArr))
+      this.$emit('getValue', this.menuKey)
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.menu-tree {
+  min-width: 200px;
+  width: 400px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
 
+  .block {
+    font-size: 14px;
+  }
+
+}
 </style>

@@ -15,7 +15,7 @@ exports.sendMailer = (pm) => {
                 secureConnection: true, // 使用 SSL
                 auth: {
                     user: '1840354092@qq.com', // 发送方邮箱的账号
-                    pass: '邮箱授权密码', // 邮箱授权密码
+                    pass: '', // 邮箱授权密码
                 }
             }
         );
@@ -23,7 +23,7 @@ exports.sendMailer = (pm) => {
         transporter.sendMail({
             from: `"MG'Blog" <1840354092@qq.com>`, // 发送方邮箱的账号
             to: pm.email, // 邮箱接受者的账号
-            subject: "MG'Blog 留言回复🎈", // Subject line
+            subject: "MG'Blog", // Subject line
             // text: '"MG'Blog 👻"', // 文本内容
             html: `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_130iiorSSjF1RWgNBX7qy3evKv2HKsH0g&usqp=CAU">
         <p style="text-indent: 2em;">您好！ "${pm.email}" </p>

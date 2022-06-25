@@ -8,7 +8,7 @@
 import request from "../libs/utils.request";
 // import {request} from "./service";
 
-export function post(url, params) {
+export function post(url, params,opt) {
     return new Promise((resolve, reject) => {
         request.post(url, params).then(response => {
             resolve(response.data)

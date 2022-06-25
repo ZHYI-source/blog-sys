@@ -92,11 +92,11 @@ exports.update = async (req, res) => {
     // 请求验证
     if (!pm.id) return res.sendResult({data: '', code: 605, message: "ID不能为空！"})
     if (!pm.menuIds) return res.sendResult({data: '', code: 605, message: "权限ID不能为空！"})
-
     let ms = await Menus.findAll({where: {id: pm['menuIds']}})
-    Roles.findByPk(pm.id).then(function (post) {
-        post.update(pm)
-        post.setMenus(ms) //更新中间表
+    Roles.findByPk(pm.id).then(function (role) {
+        console.log(role)
+        role.update(pm)
+        role.setMenus(ms) //更新中间表
         res.sendResultAto(null, 200, '修改成功')
     })
 };

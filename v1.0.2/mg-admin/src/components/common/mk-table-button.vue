@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="display: flex">
     <slot></slot>
     <el-button v-if="!disAdd" @click="$emit('add')" size="mini" type="primary" icon="el-icon-edit">
       <span>{{ addText }}</span>

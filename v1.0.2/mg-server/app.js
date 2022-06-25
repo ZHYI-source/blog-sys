@@ -1,8 +1,10 @@
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const chalk = require('chalk'); // https://www.npmjs.com/package/chalk
 const logger = require("./utils/utils.logger");
+const utilsTools = require("./utils/utils.tools");
 const https = require('https')
 const fs = require('fs')
 // 路由加载
@@ -24,10 +26,10 @@ app.use(session({
         maxAge: 300000
     }
 }))
-// const sslOptions = {
-//     key: fs.readFileSync('public/ssl/zhouyi.run.key'),
-//     cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
-// }
+const sslOptions = {
+    key: fs.readFileSync('public/ssl/zhouyi.run.key'),
+    cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
+}
 //处理请求参数解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
@@ -66,9 +68,7 @@ const admin_passport = require('./utils/utils.permission')
 
 // 设置 passport 验证路径 ('/api/private/' 开头的都需要进行token)
 app.use('/api/private/*', admin_passport.tokenAuth)
-//接口权限，有同学需要可以打开哈
-// app.use('/api/private/*', admin_passport.permissionAuth)
-
+app.use('/api/private/*', admin_passport.permissionAuth)
 
 //token 有效性中间件
 app.use(function (err, req, res, next) {
@@ -85,7 +85,6 @@ app.use(function (err, req, res, next) {
 
 // 带路径的用法并且可以打印出路有表  true 代表展示路由表在打印台
 mount(app, path.join(process.cwd(), '/routes'), true)
-
 
 // 处理无响应 如果没有路径处理就返回 Not Found
 app.use(function (req, res, next) {

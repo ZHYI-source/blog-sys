@@ -1,5 +1,6 @@
 const db = require("../models");
 const logger = require("../utils/utils.logger");
+const utilTool = require("../utils/utils.tools");
 const DAO = require("../dao/DAO");
 const POST_DAO = require("../dao/POST_DAO");
 const Article = db.article;
@@ -83,6 +84,7 @@ exports.findAll = (req, res) => {
 
     DAO.list(Article, pm, data => {
         // logger.debug(`${req.method} ${req.baseUrl + req.path} *** 参数：${JSON.stringify(pm)}; 响应：${JSON.stringify(data)}`);
+        // utilTool.generateVisitorRecord(req)
         res.sendResult(data)
     })
 };

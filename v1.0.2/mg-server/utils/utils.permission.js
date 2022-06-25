@@ -5,6 +5,7 @@ const Roles = db.roles
 const Menus = db.menus
 const rolesMenus = db.rolesMenus
 const logger = require("./utils.logger");
+const chalk = require("chalk");
 /**
  * token验证函数
  *
@@ -41,7 +42,6 @@ Menus.belongsToMany(Roles, {
     }, foreignKey: 'menuIds',
 });
 
-
 exports.permissionAuth = (req, res, next) => {
     // console.log('**********',req.user)
     // {
@@ -75,10 +75,10 @@ exports.permissionAuth = (req, res, next) => {
                 //用户请求的该接口是否有权限访问
                 if (!preMenus.includes(reqPath)){
                     logger.error(`【未通过】 ${userInfo.username} 请求 ${req.method} ${req.baseUrl + req.path} *** 权限未验证通过`);
-                    res.status(401).sendResultAto('', 401, '未有该接口权限访问')
+                    res.sendResultAto('', 604, '未有该接口权限访问,请重新配置该用户权限')
                 }
                 // res.status(200).sendResultAto(reqPath, 200, '权限验证通过')
-                logger.info(`【通过】 ${userInfo.username} 请求 ${req.method} ${req.baseUrl + req.path} *** 权限验证通过`);
+                console.log(chalk.bold.green(`【通过】 ${userInfo.username} 请求 ${req.method} ${req.baseUrl + req.path} *** 权限验证通过`));
                 next()
             })
         })

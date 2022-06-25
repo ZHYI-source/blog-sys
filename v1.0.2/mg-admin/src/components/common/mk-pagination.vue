@@ -41,7 +41,7 @@ export default {
     pageSizes: {
       type: Array,
       default() {
-        return [5, 10, 15, 20, 30]
+        return [5, 10, 15, 20, 30,60,100]
       }
     },
     currentPage: {

@@ -1,0 +1,39 @@
+[2022-06-18T16:43:37.538] [ERROR] error - 访客记录错误：192.168.31.240 : POST /list - 0ms
+[2022-06-18T16:43:37.549] [ERROR] error - 访客记录错误：192.168.31.240 : POST /list - 0ms
+[2022-06-18T16:43:37.658] [ERROR] error - 访客记录错误：192.168.31.240 : POST /list - 0ms
+[2022-06-18T17:29:48.870] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-18T17:29:48.872] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-19T14:07:13.586] [ERROR] error - 密码错误
+[2022-06-19T14:07:14.566] [ERROR] error - 密码错误
+[2022-06-19T14:07:59.543] [ERROR] error - 密码错误
+[2022-06-22T00:00:31.293] [ERROR] error - 【未通过】 admin 请求 GET /api/private/analysis/downloadTemplate/ *** 权限未验证通过
+[2022-06-22T00:03:11.589] [ERROR] error - GET /api/private/analysis/downloadTemplate *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-22T15:02:35.490] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-22T15:02:35.494] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-22T15:17:54.968] [ERROR] error - GET /api/private/analysis/downloadTemplate *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-22T15:23:46.372] [ERROR] error - GET /api/private/analysis/downloadTemplate *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-22T15:24:10.265] [ERROR] error - GET /api/private/analysis/downloadTemplate *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-22T15:59:03.084] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/exportExcel/ *** 权限未验证通过
+[2022-06-22T15:59:10.528] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/exportExcel/ *** 权限未验证通过
+[2022-06-22T17:03:59.706] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/downloadTemplate/ *** 权限未验证通过
+[2022-06-22T17:05:37.417] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/downloadTemplate/ *** 权限未验证通过
+[2022-06-22T17:05:45.872] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/downloadTemplate/ *** 权限未验证通过
+[2022-06-22T17:30:42.683] [ERROR] error - POST /api/private/analysis/importExcel *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-22T17:31:59.571] [ERROR] error - POST /api/private/analysis/importExcel *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-06-23T14:07:04.040] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-06-23T14:07:04.056] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-06-23T14:07:04.074] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-23T14:07:04.084] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-23T14:07:14.609] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-06-23T14:07:14.628] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-24T17:48:31.456] [ERROR] error - 【未通过】 admin 请求 POST /api/private/proanalysis/list/ *** 权限未验证通过
+[2022-06-24T17:48:31.471] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-24T17:49:35.324] [ERROR] error - 【未通过】 admin 请求 POST /api/private/proanalysis/list/ *** 权限未验证通过
+[2022-06-24T17:49:35.329] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-24T20:57:25.207] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-24T20:57:25.214] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-24T21:06:25.346] [ERROR] error - 【未通过】 admin 请求 POST /api/private/analysis/deleteAll/ *** 权限未验证通过
+[2022-06-24T21:06:25.358] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-06-24T22:16:18.852] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-24T22:16:18.855] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-06-24T22:16:28.598] [ERROR] error - 密码错误

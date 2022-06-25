@@ -28,6 +28,7 @@ exports.login = function (pm, cb) {
                 }
             )
             let userInfo = data
+            //登录成功
             cb({userInfo, token})
             return
         }

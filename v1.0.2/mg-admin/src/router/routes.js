@@ -214,6 +214,41 @@ const frameIn = [
         component: _import('system/users/dir-users-info')
       },
       {
+        path: '/visitor/dir-visitor-info',
+        name: 'dir-visitor-info',
+        meta: {
+          title: '访客管理',
+          auth: true,
+          perms: [
+            'POST /api/private/visitor/list',
+          ],
+        },
+        component: _import('system/visitor/dir-visitor-info')
+      },
+
+      {
+        path: '/analysis/proAnalysis/dir-proanalysis-info',
+        name: 'dir-proanalysis-info',
+        meta: {
+          title: '数据分析',
+          auth: true,
+          perms: [
+            'POST /api/private/proanalysis/list',
+            'POST /api/private/proanalysis/delete',
+            'POST /api/private/proanalysis/create',
+            'POST /api/private/proanalysis/update',
+            'POST /api/private/analysis/list',
+            'POST /api/private/analysis/delete',
+            'POST /api/private/analysis/create',
+            'POST /api/private/analysis/update',
+            'POST /api/private/analysis/downloadTemplate',
+            'POST /api/private/analysis/importExcel',
+            'POST /api/private/analysis/deleteAll',
+          ],
+        },
+        component: _import('system/analysis/proAnalysis/dir-proanalysis-info')
+      },
+      {
         path: '/menus/dir-menus-info',
         name: 'dir-menus-info',
         meta: {

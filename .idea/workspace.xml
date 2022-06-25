@@ -19,7 +19,71 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="" />
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="v1.0.2:接口权限，有同学需要可以打开哈">
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/modules/sys.analysis.api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/modules/sys.getIp.api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/modules/sys.proanalysis.api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/modules/sys.visitor.api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-chart-com.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/dir-analysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/get-analysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/proAnalysis/dir-proanalysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/proAnalysis/get-proanalysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/proAnalysis/view-proanalysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/analysis/view-analysis-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/visitor/dir-visitor-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/visitor/view-visitor-info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/analysis.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/analysis_project.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/visitor.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/models/analysis.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/models/analysis_project.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/models/visitor.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/private/analysis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/private/proanalysis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/private/visitor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/common/analysis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/common/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/common/visitor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/uploads_files/analysis.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/uploads_files/data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/uploads_files/excel/2022-06-24-03.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/uploads_files/excel/数据分析2022-06-24-03.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/uploads_files/excel/模板2022-06-24-10.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.xlsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/.env" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/api/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/Tinymce/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/Tinymce/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-chart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-chart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-menu-tree.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-menu-tree.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-pagination.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-table-button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/components/common/mk-table-button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/login/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/login/page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/dir-roles-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/dir-roles-info.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-perm-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-perm-info.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-roles-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-roles-info.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/users/dir-users-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/users/dir-users-info.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/article.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/article.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/login.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/login.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/roles.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/roles.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/website.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/controllers/website.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/routes/api/public/admin/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/sql/mg_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/sql/mg_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.nodemailer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-server/utils/utils.tools.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +91,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="4" />
@@ -58,19 +130,6 @@
       <recent name="C:\Users\Tom\Desktop\all-blog-sys\doc" />
       <recent name="C:\Users\Tom\Desktop\all-blog-sys\doc\img" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

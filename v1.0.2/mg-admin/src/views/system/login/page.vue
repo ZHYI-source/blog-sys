@@ -132,6 +132,8 @@ import {aes} from "@/libs/utils.crypto";
 import {menuAside, menuHeader, setAsideMenu} from "@/menu";
 import {getLogin, getLoginCaptcha} from "@/api/modules/sys.login.api";
 import {dirRolesList} from "@/api/modules/sys.roles.api";
+import {dirIPShare, recordVisitor} from "@/api/modules/sys.getIp.api";
+
 
 export default {
   mixins: [
@@ -226,6 +228,19 @@ export default {
       this.dialogVisible = false
       // this.submit()
     },
+    getIp(){
+      dirIPShare().then(res=>{
+        let ip = JSON.parse(res.slice(res.indexOf('{'),res.indexOf('}')+1)).cip
+        //  去记录访客
+        recordVisitor({ip,type:1}).then(res=>{
+          console.log('record:ok')
+        }).catch(err=>{
+          console.log('错误',err)
+        })
+      }).catch(err=>{
+        console.log('错误',err)
+      })
+    },
     /**
      * @description 提交表单
      */
@@ -246,6 +261,8 @@ export default {
             //存储角色信息
             util.cookies.set('roleId', roleId)
             setAsideMenu(this)
+            //记录访客
+            this.getIp()
             // 重定向对象不存在则返回顶层路径
             this.$router.replace(this.$route.query.redirect || '/')
           }).catch(err => {

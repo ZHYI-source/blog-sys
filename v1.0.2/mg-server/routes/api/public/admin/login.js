@@ -1,6 +1,7 @@
 let express = require('express');
 let router = express.Router();
 const logger = require("../../../../utils/utils.logger");
+const utilTool = require("../../../../utils/utils.tools");
 const Login = require("../../../../controllers/login.controller");
 /**
  * 登录
@@ -35,8 +36,11 @@ router.post("/", function (req, res) {
 
     Login.login(pm, (data, err) => {
         if (err) return res.sendResultAto(null, 401, err)
+        //记录访客
+        // utilTool.generateVisitorRecord(req)
         res.sendResultAto(data, 200, '登录成功')
     })
+
 
 });
 

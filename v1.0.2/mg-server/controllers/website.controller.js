@@ -1,5 +1,7 @@
+
 const db = require("../models");
 const logger = require("../utils/utils.logger");
+const utilTool = require("../utils/utils.tools");
 const DAO = require("../dao/DAO");
 const Website = db.website;
 
@@ -39,6 +41,8 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const pm = req.body;
     DAO.list(Website, pm, list => {
+        //记录访客
+        // utilTool.generateVisitorRecord(req)
         res.sendResult(list)
     })
 };

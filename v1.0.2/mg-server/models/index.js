@@ -3,7 +3,7 @@ const path = require("path");
 const dbConfig = require("../config/db.config.js");
 const _ = require('lodash');
 const Sequelize = require("sequelize");
-const { Op } = require("sequelize");
+const {Op} = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
     dialect: dbConfig.dialect,
@@ -47,6 +47,8 @@ db.rolesMenus = require("./roles_menus.model.js")(sequelize, Sequelize);
 
 //用户
 db.users = require("./users.model.js")(sequelize, Sequelize);
+//访客
+db.visitor = require("./visitor.model.js")(sequelize, Sequelize);
 
 //站点信息
 db.website = require("./website.model.js")(sequelize, Sequelize);
@@ -71,6 +73,11 @@ db.friends = require("./friend.model")(sequelize, Sequelize);
 db.message = require("./message.model")(sequelize, Sequelize);
 //音乐
 db.music = require("./music.model")(sequelize, Sequelize);
+
+//excel表格数据分析
+db.analysis = require("./analysis.model")(sequelize, Sequelize);
+//excel表格数据分析-项目组
+db.analysisProject = require("./analysis_project.model")(sequelize, Sequelize);
 
 
 

@@ -80,6 +80,7 @@ export default {
       'perms': {
         immediate: true,
         handler: function (val) {
+          // console.log('回填的val',val)
           //回填
           this.menuKey=[Array.from(new Set(val))]
         }
@@ -149,8 +150,10 @@ export default {
     selectTree(data, node) {
       let menuKeyArr = []
       menuKeyArr = [...node.checkedKeys, ...node.halfCheckedKeys,...this.assignedPermissions]
+      console.log('权限表',menuKeyArr)
       this.menuKey = Array.from(new Set(menuKeyArr))
       this.$emit('getValue', this.menuKey)
+      this.$forceUpdate()
     }
   }
 }
