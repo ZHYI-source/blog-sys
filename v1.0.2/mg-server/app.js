@@ -26,10 +26,10 @@ app.use(session({
         maxAge: 300000
     }
 }))
-const sslOptions = {
-    key: fs.readFileSync('public/ssl/zhouyi.run.key'),
-    cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
-}
+// const sslOptions = {
+//     key: fs.readFileSync('public/ssl/zhouyi.run.key'),
+//     cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
+// }
 //处理请求参数解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
