@@ -11,7 +11,7 @@
  Target Server Version : 50736
  File Encoding         : 65001
 
- Date: 12/11/2022 16:40:44
+ Date: 12/11/2022 17:18:00
 */
 
 SET NAMES utf8mb4;
@@ -554,130 +554,158 @@ CREATE TABLE `mg_roles_menus`  (
 INSERT INTO `mg_roles_menus` VALUES ('003b1c08-df1b-468e-9bc3-14eeb2f7db6f', 'af709d7f-883d-4f94-884c-b6010e0a415c', '106', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('04709167-99fa-473d-bf50-474395fd9523', 'af709d7f-883d-4f94-884c-b6010e0a415c', '13', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('0673ad18-4150-43d2-b862-6228639def4e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '37', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('06741530-0a97-43e7-beef-ede92fa32c68', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '3', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('074fbcf0-bbed-46da-9cf4-56974fb128b7', 'af709d7f-883d-4f94-884c-b6010e0a415c', '61', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('0838b8fa-e2c8-4d9f-86e5-3b69147f0978', 'af709d7f-883d-4f94-884c-b6010e0a415c', '58', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('08a97b09-46e1-45b5-9595-30d21136f78b', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '5', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('0b477b3e-392e-4135-b37f-5c55ee0e3775', 'af709d7f-883d-4f94-884c-b6010e0a415c', '89', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('0b6df998-3061-479d-bee9-96127684ddc2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '119', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('0c8aeefa-ea76-45b5-8abc-f4084bb627ba', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '6', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('0cd43d9f-26d7-4455-a5c1-2402b3d573ec', 'af709d7f-883d-4f94-884c-b6010e0a415c', '120', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('0ce1d82b-aad7-48d2-93b9-26134605d66f', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '3', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('15b9d1d5-e301-4ad6-9611-61f03606e436', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '56', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('14d9daaa-c457-4f11-8cc3-032bd7c8b24d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '55', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('172f5097-ea03-46e4-92fb-2b2220f9e203', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '16', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('1a5ee1f4-23eb-4ffa-8010-67817da76395', 'af709d7f-883d-4f94-884c-b6010e0a415c', '94', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('1b97222b-b900-4e11-b8ed-697c2cfeb3d8', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '81', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('1bdac34e-54cd-4ec7-84d0-1c4860800774', 'af709d7f-883d-4f94-884c-b6010e0a415c', '102', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('1e86ce27-d3bb-40e3-8281-e4b4e7110890', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '112', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('1ec7901c-5137-42e4-a315-b5ab215bdaa1', 'af709d7f-883d-4f94-884c-b6010e0a415c', '108', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('1ecd5540-b5ac-4db7-b30d-5e872fe0f0a6', 'af709d7f-883d-4f94-884c-b6010e0a415c', '67', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('1f8c03bc-f03c-4afc-b825-c8e5b0d0ad22', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '33', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('20306ecd-373f-47f8-934d-d26003243409', 'af709d7f-883d-4f94-884c-b6010e0a415c', '95', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('2527d8fc-17dd-43f3-848a-1ecce611b993', 'af709d7f-883d-4f94-884c-b6010e0a415c', '63', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('26da7e39-30d1-4b70-b62f-2ebd551be40b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '51', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('29eace67-e026-4d7d-811f-dc1879999b78', 'af709d7f-883d-4f94-884c-b6010e0a415c', '59', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('2bf95b1b-1c8b-4efb-b89c-a052e1bf805e', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '87', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('2cf58cd1-747f-4780-aa67-ed5828bd57ae', 'af709d7f-883d-4f94-884c-b6010e0a415c', '118', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('2ec0da68-4ee8-4daa-931f-1d63c3a59547', 'af709d7f-883d-4f94-884c-b6010e0a415c', '44', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('2f355d2a-edcf-49f5-8b5c-b62d12d0fe5a', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '103', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('306633c1-e30e-42bc-b3a9-8170daf87432', 'af709d7f-883d-4f94-884c-b6010e0a415c', '41', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('310145cc-2a5b-4c17-9037-5339f2566e82', 'af709d7f-883d-4f94-884c-b6010e0a415c', '87', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('31b2215e-f8e1-4bd6-8061-0e1ec16a297c', 'af709d7f-883d-4f94-884c-b6010e0a415c', '121', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('32381cad-b6ca-49a3-b011-378a85f5b94f', 'af709d7f-883d-4f94-884c-b6010e0a415c', '97', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('32d06aa7-083d-4cb5-bca2-504ccfcbed08', 'af709d7f-883d-4f94-884c-b6010e0a415c', '71', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('36f35983-5036-4623-ae76-bb4fc7f5a09f', 'af709d7f-883d-4f94-884c-b6010e0a415c', '34', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('3770aa78-e722-41b7-bccd-d97899dcc92c', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '117', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('38638b1f-7657-4c55-93f5-9f3ec70b898d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '119', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('38b504f7-bb18-4821-99f6-cb623063a3c2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '105', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('3b5fd867-e705-44a0-b004-79f66206eec2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '40', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('3bbf0753-2c91-4cd2-8aa2-97bc13a8e84f', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '49', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('3d41ae68-f40a-45ac-a20b-1276ed39956d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '94', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('3d689b1b-0602-4cf5-90c1-4c7d320cb7fa', 'af709d7f-883d-4f94-884c-b6010e0a415c', '14', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('3db52f5a-48aa-408d-a2db-6a61f0f62891', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '99', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('3f8fd8ec-ec03-4748-9550-58f74d97c0f7', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '98', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('40d14708-eb7d-4a26-97fd-12d5a99f9d33', 'af709d7f-883d-4f94-884c-b6010e0a415c', '98', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('42078b27-41f8-45b0-9563-84fc0828473d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '31', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('42aad4e5-4791-4e15-b018-e6e0bb105e91', 'af709d7f-883d-4f94-884c-b6010e0a415c', '101', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('4334d04d-cfb2-4687-b1cc-a01337f53bf0', 'af709d7f-883d-4f94-884c-b6010e0a415c', '39', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('441f3cf6-01b2-41b7-adf2-d6cef76721d1', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '10', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('45de5c33-0d2d-4616-a5cc-49bff89af565', 'af709d7f-883d-4f94-884c-b6010e0a415c', '64', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('46d39446-6b58-419a-be6c-930f263f5a6e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '9', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('47526bc0-c6e9-44a7-9f23-fbb1e09e2953', 'af709d7f-883d-4f94-884c-b6010e0a415c', '65', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('47a90011-78ef-4e6a-ab72-3ca14f1b646a', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '110', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('47fff5b3-9477-4cee-a7af-cf8f91cb4cd8', 'af709d7f-883d-4f94-884c-b6010e0a415c', '56', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('49c40f13-72fa-403d-8fc6-8df89d73a3e0', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '13', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('49ea78fb-f345-46a7-931c-072668324175', 'af709d7f-883d-4f94-884c-b6010e0a415c', '33', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('4b8a8db5-0245-490f-a5c7-5ca04f99c777', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '13', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('4be1ce33-6d92-41de-8c1d-7c64b6cf62a1', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '118', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('4bfc8103-1187-4845-b26c-d1efe1094789', 'af709d7f-883d-4f94-884c-b6010e0a415c', '70', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('4c40b2e8-f263-4c55-9a9f-76fdcf4c98ec', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '73', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('4d93090a-9f9d-4ed4-8da6-41bebce2c60f', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '16', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('4de956cc-a097-4742-9bf0-4d41a402f771', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '11', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('4eb033a4-9fab-4af0-927d-d74991eebc5b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '35', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('52968c12-b88d-48d6-92b9-23be4091e4c0', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '93', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('4fb110e2-0708-482c-9239-36aa453951e1', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '56', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('54cc0771-7f45-4df2-8062-5564704b8c0f', 'af709d7f-883d-4f94-884c-b6010e0a415c', '72', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('5555f59a-17c6-47e4-bd0d-78e151de472c', 'af709d7f-883d-4f94-884c-b6010e0a415c', '103', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('56f7fac7-8b5f-4170-bf23-acafcf919459', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '15', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('57371537-702f-4fbf-ad5d-8b5a58fefc60', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '94', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('577fb4b8-888b-4bdb-b165-fa6d7ae9267e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '47', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('5d0e7e96-30ca-4cd8-bd7d-32f833454a28', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '87', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('5d8710ee-6084-47ff-9457-24d3e3568922', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '80', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('57a0a96c-05fe-473d-b785-40fe7a2402d3', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '97', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('5ef4f12f-5d6b-413c-a3fe-cc9d4adf497b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '3', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('5f224631-33fe-41e8-82e3-442dc1e51b6d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '93', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('60356f34-a72d-4884-a220-3fff7cdfe7ab', 'af709d7f-883d-4f94-884c-b6010e0a415c', '43', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('6362bb1c-626d-46b2-981c-9773fa4b2da7', 'af709d7f-883d-4f94-884c-b6010e0a415c', '36', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('647bcfc2-9d1b-4bbe-94b3-4581d37a96ad', 'af709d7f-883d-4f94-884c-b6010e0a415c', '42', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('6589bb90-761f-4f92-9af2-bbc49cd0b14a', 'af709d7f-883d-4f94-884c-b6010e0a415c', '54', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('66212f03-fbb0-47a8-a8f6-c6b5eda35057', 'af709d7f-883d-4f94-884c-b6010e0a415c', '83', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('66bcb180-34b0-465b-b521-375fa2569836', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '12', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('66a80a39-3020-49cd-be5a-4b1f222bc73c', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '121', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('68043933-e53d-40f3-9a14-32b81d894590', 'af709d7f-883d-4f94-884c-b6010e0a415c', '116', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('6a4afee1-3b5d-4495-b6ec-0f806688aaf3', 'af709d7f-883d-4f94-884c-b6010e0a415c', '75', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('6f93c0d5-933f-4701-9693-a6c18cf4f123', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '82', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('71ea9ed7-a7a0-4476-818c-e08679b9d742', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '7', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('768237c7-7332-4d4a-88a3-57ad332fe022', 'af709d7f-883d-4f94-884c-b6010e0a415c', '96', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('7929c067-6e53-45ab-a5ad-12b03207b9dc', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '37', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('7ac850e5-b9b3-4ecc-972d-8d014a699bc6', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '82', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('7de0810e-ca29-4949-9a83-44149ebb6cb4', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '106', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('7e3436d8-11c0-4be3-9389-17bbaf760cc1', 'af709d7f-883d-4f94-884c-b6010e0a415c', '107', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('7e824cd8-06e8-4b23-898e-7d8c0fd54c6b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '8', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('7e8840f1-b6c6-4616-a4b3-6a6afa8df650', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '41', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('80b1363f-0667-48bc-8d32-488c1901849d', 'af709d7f-883d-4f94-884c-b6010e0a415c', '81', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('8363687b-8c58-4a90-9a6f-bcc2f3c554db', 'af709d7f-883d-4f94-884c-b6010e0a415c', '92', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('83c97125-5e6d-4c88-901a-9122b97e1837', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '65', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('8526d368-53ed-4940-aa95-90daaa904f91', 'af709d7f-883d-4f94-884c-b6010e0a415c', '110', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('88f5ae9c-5776-46d4-8f76-bc92c051aa38', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '108', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('89a1bb36-bd14-4c36-b6c1-2e95b3b55d05', 'af709d7f-883d-4f94-884c-b6010e0a415c', '117', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('8d1b5dc6-d62c-4d7b-b9a7-8aa831f63237', 'af709d7f-883d-4f94-884c-b6010e0a415c', '88', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('8eb2af97-d633-4ed1-8b82-885a8a054c21', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '37', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('8e0f70a5-112b-49f5-8903-7d6f4176bbd2', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '86', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('8e9b5367-5410-498b-9ba2-bc7f0a82986d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '49', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('9034a37b-25bd-48a8-bb2d-3545c9ce2a12', 'af709d7f-883d-4f94-884c-b6010e0a415c', '52', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('9214ec84-6efc-4eb1-aa0d-f323b8b80bc1', 'af709d7f-883d-4f94-884c-b6010e0a415c', '57', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('921f300c-1f03-4c02-8f22-c70749e58914', 'af709d7f-883d-4f94-884c-b6010e0a415c', '109', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('97add403-6f90-4b52-8d56-521d89430fbf', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '105', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('9be6a880-6f92-42a1-be13-2e4281104831', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '11', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('9c2d0428-9c53-4ea2-b0c1-e8c38be10f7d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '2', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('9f16b1c0-88c9-409f-87f3-eedbaa69bc48', 'af709d7f-883d-4f94-884c-b6010e0a415c', '31', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('a03244ba-c23d-4515-a4af-1ea76940e22b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '100', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('a101d8cc-cf41-473c-b7c1-9b704cb651a3', 'af709d7f-883d-4f94-884c-b6010e0a415c', '12', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('a1977661-9c0d-4d5d-bb82-7b1a2a513a7d', 'af709d7f-883d-4f94-884c-b6010e0a415c', '48', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('a1d7c6e3-8997-440d-928b-e12d3f2eaf13', 'af709d7f-883d-4f94-884c-b6010e0a415c', '50', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('a4042af0-bc81-40c2-875b-fef10a9f4db4', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '69', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('a245aa76-05f0-4ab1-bdc0-f9f515f59bcf', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '80', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('a38cae78-0245-40e8-a6cd-b2bd0aa4be3a', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '113', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('a774e27d-55ae-41a8-a91e-14cfe6869c1e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '49', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('aab6ae6c-a177-47b6-901e-be4d3721e59c', 'af709d7f-883d-4f94-884c-b6010e0a415c', '62', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('ac320805-2174-4084-883f-8e99011d63c6', 'af709d7f-883d-4f94-884c-b6010e0a415c', '2', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('ac35dfe5-1209-4441-abe0-5a8f748b0d6b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '15', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('ae35f627-33d7-48af-b7ab-eae6221cc5d9', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '2', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('b08f4024-9972-41a9-8bd0-1b2d1bbadb84', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '33', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('ac87aa74-4920-45f3-8080-577d684b6467', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '102', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('afcea9e6-58bf-4ee6-9ad3-5efb27b9c357', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '8', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('b0350a52-f290-43a1-9c68-5749cac82d0b', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '5', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('b0cd6c6e-800b-4725-9547-024f95830919', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '101', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('b226b11a-ecef-4df9-bf71-101d67901d2b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '10', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('b6407a75-d045-4ff6-aa80-03932cab64db', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '41', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('b748502e-991b-406a-954d-89a0acf1f908', 'af709d7f-883d-4f94-884c-b6010e0a415c', '7', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('b8ab3a2a-c2c1-4459-841f-66e675e13dc5', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '115', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('b92317b5-28d4-43f9-a7be-c3929d28826c', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '7', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('b9b91425-7df3-4e34-bc89-266dd8700e1b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '55', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('bbe06f6e-dfb2-461a-8805-007d070c292b', 'af709d7f-883d-4f94-884c-b6010e0a415c', '46', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('bd0a67a2-0226-443b-b170-edae003d01f4', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '116', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('c0b63f03-d1f1-4da4-86d3-79c081ad96f2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '99', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('c1552695-d9d7-4b4e-ab5a-b0b649be4a20', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '10', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('c2811091-c908-4077-a36a-0c139dff67eb', 'af709d7f-883d-4f94-884c-b6010e0a415c', '84', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('c5bc1de8-4e10-4371-8c1a-909f4d3fcad6', 'af709d7f-883d-4f94-884c-b6010e0a415c', '74', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('c7f36413-192c-470d-83ee-f1f00aa0b8b5', 'af709d7f-883d-4f94-884c-b6010e0a415c', '111', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('c8024db8-fda6-40fd-b91e-eaaf3e3fc730', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '31', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
 INSERT INTO `mg_roles_menus` VALUES ('c8bb7a4b-8a1c-41da-b51b-ffe5d5357e1a', 'af709d7f-883d-4f94-884c-b6010e0a415c', '16', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('cabbceaf-becc-42e0-b351-9d9817250b68', 'af709d7f-883d-4f94-884c-b6010e0a415c', '90', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('cccbefe2-1ae0-4c6b-a31f-4fbe3c0198c2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '115', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('cebe1dd8-1e64-45f9-a9c7-6033dbf60e90', 'af709d7f-883d-4f94-884c-b6010e0a415c', '45', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('cebff749-c0bf-4957-9437-f418988f27fe', 'af709d7f-883d-4f94-884c-b6010e0a415c', '69', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('d1f1be43-3b62-4ef2-aa88-f69b37a5bbf5', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '55', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('d11851b6-3924-48e3-b363-15de211fba8a', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '61', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('d2a05479-7b43-4d04-9b4e-7d9fc790c9c4', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '107', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('d2ec6daf-06c2-436b-bf69-df49de47af86', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '45', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('d3c93c82-2449-4f92-850e-96c57ac3c0b2', 'af709d7f-883d-4f94-884c-b6010e0a415c', '93', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('d721034a-6698-4a85-94e2-ebffc7c8e0db', 'af709d7f-883d-4f94-884c-b6010e0a415c', '68', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('d8488427-1481-4351-858e-bda11c547526', 'af709d7f-883d-4f94-884c-b6010e0a415c', '82', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('d9c0ce0d-70cc-4770-822d-a9f29ccfa0bf', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '81', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('dc49ddf4-4ed9-4eb6-90d2-5cda14e239c3', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '104', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('dd05e761-0eae-4ed5-b76d-9a7dc52bac01', 'af709d7f-883d-4f94-884c-b6010e0a415c', '53', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('de519098-c6b4-4734-afcb-fa3ccb3c5609', 'af709d7f-883d-4f94-884c-b6010e0a415c', '11', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('e06cbbad-bcf6-4851-8122-63a418187a1e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '91', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('e080064f-85c0-4bb4-b173-d80f677905ce', 'af709d7f-883d-4f94-884c-b6010e0a415c', '6', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('e1f3009c-9fb8-4aac-aee3-efc30c8ce22c', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '111', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('e44ae347-c12d-48aa-b4a0-36ac2731f191', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '12', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('e44dccc1-3c4a-44e9-90f1-31317a07d3db', 'af709d7f-883d-4f94-884c-b6010e0a415c', '114', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('e451dc91-0831-4b67-9598-7e88569f0d51', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '14', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('e4f6afec-5d61-4800-b203-4990a10f864a', 'af709d7f-883d-4f94-884c-b6010e0a415c', '60', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('e50f28c8-c39b-4366-b451-8b7963f9cd35', 'af709d7f-883d-4f94-884c-b6010e0a415c', '85', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('e5b783f7-ca5c-4c6c-8f24-4470c86e6946', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '100', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('e6d9a336-aa7d-4e49-94ed-cd960aabc1a8', 'af709d7f-883d-4f94-884c-b6010e0a415c', '73', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('e97de89e-724f-4e4c-8e85-8dbe1ea34ce1', 'af709d7f-883d-4f94-884c-b6010e0a415c', '113', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('ea9b60da-6a80-45b8-b2b2-c8b8e7283c5f', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '73', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('ecbc6358-346d-4ad6-ac31-8dcee623e348', 'af709d7f-883d-4f94-884c-b6010e0a415c', '104', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('ee70c095-9228-47ee-b422-e89e27d7a7a5', 'af709d7f-883d-4f94-884c-b6010e0a415c', '38', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('efc4b72b-9526-4424-9e3c-e3de2828ae68', 'af709d7f-883d-4f94-884c-b6010e0a415c', '80', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('f35b4a5f-ff49-40bc-9762-8df8416f2fea', 'af709d7f-883d-4f94-884c-b6010e0a415c', '86', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('f4bcd394-3fe2-4f53-a8de-dba74af770c9', 'af709d7f-883d-4f94-884c-b6010e0a415c', '66', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 INSERT INTO `mg_roles_menus` VALUES ('f7007877-0204-4eb7-b0ad-fd48c13bfabd', 'af709d7f-883d-4f94-884c-b6010e0a415c', '32', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
+INSERT INTO `mg_roles_menus` VALUES ('f75ddb98-7139-4401-8637-a82d9cbb74a0', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '6', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('f7a03919-cb76-4487-92e4-28b880ef932e', 'af709d7f-883d-4f94-884c-b6010e0a415c', '112', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
-INSERT INTO `mg_roles_menus` VALUES ('f7d7c437-5d29-4439-984d-f01b9c64b514', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '86', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
-INSERT INTO `mg_roles_menus` VALUES ('fecf5d91-aafe-4633-8e5f-756154efcb94', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '15', '2022-06-28 19:10:03', '2022-06-28 19:10:03');
+INSERT INTO `mg_roles_menus` VALUES ('f9e1767c-13dd-4fdb-b9bf-3eba1904217d', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '69', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
+INSERT INTO `mg_roles_menus` VALUES ('fcd0b309-9ddb-469b-8096-241c25ce9230', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', '9', '2022-11-12 17:10:58', '2022-11-12 17:10:58');
 INSERT INTO `mg_roles_menus` VALUES ('ff9969f9-4e79-4fe6-84c9-e511311797e7', 'af709d7f-883d-4f94-884c-b6010e0a415c', '5', '2022-11-12 16:07:18', '2022-11-12 16:07:18');
 
 -- ----------------------------
@@ -784,8 +812,11 @@ CREATE TABLE `mg_travel`  (
 -- ----------------------------
 -- Records of mg_travel
 -- ----------------------------
-INSERT INTO `mg_travel` VALUES ('1865e87e-1da1-403f-96dc-0fb1b11f01b5', '北京', '39.984104', '116.39534686445768', '的撒大', '3000', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=76be46c52f508c0557eec3340bf0aa4d.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-10-22 12:40:13', '2022-11-12 16:14:17');
-INSERT INTO `mg_travel` VALUES ('ae6a35b9-e604-4a53-92b0-9805d60fb630', '沈阳市', '41.66336477848874', '123.46598575315863', '范德萨发达', '3625.36', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=fcb94cae384f7bf5c091fc4b48d2a743.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-09-26 15:53:59', '2022-11-12 16:12:11');
+INSERT INTO `mg_travel` VALUES ('1865e87e-1da1-403f-96dc-0fb1b11f01b5', '北京', '39.984104', '116.39534686445768', '首都北京-2日游', '3000', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=76be46c52f508c0557eec3340bf0aa4d.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-10-22 12:40:13', '2022-11-12 16:48:58');
+INSERT INTO `mg_travel` VALUES ('3542ba82-14e3-4e5f-bdd3-6a8facec10f2', '贵阳', '26.42706577583009', '106.7000809118108', '贵阳-五日游行程记录', '3000', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=b3ee7450125a9d1697975643a6d51e70.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-11-12 16:46:24', '2022-11-12 16:49:47');
+INSERT INTO `mg_travel` VALUES ('40a580de-6d55-4516-890c-148d3406e241', '上海', '30.969811981952745', '121.3286021105996', '上海-3日游', '2000', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=aa239307f3033e705581591ef7f4607a.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-11-12 16:47:47', '2022-11-12 16:47:47');
+INSERT INTO `mg_travel` VALUES ('96da2156-6d6a-4957-9fa9-3c4023e83de6', '台湾', '23.989452882822572', '120.99356352813788', '宝岛台湾-3日游', '25000', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=aa239307f3033e705581591ef7f4607a.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-11-12 16:48:27', '2022-11-12 16:48:27');
+INSERT INTO `mg_travel` VALUES ('ae6a35b9-e604-4a53-92b0-9805d60fb630', '沈阳市', '41.66336477848874', '123.46598575315863', '沈阳-3日游', '3625.36', 'http://zhouyi.run:5222/api/public/admin/getFiles?id=fcb94cae384f7bf5c091fc4b48d2a743.jpg&&mimetype=image/jpeg', '', NULL, NULL, '2022-09-26 15:53:59', '2022-11-12 17:01:49');
 
 -- ----------------------------
 -- Table structure for mg_travel_detail
@@ -812,7 +843,10 @@ CREATE TABLE `mg_travel_detail`  (
 -- Records of mg_travel_detail
 -- ----------------------------
 INSERT INTO `mg_travel_detail` VALUES ('2c72f045-7d14-444c-a833-90f96c3bd9de', '1865e87e-1da1-403f-96dc-0fb1b11f01b5', '百工博物馆', '39.88378254065453', '116.4352714625768', '2022-10-21', '3', 1, '', '', '', '2022-10-22 12:41:01', '2022-10-22 12:41:01');
-INSERT INTO `mg_travel_detail` VALUES ('d2d6f9e5-1b78-4a6a-b5d7-866aa2094b55', 'ae6a35b9-e604-4a53-92b0-9805d60fb630', '北京', '39.95044173026311', '116.43926880192521', '2022-09-27', '2', 1, '456', '', '16', '2022-09-26 16:01:27', '2022-11-12 16:12:27');
+INSERT INTO `mg_travel_detail` VALUES ('2f925e65-e735-4726-96bb-e2a2ccabc873', 'ae6a35b9-e604-4a53-92b0-9805d60fb630', '沈阳万象城', '41.776229758297205', '123.43459224823187', '2022-11-13', '4', 1, '', '', '', '2022-11-12 16:44:21', '2022-11-12 16:44:21');
+INSERT INTO `mg_travel_detail` VALUES ('3be04b91-d4ab-490e-b8d4-75153408944d', 'ae6a35b9-e604-4a53-92b0-9805d60fb630', '沈阳东陵公园', '41.84003324761778', '123.59419769976057', '2022-11-14', '6', 1, '', '', '', '2022-11-12 16:44:57', '2022-11-12 16:44:57');
+INSERT INTO `mg_travel_detail` VALUES ('6af6fd5f-f07f-4b81-8782-1c29d5384a67', 'ae6a35b9-e604-4a53-92b0-9805d60fb630', '五里河公园', '41.75905530029965', '123.46744944496265', '2022-11-13', '5', 1, '测试', '', '', '2022-11-12 16:43:46', '2022-11-12 16:43:46');
+INSERT INTO `mg_travel_detail` VALUES ('8c5ba3fa-3258-4153-81f6-9d307eb9014a', 'ae6a35b9-e604-4a53-92b0-9805d60fb630', '九·一八历史博物馆', '41.83641399601335', '123.46722354684664', '2022-11-15', '4', 1, '', '', '', '2022-11-12 16:45:31', '2022-11-12 16:45:31');
 
 -- ----------------------------
 -- Table structure for mg_users
@@ -835,7 +869,7 @@ CREATE TABLE `mg_users`  (
 -- Records of mg_users
 -- ----------------------------
 INSERT INTO `mg_users` VALUES ('cb404a29-c68f-495f-97f0-d3d0e8369853', 'editor', 'Vchs0bbdk2pr/Ac6DsHruw==', 'Editor', NULL, '2022-04-28 17:49:36', '2022-07-04 09:31:09', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', 1);
-INSERT INTO `mg_users` VALUES ('e5d03ffa-39ee-42d5-a9e3-2bba1c987bd1', 'admin', 'Vchs0bbdk2pr/Ac6DsHruw==', '芒果快熟', NULL, '2022-04-26 21:53:54', '2022-06-24 21:42:16', 'af709d7f-883d-4f94-884c-b6010e0a415c', 1);
+INSERT INTO `mg_users` VALUES ('e5d03ffa-39ee-42d5-a9e3-2bba1c987bd1', 'admin', 'Qr5BD0giQp0cVTK61LzGoErxKc41f2LVAGOUf1MLKVU=', '芒果快熟', NULL, '2022-04-26 21:53:54', '2022-06-24 21:42:16', 'af709d7f-883d-4f94-884c-b6010e0a415c', 1);
 
 -- ----------------------------
 -- Table structure for mg_visitor

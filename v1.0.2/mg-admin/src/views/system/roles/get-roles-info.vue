@@ -25,6 +25,7 @@
             <el-tree
               :data="treeData"
               show-checkbox
+              check-strictly
               :default-checked-keys="form.menuIds"
               @check="checkNode"
               node-key="id">

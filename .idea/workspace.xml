@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="🎈 新增 我的世界模块" />
+    <list default="true" id="284bcf13-e2b7-4ccf-943a-62f862740896" name="默认变更列表" comment="🎈 新增 我的世界模块">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-roles-info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1.0.2/mg-admin/src/views/system/roles/get-roles-info.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,21 +96,8 @@
       <workItem from="1654319169029" duration="225000" />
       <workItem from="1654320486613" duration="87000" />
       <workItem from="1656334274955" duration="607000" />
-      <workItem from="1668241272454" duration="941000" />
-    </task>
-    <task id="LOCAL-00007" summary="1.0.2">
-      <created>1651845565457</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1651845565457</updated>
-    </task>
-    <task id="LOCAL-00008" summary="1.0.2">
-      <created>1651850671289</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1651850671289</updated>
+      <workItem from="1668241272454" duration="1787000" />
+      <workItem from="1668244485515" duration="42000" />
     </task>
     <task id="LOCAL-00009" summary="v1.0.2:增加首页最新评论和留言，邮件回复留言">
       <created>1651995525741</created>
@@ -438,7 +428,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668242202064</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="🎈 新增 我的世界模块">
+      <created>1668242219326</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1668242219326</updated>
+    </task>
+    <task id="LOCAL-00057" summary="🎈 新增 我的世界模块">
+      <created>1668242455474</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1668242455474</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,5 +481,19 @@
     <MESSAGE value="功能更新：excel批量数据导入/导出 ⛷" />
     <MESSAGE value=" 新增 我的世界模块" />
     <option name="LAST_COMMIT_MESSAGE" value=" 新增 我的世界模块" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="404" y="169" key="MultipleFileMergeDialog" timestamp="1668242241825">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="404" y="169" key="MultipleFileMergeDialog/0.0.1536.816@0.0.1536.816" timestamp="1668242241825" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1668242461321">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1668242461321" />
+    <state x="582" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668242247714">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="582" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1668242247714" />
   </component>
 </project>
