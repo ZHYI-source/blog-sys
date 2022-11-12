@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : zy_blog
+ Source Server         : 本地
  Source Server Type    : MySQL
- Source Server Version : 50650
- Source Host           : 114.117.164.181:3306
+ Source Server Version : 50736
+ Source Host           : localhost:3306
  Source Schema         : mg_db
 
  Target Server Type    : MySQL
- Target Server Version : 50650
+ Target Server Version : 50736
  File Encoding         : 65001
 
- Date: 12/11/2022 16:16:27
+ Date: 12/11/2022 16:40:44
 */
 
 SET NAMES utf8mb4;
@@ -498,25 +498,6 @@ CREATE TABLE `mg_musics`  (
 INSERT INTO `mg_musics` VALUES ('9de5af04-a01f-441e-8c46-9408f6747239', '永不失联的爱', '单依纯', 'http://freetyst.nf.migu.cn/public/product9th/product45/2021/10/2716/2020%E5%B9%B412%E6%9C%8819%E6%97%A517%E7%82%B933%E5%88%86%E7%B4%A7%E6%80%A5%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E6%A2%A6%E5%93%8D%E5%BC%BA%E9%9F%B3274%E9%A6%96/%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC/Mp3_64_22_16/6404689Z1J9161225.mp3?channelid=02&msisdn=a426959b-6412-4b39-90e5-d51838056a15&Tim=1652019526567&Key=a0ad825b33820979', 'http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/e27dccd008b264a4b76b35c4ed59abb1/acabc4887435b492e759069802d04dd5', '[00:00.16]周兴哲 - 永不失联的爱\n[00:01.09]词：饶雪漫\n[00:01.25]曲：周兴哲\n[00:23.05]亲爱的你躲在哪里发呆\n[00:28.79]有什么心事还无法释怀\n[00:34.37]我们总把人生想得太坏\n[00:39.99]像旁人不允许我们的怪\n[00:45.69]每一片与众不同的云彩\n[00:51.38]都需要找到天空去存在\n[00:56.96]我们都习惯了原地徘徊\n[01:02.61]却无法习惯被依赖\n[01:08.97]你给我 这一辈子都不想失联的爱\n[01:15.60]相信爱的征途就是星辰大海\n[01:20.62]美好剧情 不会更改\n[01:25.82]是命运最好的安排\n[01:31.50]你是我\n[01:33.30]这一辈子都不想失联的爱\n[01:38.27]何苦残忍逼我把手轻轻放开\n[01:43.18]请快回来 想听你说\n[01:48.43]说你还在\n[02:16.17]走过陪你看流星的天台\n[02:21.71]熬过失去你漫长的等待\n[02:27.36]好担心没人懂你的无奈\n[02:32.97]离开我谁还把你当小孩\n[02:38.79]我猜你一定也会想念我\n[02:44.23]也怕我失落在茫茫人海\n[02:49.90]没关系只要你肯回头望\n[02:55.52]会发现我一直都在\n[03:01.93]你给我 这一辈子都不想失联的爱\n[03:08.77]你的每条讯息都是心跳节拍\n[03:13.55]每秒都想 拥你入怀\n[03:18.78]全世界你最可爱\n[03:24.59]你是我 这一辈子都不想失联的爱\n[03:31.08]就算你的呼吸远在千山之外\n[03:36.09]请你相信 我给的爱\n[03:41.35]值得你爱', '2022-05-08 22:15:27', '2022-05-08 22:45:29');
 
 -- ----------------------------
--- Table structure for mg_proAnalysis
--- ----------------------------
-DROP TABLE IF EXISTS `mg_proAnalysis`;
-CREATE TABLE `mg_proAnalysis`  (
-  `id` char(36) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
-  `pro_title` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '项目组名称',
-  `remark` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
-  `createdAt` datetime NOT NULL,
-  `updatedAt` datetime NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of mg_proAnalysis
--- ----------------------------
-INSERT INTO `mg_proAnalysis` VALUES ('5a068b21-cfc0-4d12-9457-99a5e9409367', '氨基酸的浓度', 'Enzyme activity/(nmol/min/mg/prot)', '2022-06-24 20:21:05', '2022-06-24 20:22:29');
-INSERT INTO `mg_proAnalysis` VALUES ('d261ee54-80b3-4377-b25b-bc4b078b148c', '酶活值', 'Enzyme activity/(nmol/min/mg/prot)', '2022-06-24 17:53:22', '2022-06-24 20:22:36');
-
--- ----------------------------
 -- Table structure for mg_proanalysis
 -- ----------------------------
 DROP TABLE IF EXISTS `mg_proanalysis`;
@@ -798,7 +779,7 @@ CREATE TABLE `mg_travel`  (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of mg_travel
@@ -825,7 +806,7 @@ CREATE TABLE `mg_travel_detail`  (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of mg_travel_detail
@@ -854,7 +835,7 @@ CREATE TABLE `mg_users`  (
 -- Records of mg_users
 -- ----------------------------
 INSERT INTO `mg_users` VALUES ('cb404a29-c68f-495f-97f0-d3d0e8369853', 'editor', 'Vchs0bbdk2pr/Ac6DsHruw==', 'Editor', NULL, '2022-04-28 17:49:36', '2022-07-04 09:31:09', '86deca84-5bdb-4ec4-8979-a72abcbc27bb', 1);
-INSERT INTO `mg_users` VALUES ('e5d03ffa-39ee-42d5-a9e3-2bba1c987bd1', 'admin', 'Qr5BD0giQp0cVTK61LzGoErxKc41f2LVAGOUf1MLKVU=', '芒果快熟', NULL, '2022-04-26 21:53:54', '2022-06-24 21:42:16', 'af709d7f-883d-4f94-884c-b6010e0a415c', 1);
+INSERT INTO `mg_users` VALUES ('e5d03ffa-39ee-42d5-a9e3-2bba1c987bd1', 'admin', 'Vchs0bbdk2pr/Ac6DsHruw==', '芒果快熟', NULL, '2022-04-26 21:53:54', '2022-06-24 21:42:16', 'af709d7f-883d-4f94-884c-b6010e0a415c', 1);
 
 -- ----------------------------
 -- Table structure for mg_visitor
