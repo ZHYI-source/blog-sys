@@ -99,8 +99,8 @@
 
 #### 🥯v1.0.2 项目截图
 
- <img src="doc/img/1.png" width = "300" height = "150" alt="图片名称" align=center />
- <img src="doc/img/2.png" width = "300" height = "150" alt="图片名称" align=center />
+ <img src="doc/img/1.png" width = "250" height = "150" alt="图片名称" align=center />
+ <img src="doc/img/2.png" width = "250" height = "150" alt="图片名称" align=center />
  <img src="doc/img/3.png" width = "300" height = "150" alt="图片名称" align=center />
  <img src="doc/img/4.png" width = "300" height = "150" alt="图片名称" align=center />
  <img src="doc/img/5.png" width = "300" height = "150" alt="图片名称" align=center />
