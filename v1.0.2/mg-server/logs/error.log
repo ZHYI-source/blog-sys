@@ -37,3 +37,55 @@
 [2022-06-24T22:16:18.852] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
 [2022-06-24T22:16:18.855] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
 [2022-06-24T22:16:28.598] [ERROR] error - 密码错误
+[2022-06-27T20:10:34.440] [ERROR] error - 【未通过】 admin 请求 POST /api/private/upload/ *** 权限未验证通过
+[2022-06-27T20:10:56.561] [ERROR] error - 【未通过】 admin 请求 POST /api/private/upload/ *** 权限未验证通过
+[2022-06-27T20:11:16.217] [ERROR] error - 【未通过】 admin 请求 POST /api/private/upload/ *** 权限未验证通过
+[2022-06-27T20:13:01.732] [ERROR] error - 【未通过】 admin 请求 POST /api/private/upload/ *** 权限未验证通过
+[2022-06-27T20:13:12.697] [ERROR] error - 【未通过】 admin 请求 POST /api/private/upload/ *** 权限未验证通过
+[2022-06-27T20:24:55.265] [ERROR] error - 密码错误
+[2022-06-28T09:15:41.947] [ERROR] error - 密码错误
+[2022-06-28T09:40:42.594] [ERROR] error - {"errno":-4058,"syscall":"open","code":"ENOENT","path":"../uploads_files/excel/数据分析2022-06-28-09.xlsx"}
+[2022-06-28T09:41:51.999] [ERROR] error - {"errno":-4058,"syscall":"open","code":"ENOENT","path":"../uploads_files/excel/数据分析2022-06-28-09.xlsx"}
+[2022-06-28T09:42:25.913] [ERROR] error - {"errno":-4058,"syscall":"open","code":"ENOENT","path":"../uploads_files/excel/数据分析2022-06-28-09.xlsx"}
+[2022-07-14T09:39:59.450] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-07-14T09:39:59.463] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-07-14T09:40:20.141] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-07-14T09:40:20.142] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-07-14T09:40:27.672] [ERROR] error - 密码错误
+[2022-07-14T10:06:17.149] [ERROR] error - 【未通过】 editor 请求 POST /api/private/proanalysis/list/ *** 权限未验证通过
+[2022-07-14T10:06:17.158] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T10:06:40.440] [ERROR] error - 【未通过】 editor 请求 POST /api/private/proanalysis/list/ *** 权限未验证通过
+[2022-07-14T10:06:40.444] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T10:06:52.936] [ERROR] error - 密码错误
+[2022-07-14T11:15:14.936] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/list/ *** 权限未验证通过
+[2022-07-14T11:15:14.951] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T11:15:21.183] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-07-14T11:15:21.186] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-07-14T11:15:21.189] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T11:15:21.192] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T11:15:21.279] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/list/ *** 权限未验证通过
+[2022-07-14T11:15:21.300] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T11:15:33.281] [ERROR] error - 【未通过】 admin 请求 POST /api/private/roles/one/ *** 权限未验证通过
+[2022-07-14T11:15:33.290] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-07-14T14:16:36.178] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"Format is Authorization: Bearer [token]"}
+[2022-09-23T19:19:19.720] [ERROR] error - {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`ace' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`ace' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;"},"sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;","parameters":{}}
+[2022-09-23T19:19:26.523] [ERROR] error - {}
+[2022-09-23T19:19:32.897] [ERROR] error - {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`ace' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`ace' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;"},"sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``ace` LIMIT 0, 25;","parameters":{}}
+[2022-09-23T19:19:37.776] [ERROR] error - {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`esc' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``esc` LIMIT 0, 25;"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'travel.createdAt`esc' in 'order clause'","sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``esc` LIMIT 0, 25;"},"sql":"SELECT `id`, `city`, `latitude`, `longitude`, `title`, `img`, `date`, `createdAt`, `updatedAt` FROM `mg_travel` AS `travel` ORDER BY `travel`.`createdAt``esc` LIMIT 0, 25;","parameters":{}}
+[2022-09-23T22:15:40.059] [ERROR] error - {}
+[2022-09-23T22:31:12.790] [ERROR] error - POST /api/private/upload *** 响应：{"data":null,"code":401,"message":"No authorization token was found"}
+[2022-09-24T15:17:20.496] [ERROR] error - {"name":"SequelizeValidationError","errors":[{"message":"date cannot be an array or an object","type":"string violation","path":"date","value":["2022-09-05","2022-09-12","2022-09-19"],"origin":"CORE","instance":{"id":"d6b89496-3a12-45b4-9159-39e8ed95e531","city":"上海","latitude":"31.27231676733753","longitude":"121.40797489171018","title":"豆腐干大范甘迪","img":"http://zhouyi.run:5222/api/public/admin/getFiles?id=aa239307f3033e705581591ef7f4607a.jpg&&mimetype=image/jpeg","date":["2022-09-05","2022-09-12","2022-09-19"],"memoirTxt":null,"memoirImgs":null,"createdAt":"2022-09-24T06:31:11.000Z","updatedAt":"2022-09-24T07:17:20.494Z"},"validatorKey":"not_a_string","validatorName":null,"validatorArgs":[]}]}
+[2022-09-24T15:17:20.530] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-09-24T16:01:01.035] [ERROR] error - {"name":"SequelizeValidationError","errors":[{"message":"date cannot be an array or an object","type":"string violation","path":"date","value":["2022-09-05","2022-09-12"],"origin":"CORE","instance":{"id":"d6b89496-3a12-45b4-9159-39e8ed95e531","city":"上海","latitude":"31.27231676733753","longitude":"121.40797489171018","title":"豆腐干大范甘迪的萨芬的萨芬","img":"http://zhouyi.run:5222/api/public/admin/getFiles?id=aa239307f3033e705581591ef7f4607a.jpg&&mimetype=image/jpeg","date":["2022-09-05","2022-09-12"],"memoirTxt":null,"memoirImgs":null,"createdAt":"2022-09-24T06:31:11.000Z","updatedAt":"2022-09-24T08:01:01.033Z"},"validatorKey":"not_a_string","validatorName":null,"validatorArgs":[]}]}
+[2022-09-24T16:26:36.329] [ERROR] error - {"name":"SequelizeDatabaseError","parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'pid' in 'where clause'","sql":"DELETE FROM `mg_travel_detail` WHERE `pid` = 'b4b768cd-6dc5-429a-96e1-9029c4200d23'"},"original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'pid' in 'where clause'","sql":"DELETE FROM `mg_travel_detail` WHERE `pid` = 'b4b768cd-6dc5-429a-96e1-9029c4200d23'"},"sql":"DELETE FROM `mg_travel_detail` WHERE `pid` = 'b4b768cd-6dc5-429a-96e1-9029c4200d23'","parameters":{}}
+[2022-09-26T13:01:39.733] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-09-26T13:01:39.740] [ERROR] error - POST /api/private/roles/one *** 响应：{"data":null,"code":401,"message":"jwt expired"}
+[2022-09-26T13:01:50.884] [ERROR] error - 密码错误
+[2022-10-22T12:26:22.102] [ERROR] error - 密码错误
+[2022-10-11T14:22:47.340] [ERROR] error - 密码错误
+[2022-11-12T15:47:44.057] [ERROR] error - 【未通过】 admin 请求 POST /api/private/travel/list/ *** 权限未验证通过
+[2022-11-12T15:47:44.291] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-11-12T15:48:18.174] [ERROR] error - 【未通过】 admin 请求 POST /api/private/travel/list/ *** 权限未验证通过
+[2022-11-12T15:48:18.326] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}
+[2022-11-12T15:48:48.751] [ERROR] error - 【未通过】 admin 请求 POST /api/private/travel/list/ *** 权限未验证通过
+[2022-11-12T15:48:49.018] [ERROR] error - {"code":"ERR_HTTP_HEADERS_SENT"}

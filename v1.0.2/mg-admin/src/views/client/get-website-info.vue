@@ -64,7 +64,7 @@
                       :rows="2"
                       maxlength="200"
                       show-word-limit
-                      placeholder="请输入全局样式"
+                      placeholder="filter的值：grayscale(50%)"
             />
           </el-form-item>
         </mk-get-row>

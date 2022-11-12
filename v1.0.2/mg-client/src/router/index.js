@@ -61,11 +61,11 @@ const router = new VueRouter({
     routes
 })
 router.beforeEach((to, from, next) => {
-    let title = "MG"
+    let title = "MG'blog"
     if (to.meta.params){
-        title = `${to.meta.title}:${to.params[to.meta.params] || ''} - ${title}`
+        title = `${title}-${to.meta.title}:${to.params[to.meta.params] || ''}`
     }else {
-        title = `${to.meta.title} - ${title}`
+        title = `${title}-${to.meta.title} `
     }
     document.title = title
     if (to.path !== from.path) {

@@ -150,7 +150,6 @@ export default {
     selectTree(data, node) {
       let menuKeyArr = []
       menuKeyArr = [...node.checkedKeys, ...node.halfCheckedKeys,...this.assignedPermissions]
-      console.log('权限表',menuKeyArr)
       this.menuKey = Array.from(new Set(menuKeyArr))
       this.$emit('getValue', this.menuKey)
       this.$forceUpdate()

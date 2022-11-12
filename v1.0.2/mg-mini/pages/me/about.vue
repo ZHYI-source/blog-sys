@@ -133,7 +133,8 @@ export default {
         data: val,
         success: function () {
           uni.showToast({
-            title: '复制成功',
+            icon:'none',
+            title: '复制成功,请到浏览器中打开',
           });
         },
         fail:function () {

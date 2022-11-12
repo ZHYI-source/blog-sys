@@ -62,6 +62,8 @@
             </p>
             <p>转载：- <a :href="articleData.reprint">{{ articleData.article_title }}</a></p>
           </div>
+          <img alt="装饰图片"
+               src="http://zhouyi.run:5222/api/public/admin/getFiles?id=09a5737ecfd353f1fb91a5846a12a705.webp&&mimetype=image/webp">
           <!--评论-->
           <div class="comments">
             <div class="comments-head">
@@ -91,418 +93,417 @@
 </template>
 
 <script>
-import Banner from '@/components/banner'
-import sectionTitle from '@/components/section-title'
-import comment from '@/components/comment'
-import menuTree from '@/components/menu-tree'
-import commentMessageEditor from 'comment-message-editor'
-import {getArticleDetail, getCommentsCreate, getCommentsList} from "../api/article";
-import {marked} from 'marked';
-import hljs from "highlight.js"
-// https://highlightjs.org/static/demo/
-import 'highlight.js/styles/base16/atelier-forest-light.css'
+  import Banner from '@/components/banner'
+  import sectionTitle from '@/components/section-title'
+  import comment from '@/components/comment'
+  import menuTree from '@/components/menu-tree'
+  import commentMessageEditor from 'comment-message-editor'
+  import {getArticleDetail, getCommentsCreate, getCommentsList} from "../api/article";
+  import {marked} from 'marked';
+  import hljs from "highlight.js"
+  // https://highlightjs.org/static/demo/
+  import 'highlight.js/styles/base16/atelier-forest-light.css'
 
-import MkMdEditor from "../components/md-editor";
-import Vue from 'vue';
+  import MkMdEditor from "../components/md-editor";
+  import Vue from 'vue';
 
-export default {
-  name: 'articles',
-  watch: {
-    'articleData.article_content': function () {
-      this.$nextTick(() => {
-        if (this.articleData.editType === 'mce') {
-          //延时 解决 v-html 取不到dom
-          setTimeout(() => {
-            const template = this.$refs.temp
-            let blocks = template.querySelectorAll("pre code");
-            blocks.forEach((block) => {
-              //高亮
-              hljs.highlightBlock(block);
-            });
-          }, 100)
-        }
-      })
-    }
-  },
-  data() {
-    return {
-      comKey: 1,
-      curLink: '',
-      article_id: '',
-      article_title: '-',
-      showDonate: false,
-      commentsCount: 0,
-      comments: [],
-      menus: [],
-      articleData: {},
-      cateName: '',
-      currImgUrl: '',
-      isShowImg: false
-    }
-  },
-  components: {
-    MkMdEditor,
-    Banner,
-    sectionTitle,
-    comment,
-    menuTree,
-    commentMessageEditor,
-  },
-  methods: {
-    //提交回复
-    replyComment(val) {
-      this.getComment(val)
-    },
-    //提交评论
-    toSubmitComment(val) {
-      let p = {
-        article_id: this.article_id,//文章id
-        article_title: this.article_title,//文章id
-        pid: 0,//父级id
-        from_userId: '1',//用户ID
-        from_username: '吴彦祖',//用户名称
-        from_user_logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSYITOSgSQdTv0Z_Z0KkvwWsBMwadCA2PRA&usqp=CAU',//用户头像
-        content: val,//评论内容
-        to_userId: '',//回复对象ID
-        to_username: '',//回复对象名称
-        to_user_logo: '',//回复对象头像
-      }
-      getCommentsCreate(p).then(res => {
-        this.$message({
-          message: '评论成功！',
-          type: 'success'
-        });
-        this.comKey += 1
-        this.getComment(this.article_id)
-      })
-    },
-    goCategory(val) {
-      localStorage.removeItem("category");
-      localStorage.setItem("category", JSON.stringify(val));
-      this.$router.push({name: 'category', params: {cateId: val.cateId, cate: val.name}});
-    },
-    markdownToHtml(val) {
-      return marked(val);
-    },
-    getDataDetail(id) {
-      getArticleDetail(id).then(article => {
-        this.articleData = article || {}
-        this.article_title = article.article_title
-        this.cateName = this.articleData.cate.name
-      })
-    },
-
-    // 预览解析的图片  $event.target.currentSrc为base64的图片地址
-    previewImg($event) {
-      if ($event.target.currentSrc) {
-        this.currImgUrl = $event.target.currentSrc
-        window.open(this.currImgUrl, '_blank')
+  export default {
+    name: 'articles',
+    watch: {
+      'articleData.article_content': function () {
+        this.$nextTick(() => {
+          if (this.articleData.editType === 'mce') {
+            //延时 解决 v-html 取不到dom
+            setTimeout(() => {
+              const template = this.$refs.temp
+              let blocks = template.querySelectorAll("pre code");
+              blocks.forEach((block) => {
+                //高亮
+                hljs.highlightBlock(block);
+              });
+            }, 100)
+          }
+        })
       }
     },
-
-    //加载文章评论
-    getComment(id) {
-      let p = {
-        params: {
-          article_id: id,
-        }
-      }
-      getCommentsList(p).then(res => {
-        this.commentsCount = res.count
-        let params = res.data || []
-        const initTree = (parentId) => {
-          const child = params.filter(item => item.pid == parentId)
-          return child.map(item => ({
-            comment: {...item},
-            reply: initTree(item.id)
-          }))
-        }
-        this.comments = initTree(0)
-      }).catch(err => {
-        console.log(err)
-      })
-    },
-    fetchH(arr, left, right) {
-      if (right) {
-        return arr.filter(item => item.offsetTop > left && item.offsetTop < right)
-      } else {
-        return arr.filter(item => item.offsetTop > left)
+    data() {
+      return {
+        comKey: 1,
+        curLink: '',
+        article_id: '',
+        article_title: '-',
+        showDonate: false,
+        commentsCount: 0,
+        comments: [],
+        menus: [],
+        articleData: {},
+        cateName: '',
+        currImgUrl: '',
+        isShowImg: false
       }
     },
+    components: {
+      MkMdEditor,
+      Banner,
+      sectionTitle,
+      comment,
+      menuTree,
+      commentMessageEditor,
+    },
+    methods: {
+      //提交回复
+      replyComment(val) {
+        this.getComment(val)
+      },
+      //提交评论
+      toSubmitComment(val) {
+        let p = {
+          article_id: this.article_id,//文章id
+          article_title: this.article_title,//文章id
+          pid: 0,//父级id
+          from_userId: '1',//用户ID
+          from_username: 'Jake',//用户名称
+          from_user_logo: 'https://joeschmoe.io/api/v1/male/jake',//用户头像
+          content: val,//评论内容
+          to_userId: '',//回复对象ID
+          to_username: '',//回复对象名称
+          to_user_logo: '',//回复对象头像
+        }
+        getCommentsCreate(p).then(res => {
+          this.$message({
+            message: '评论成功！',
+            type: 'success'
+          });
+          this.comKey += 1
+          this.getComment(this.article_id)
+        })
+      },
+      goCategory(val) {
+        localStorage.removeItem("category");
+        localStorage.setItem("category", JSON.stringify(val));
+        this.$router.push({name: 'category', params: {cateId: val.cateId, cate: val.name}});
+      },
+      markdownToHtml(val) {
+        return marked(val);
+      },
+      getDataDetail(id) {
+        getArticleDetail(id).then(article => {
+          this.articleData = article || {}
+          this.article_title = article.article_title
+          this.cateName = this.articleData.cate.name
+        })
+      },
 
-    // 生成目录
-    createMenus() {
-      let arr = []
-      for (let i = 6; i > 0; i--) {
-        let temp = []
-        let e = document.querySelector(".md-edit").querySelectorAll(`h${i}`)
-        for (let j = 0; j < e.length; j++) {
-          let child = this.fetchH(arr, e[j].offsetTop, (j + 1 === e.length) ? undefined : e[j + 1].offsetTop)
-          temp.push({
-            h: i,
-            title: e[j].innerText,
-            id: e[j].id,
-            offsetTop: e[j].offsetTop,
-            child
-          })
+      // 预览解析的图片  $event.target.currentSrc为base64的图片地址
+      previewImg($event) {
+        if ($event.target.currentSrc) {
+          this.currImgUrl = $event.target.currentSrc
+          window.open(this.currImgUrl, '_blank')
         }
-        if (temp.length) {
-          arr = temp
+      },
+
+      //加载文章评论
+      getComment(id) {
+        let p = {
+          params: {
+            article_id: id,
+          }
         }
+        getCommentsList(p).then(res => {
+          this.commentsCount = res.count
+          let params = res.data || []
+          const initTree = (parentId) => {
+            const child = params.filter(item => item.pid == parentId)
+            return child.map(item => ({
+              comment: {...item},
+              reply: initTree(item.id)
+            }))
+          }
+          this.comments = initTree(0)
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      fetchH(arr, left, right) {
+        if (right) {
+          return arr.filter(item => item.offsetTop > left && item.offsetTop < right)
+        } else {
+          return arr.filter(item => item.offsetTop > left)
+        }
+      },
+
+      // 生成目录
+      createMenus() {
+        let arr = []
+        for (let i = 6; i > 0; i--) {
+          let temp = []
+          let e = document.querySelector(".md-edit").querySelectorAll(`h${i}`)
+          for (let j = 0; j < e.length; j++) {
+            let child = this.fetchH(arr, e[j].offsetTop, (j + 1 === e.length) ? undefined : e[j + 1].offsetTop)
+            temp.push({
+              h: i,
+              title: e[j].innerText,
+              id: e[j].id,
+              offsetTop: e[j].offsetTop,
+              child
+            })
+          }
+          if (temp.length) {
+            arr = temp
+          }
+        }
+        this.menus = arr
       }
-      this.menus = arr
-    }
-  },
-  created() {
-    let arId = this.$route.params.id
-    this.article_id = this.$route.params.id
-    this.getDataDetail(arId)
-    this.getComment(arId)
-  },
-  mounted() {
-    // this.createMenus()
-    this.curLink = window.location.href
-    window.scroll(0, 0)
+    },
+    created() {
+      let arId = this.$route.params.id
+      this.article_id = this.$route.params.id
+      this.getDataDetail(arId)
+      this.getComment(arId)
+    },
+    mounted() {
+      // this.createMenus()
+      this.curLink = window.location.href
+      window.scroll(0, 0)
 
 
-  },
+    },
 
-}
+  }
 </script>
 <style scoped lang="less">
-.site-content {
-  position: relative;
+  .site-content {
+    position: relative;
 
-  .site-main {
-    padding: 80px 0 0 0;
+    .site-main {
+      padding: 80px 0 0 0;
+    }
   }
-}
 
-#article-menus {
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-  border-radius: 3px;
-  padding: 15px;
-  width: 300px;
-  transform: translateX(-120%) translateY(150px);
-  font-size: 14px;
-}
+  #article-menus {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    padding: 15px;
+    width: 300px;
+    transform: translateX(-120%) translateY(150px);
+    font-size: 14px;
+  }
 
-article.hentry {
+  article.hentry {
 
-  .entry-header {
-    .entry-title {
-      font-size: 23px;
-      font-weight: 600;
-      color: #737373;
-      margin: 0.67em 0;
-
-      &:before {
-        content: "#";
-        margin-right: 6px;
-        color: #d82e16;
-        font-size: 20px;
+    .entry-header {
+      .entry-title {
+        font-size: 23px;
         font-weight: 600;
+        color: #737373;
+        margin: 0.67em 0;
+
+        &:before {
+          content: "#";
+          margin-right: 6px;
+          color: #d82e16;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      hr {
+        height: 1px;
+        border: 0;
+        background: #EFEFEF;
+        margin: 15px 0;
+      }
+
+      .breadcrumbs {
+        font-size: 14px;
+        color: #D2D2D2;
+        text-decoration: none;
+        margin-bottom: 30px;
+
       }
     }
 
-    hr {
-      height: 1px;
-      border: 0;
-      background: #EFEFEF;
-      margin: 15px 0;
+    .tags-box {
+      display: flex;
+      margin-top: 8px;
+      font-size: 13px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
     }
 
-    .breadcrumbs {
-      font-size: 14px;
-      color: #D2D2D2;
-      text-decoration: none;
-      margin-bottom: 30px;
-
-
-    }
-  }
-
-  .tags-box {
-    display: flex;
-    margin-top: 8px;
-    font-size: 13px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-  }
-
-  .tag-item {
-    border: 1px solid #eee;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 0 5px;
-  }
-
-  .entry-content {
-
-  }
-
-  footer.post-footer {
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 30px;
-    height: 65px;
-    position: relative;
-
-    i {
-      font-size: 18px;
-      margin-right: 5px;
+    .tag-item {
+      border: 1px solid #eee;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 0 5px;
     }
 
-    .post-like {
-      float: right;
-      margin: 7px 0 0 20px;
+    .entry-content {
+
     }
 
-    .post-share {
-      float: right;
-      list-style: none;
-      margin-right: 20px;
-    }
+    footer.post-footer {
+      width: 100%;
+      padding: 20px 10px;
+      margin-top: 30px;
+      height: 65px;
+      position: relative;
 
-    .donate {
-      float: left;
-      line-height: 36px;
-      border-radius: 100%;
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
-      border: 1px solid #2B2B2B;
+      i {
+        font-size: 18px;
+        margin-right: 5px;
+      }
 
-      &:hover {
-        border: 1px solid goldenrod;
+      .post-like {
+        float: right;
+        margin: 7px 0 0 20px;
+      }
+
+      .post-share {
+        float: right;
+        list-style: none;
+        margin-right: 20px;
+      }
+
+      .donate {
+        float: left;
+        line-height: 36px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border: 1px solid #2B2B2B;
+
+        &:hover {
+          border: 1px solid goldenrod;
+
+          span {
+            color: goldenrod;
+          }
+        }
 
         span {
-          color: goldenrod;
+          color: #2B2B2B;
+          padding: 10px;
+          position: relative;
+          cursor: pointer;
         }
+
+        .donate_inner {
+          display: none;
+          margin: 0;
+          list-style: none;
+          position: absolute;
+          left: 80px;
+          top: -40px;
+          background: #FFF;
+          padding: 10px;
+          border: 1px solid #ddd;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+          border-radius: 3px;
+
+          &.show {
+            display: block;
+          }
+
+          li {
+            float: left;
+          }
+
+          img {
+            width: 100px;
+          }
+
+          p {
+            text-align: center;
+            font-size: 15px;
+            color: #D2D2D2;
+            line-height: 1rem;
+          }
+        }
+
+        .donate_inner:after, .donate_inner:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 45%;
+          margin-left: -8px;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-right: 8px solid #fff;
+        }
+
+        .donate_inner:before {
+          left: -1px;
+          border-right: 8px solid #ddd;
+        }
+
       }
 
-      span {
-        color: #2B2B2B;
-        padding: 10px;
-        position: relative;
-        cursor: pointer;
-      }
+      .post-tags {
+        margin: 7px 0 0 20px;
+        float: left;
+        text-transform: uppercase;
 
-      .donate_inner {
-        display: none;
-        margin: 0;
-        list-style: none;
-        position: absolute;
-        left: 80px;
-        top: -40px;
-        background: #FFF;
-        padding: 10px;
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
-        border-radius: 3px;
-
-        &.show {
-          display: block;
-        }
-
-        li {
-          float: left;
-        }
-
-        img {
-          width: 100px;
-        }
-
-        p {
-          text-align: center;
-          font-size: 15px;
-          color: #D2D2D2;
-          line-height: 1rem;
+        a:hover {
+          color: #ff6d6d;
         }
       }
+    }
 
-      .donate_inner:after, .donate_inner:before {
+    .open-message {
+      margin: 50px 0;
+      position: relative;
+      background: #2B2B2B;
+      padding: 10px 30px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #fff;
+
+      &:after {
         content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #2B2B2B;
         position: absolute;
-        left: 0;
-        bottom: 45%;
-        margin-left: -8px;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 8px solid #fff;
+        top: -8px;
+        left: 48%;
       }
 
-      .donate_inner:before {
-        left: -1px;
-        border-right: 8px solid #ddd;
+      p {
+        margin: 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
-    }
-
-    .post-tags {
-      margin: 7px 0 0 20px;
-      float: left;
-      text-transform: uppercase;
-
-      a:hover {
-        color: #ff6d6d;
+      a {
+        color: #A0DAD0;
+        padding: 0 5px;
       }
     }
   }
 
-  .open-message {
-    margin: 50px 0;
-    position: relative;
-    background: #2B2B2B;
-    padding: 10px 30px;
-    border-radius: 3px;
-    font-size: 14px;
-    color: #fff;
+  .comments-head {
+    border-top: 1px dashed #ECECEC;
+    padding: 15px 0;
+    padding-left: 10px;
+    margin-bottom: 25px;
 
-    &:after {
-      content: "";
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #2B2B2B;
-      position: absolute;
-      top: -8px;
-      left: 48%;
-    }
+    .comments-h-t {
+      line-height: 40px;
+      padding-bottom: 10px;
+      font-size: 15px;
 
-    p {
-      margin: 10px 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    a {
-      color: #A0DAD0;
-      padding: 0 5px;
     }
   }
-}
 
-.comments-head {
-  border-top: 1px dashed #ECECEC;
-  padding: 15px 0;
-  padding-left: 10px;
-  margin-bottom: 25px;
-
-  .comments-h-t {
-    line-height: 40px;
-    padding-bottom: 10px;
-    font-size: 15px;
+  /******/
+  @media (max-width: 800px) {
+    .site-content .site-main {
+      padding: 30px 0 0 0;
+    }
 
   }
-}
-
-/******/
-@media (max-width: 800px) {
-  .site-content .site-main {
-    padding: 30px 0 0 0;
-  }
-
-}
 </style>

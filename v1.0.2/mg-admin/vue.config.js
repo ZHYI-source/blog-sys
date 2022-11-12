@@ -41,7 +41,6 @@ module.exports = {
   devServer: {
     proxy: {
       '/mg': {
-        // target: 'http://zhouyi.run:5222',
         target: 'http://localhost:5222', //本地服务器
         changeOrigin: true,
         pathRewrite: {

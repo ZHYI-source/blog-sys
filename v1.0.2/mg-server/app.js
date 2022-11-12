@@ -4,9 +4,6 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const chalk = require('chalk'); // https://www.npmjs.com/package/chalk
 const logger = require("./utils/utils.logger");
-const utilsTools = require("./utils/utils.tools");
-const https = require('https')
-const fs = require('fs')
 // 路由加载
 const mount = require('mount-routes')
 const app = express()
@@ -22,21 +19,17 @@ app.use(session({
     resave: false,	// 强制将会话保存回会话容器
     rolling: false,	// 强制在每个response上设置会话标识符cookie
     cookie: {
-        // 5分钟验证码过期
+        // 3天验证码过期
         maxAge: 300000
     }
 }))
-const sslOptions = {
-    key: fs.readFileSync('public/ssl/zhouyi.run.key'),
-    cert: fs.readFileSync('public/ssl/zhouyi.run.pem'),
-}
 //处理请求参数解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 const db = require("./models");
-db.sequelize.sync();
-// db.comments.sync({ alter: true })
+// db.sequelize.sync();
+// db.travel.sync({ alter: true })
 
 //解决跨域
 app.use(cors())
@@ -51,7 +44,6 @@ app.all('/api/*', function (req, res, next) {
     if (req.method == 'OPTIONS') res.send(200)
     /*让options请求快速返回*/
     else next()
-
 })
 
 // 使用swagger API 文档
@@ -94,9 +86,5 @@ app.listen(process.env.DEV_PORT, () => {
     console.log(chalk.bold.green(`项目启动成功: ${process.env.DEV_URL}:${process.env.DEV_PORT}`));
     console.log(chalk.bold.green(`接口文档地址: ${process.env.DEV_URL}:${process.env.DEV_PORT}/swagger`));
 })
-// https.createServer(sslOptions, app).listen(process.env.DEV_PORT,() => {
-//     console.log(chalk.bold.green(`项目启动成功: ${process.env.DEV_URL}:${process.env.DEV_PORT}`));
-//     console.log(chalk.bold.green(`接口文档地址: ${process.env.DEV_URL}:${process.env.DEV_PORT}/swagger`));
-// })
 //apiPost接口文档：https://docs.apipost.cn/preview/85df1005c24df829/b25c320b5df19b98
 module.exports = app

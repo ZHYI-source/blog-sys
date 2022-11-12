@@ -15,7 +15,7 @@ exports.sendMailer = (pm) => {
                 secureConnection: true, // 使用 SSL
                 auth: {
                     user: '1840354092@qq.com', // 发送方邮箱的账号
-                    pass: '', // 邮箱授权密码
+                    pass: '****', // 邮箱授权密码
                 }
             }
         );

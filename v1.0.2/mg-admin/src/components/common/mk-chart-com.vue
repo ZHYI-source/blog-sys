@@ -54,7 +54,6 @@ export default {
     }
   },
   mounted() {
-
     this.initChart()
     //监视窗口变化实现自适应
     window.addEventListener('resize', this.resizeChart)
@@ -65,6 +64,7 @@ export default {
     window.removeEventListener('resize', this.resizeChart)
   },
   beforeDestroy() {
+    // // 如果这个dom不存在  那就不执行
     if (!this.chart) {
       return
     }

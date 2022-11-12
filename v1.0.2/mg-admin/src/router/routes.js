@@ -262,6 +262,26 @@ const frameIn = [
           ],
         },
         component: _import('system/menus/dir-menus-info')
+      },{
+        path: '/myWorld/dir-travel-track',
+        name: 'dir-travel-track',
+        meta: {
+          title: '旅游轨迹',
+          auth: true,
+          perms: [
+            'POST /api/private/travel/create',
+            'POST /api/private/travel/list',
+            'POST /api/private/travel/delete',
+            'POST /api/private/travel/update',
+            'POST /api/private/travel/findOne',
+            'POST /api/private/travel/createDetail',
+            'POST /api/private/travel/deleteDetail',
+            'POST /api/private/travel/listDetail',
+            'POST /api/private/travel/updateDetail',
+            'POST /api/private/travel/findOneDetail',
+          ],
+        },
+        component: _import('myWorld/dir-travel-track')
       },
 
 

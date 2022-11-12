@@ -1,7 +1,14 @@
 <template>
     <div class="header-search">
         <i class="iconfont iconsearch" @click.stop="click"></i>
-        <input ref="searchInput" :class="{'show':show}" v-model="searchValue" placeholder="请输入关键字" type="text" @blur="show=false" @click.stop="" @keyup.enter="search"/>
+        <input ref="searchInput"
+               :class="{'show':show}"
+               v-model="searchValue"
+               placeholder="请输入关键字"
+               type="text"
+               @blur="show=false"
+               @click.stop=""
+               @keyup.enter="search"/>
     </div>
 </template>
 

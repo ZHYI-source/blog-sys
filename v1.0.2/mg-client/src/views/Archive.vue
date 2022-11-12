@@ -20,7 +20,7 @@
             <el-timeline-item
                 color="#ff8b89"
                 type="success "
-                :timestamp="item.updatedAt | parseTimeFull" placement="top">
+                :timestamp="item.createdAt | parseTimeFull" placement="top">
               <div style="padding-top: 15px;">
                 <post :showLine="false" class="post-i" :style="{'animation-delay':0.2+'s'}" :post="item"
                       :key="item.id"></post>

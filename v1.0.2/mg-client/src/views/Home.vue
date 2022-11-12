@@ -37,7 +37,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import Banner from '@/components/banner'
 import Feature from '@/components/feature'
@@ -45,8 +44,9 @@ import sectionTitle from '@/components/section-title'
 import Post from '@/components/post'
 import SmallIco from '@/components/small-ico'
 import Quote from '@/components/quote'
-import {fetchFocus, fetchList} from '../api'
 import {dirArticle} from "../api/article";
+import {dirIPShare} from "../api/getIp";
+import {recordVisitor} from "../api/website";
 
 export default {
   name: 'Home',
@@ -133,6 +133,22 @@ export default {
     }
   },
   methods: {
+    getIp(){
+      // navigator.geolocation.getCurrentPosition(function(position) {
+      //   console.log('*****',position.coords.latitude, position.coords.longitude)
+      // });
+      dirIPShare().then(res=>{
+        let ip = JSON.parse(res.slice(res.indexOf('{'),res.indexOf('}')+1)).cip
+      //  去记录访客
+        recordVisitor({ip,type:0}).then(res=>{
+          console.log('record:ok')
+        }).catch(err=>{
+          console.log('错误',err)
+        })
+      }).catch(err=>{
+        console.log('错误',err)
+      })
+    },
     changeType() {
       this.sectionTitle = !this.sectionTitle
       //清除推荐和全部
@@ -209,6 +225,9 @@ export default {
       }
     }
     this.getDataList();
+  },
+  created() {
+    this.getIp()
   }
 }
 </script>

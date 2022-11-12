@@ -74,7 +74,7 @@ exports.export = (req, res) => {
     const pm = req.body;
     DAO.list(Analysis, pm, list => {
         let arr = [
-            ['标识', 'X轴数据', 'Y轴数据', '备注', '创建时间']
+            ['ID', 'GST', '平均数', '标准误', '备注', '创建时间']
         ]
         // 模板名称
         let name = `数据分析${dayjs().format('YYYY-MM-DD-hh')}.xlsx`
@@ -83,13 +83,17 @@ exports.export = (req, res) => {
             arrItem.push(listElement.id)
             arrItem.push(listElement.axi_x)
             arrItem.push(listElement.axi_y)
+            arrItem.push(listElement.axi_y_a)
             arrItem.push(listElement.remark)
             arrItem.push(listElement.createdAt)
             arr.push(arrItem)
         }
         let buffer = xlsx.build([{name: '数据', data: arr}]);
-        let url = path.resolve(process.cwd(), `uploads_files/excel/${name}`);
-        fs.writeFileSync(url, buffer, {'flag': 'w'}); // 如果文件存在，覆盖
+        let url = path.resolve(__dirname, `../uploads_files/excel/${name}`);
+        console.log(url)
+        console.log(__dirname)
+        // 如果文件存在，覆盖
+        fs.writeFileSync(url, buffer, {'flag': 'w'});
         //下载地址响应出去
         res.sendResultAto({url: `${process.env.DEV_URL}:${process.env.DEV_PORT}/api/public/common/common/download?name=${name}`}, 200, '导出成功')
     })
@@ -102,12 +106,12 @@ exports.downloadTemplate = (req, res) => {
         let name = `模板${dayjs().format('YYYY-MM-DD-hh')}.xlsx`
         //下载地址响应出去
         let arr = [
-            ['GST', '平均数', '标准误','备注',]
+            ['GST', '平均数', '标准误', '备注',]
         ]
         //生成excel
         let buffer = xlsx.build([{name: '数据分析模板导入模板', data: arr}]);
         let url = path.resolve(process.cwd(), `uploads_files/excel/${name}`);
-        console.log(url)
+        console.log(buffer)
         fs.writeFileSync(url, buffer, {'flag': 'w'}); // 如果文件存在，覆盖
         res.status(200).sendResultAto(
             {url: `${process.env.DEV_URL}:${process.env.DEV_PORT}/api/public/common/common/download?name=${name}`},
@@ -166,12 +170,12 @@ exports.importExcel = (req, res) => {
         * */
 
         if (!excelArr.length) {
-            return res.sendResultAto(null,605,'不能导入空表格')
+            return res.sendResultAto(null, 605, '不能导入空表格')
         }
         insetExcelData(excelArr).then(_ires => {
-            res.sendResultAto(null,200,'成功导入'+ excelArr.length + '条数据')
+            res.sendResultAto(null, 200, '成功导入' + excelArr.length + '条数据')
         }).catch(err => {
-            res.sendResultAto(null,605,'导入失败')
+            res.sendResultAto(null, 605, '导入失败')
         })
     })
 };

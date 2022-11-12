@@ -7,32 +7,30 @@ const CryptoJS = require("crypto-js");
 
 let KP = {
     key: '90268d3dc304f5f3', //process.env.VUE_APP_AES_KEY, // 秘钥 16*n:
-    iv: 'b894f52b46104ab2'  //process.env.VUE_APP_AES_IV  // 偏移量
+    iv: 'b894f52b46104ab2' //process.env.VUE_APP_AES_IV  // 偏移量
 };
 
 function getAesString(data, key, iv) { // 加密
     key = CryptoJS.enc.Utf8.parse(key);
     // alert(key）;
     iv = CryptoJS.enc.Utf8.parse(iv);
-    let encrypted = CryptoJS.AES.encrypt(data, key,
-        {
-            iv,
-            mode: CryptoJS.mode.CBC,
-            padding: CryptoJS.pad.Pkcs7
-        });
-    return encrypted.toString();    // 返回的是base64格式的密文
+    let encrypted = CryptoJS.AES.encrypt(data, key, {
+        iv,
+        mode: CryptoJS.mode.CBC,
+        padding: CryptoJS.pad.Pkcs7
+    });
+    return encrypted.toString(); // 返回的是base64格式的密文
 }
 
 function getDAesString(encrypted, key, iv) { // 解密
     key = CryptoJS.enc.Utf8.parse(key);
     iv = CryptoJS.enc.Utf8.parse(iv);
-    let decrypted = CryptoJS.AES.decrypt(encrypted, key,
-        {
-            iv,
-            mode: CryptoJS.mode.CBC,
-            padding: CryptoJS.pad.Pkcs7
-        });
-    return decrypted.toString(CryptoJS.enc.Utf8);      //
+    let decrypted = CryptoJS.AES.decrypt(encrypted, key, {
+        iv,
+        mode: CryptoJS.mode.CBC,
+        padding: CryptoJS.pad.Pkcs7
+    });
+    return decrypted.toString(CryptoJS.enc.Utf8); //
 }
 
 // AES 对称秘钥加密

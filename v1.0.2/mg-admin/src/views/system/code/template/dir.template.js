@@ -4,7 +4,7 @@ export const dirTemplate = function (dirObj) {
   &lt;section&gt;
     &lt;d2-container type="full" v-if="!show.edit&amp;&amp;!show.view"&gt;
       &lt;section class="data-list-box"&gt;
-        &lt;mk-search-form :model="query" @search="goPage(1)"&gt;
+        &lt;mk-search-form :model="query" v-if="permBtn.queryButton" @search="goPage(1)"&gt;
           ${dirObj.searchField}
         &lt;/mk-search-form&gt;
         &lt;div class="table-operate"&gt;
@@ -27,7 +27,10 @@ export const dirTemplate = function (dirObj) {
               &lt;template slot-scope="scope"&gt;
                 &lt;mk-tool-button @view="goView(scope.row)"
                                 @edit="goEdit(scope.row)"
-                                @delete="goDelete(scope.row)"&gt;
+                                @delete="goDelete(scope.row)"
+                                :dis-delete="!permBtn.deleteButton"
+                                :dis-edit="!permBtn.updateButton"
+                                >;
                 &lt;/mk-tool-button&gt;
               &lt;/template&gt;
             &lt;/el-table-column&gt;
@@ -81,6 +84,13 @@ export default {
           order: 'desc',
         }
       },
+      //权限按钮
+      permBtn: {
+        createButton: false,
+        queryButton: false,
+        deleteButton: false,
+        updateButton: false,
+      },
       //返回数据列表
       datas: [],
       //临时变量
@@ -114,8 +124,34 @@ export default {
   mounted() {
     this.getWinHeight()
     this.getDataList();
+     this.getPerms()
   },
   methods: {
+
+   getPerms() {
+      // let perms = this.$store.state.d2admin.perms.permsArr
+      let perms = JSON.parse(util.cookies.get('permMenus'))
+      if (perms.includes('*')) {
+        this.permBtn.createButton = true;
+        this.permBtn.queryButton = true;
+        this.permBtn.deleteButton = true;
+        this.permBtn.updateButton = true;
+      } else {
+        if (perms.includes('POST /api/private/${dirObj.str}/create')) {
+          this.permBtn.createButton = true;
+        }
+        if (perms.includes('POST /api/private/${dirObj.str}/list')) {
+          this.permBtn.queryButton = true;
+        }
+        if (perms.includes('POST /api/private/${dirObj.str}/update')) {
+          this.permBtn.updateButton = true;
+        }
+        if (perms.includes('POST /api/private/${dirObj.str}/delete')) {
+          this.permBtn.deleteButton = true;
+        }
+      }
+    },
+
     //导出
     exportEcx() {
       exportExecl(this, this.fields, this.datas, '列表', new Date().toLocaleDateString() + '导出的列表')
@@ -157,7 +193,6 @@ export default {
           console.log(err)
         })
       });
-
     },
     close() {
       this.show.edit = false

@@ -14,6 +14,7 @@
     <!-- 使用 CDN 加速的 JS 文件，配置在 vue.config.js 下 -->
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
     <link href="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload" as="script">
+
     <% } %>
     <title><%= VUE_APP_TITLE %></title>
     <style>
@@ -83,6 +84,9 @@
     <!--          });-->
     <!--      </script>-->
 </head>
+<script charset="utf-8" src="https://map.qq.com/api/gljs?v=1.exp&key=QULBZ-ERHWG-2YXQ6-IP3UZ-UCVVE-VFBW4"></script>
+<!--定位-->
+<script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
 <body>
 <noscript>
     <strong>

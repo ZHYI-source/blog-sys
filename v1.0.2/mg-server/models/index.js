@@ -24,20 +24,6 @@ db.sequelize = sequelize;//实例
 db.Op = Op; //操作符
 
 
-// fs.readdirSync(__dirname)
-//     .filter((file) => {
-//         return (file.indexOf('.') !== 0) && (file !== 'index.js');
-//     })
-//     .forEach((file) => {
-//         console.log('./'+file)
-//         let url = './'+file
-//         var model =require("./users.model.js")(sequelize, Sequelize);
-//         // require(`${path.join(__dirname, file)}`)(sequelize, Sequelize);
-//         db[_.upperFirst(model.name)] = model;
-//         console.log(db[_.upperFirst(model.name)])
-//     });
-//
-
 //菜单
 db.menus = require("./menus.model")(sequelize, Sequelize);
 //角色
@@ -79,7 +65,10 @@ db.analysis = require("./analysis.model")(sequelize, Sequelize);
 //excel表格数据分析-项目组
 db.analysisProject = require("./analysis_project.model")(sequelize, Sequelize);
 
-
+//我的世界-旅游轨迹
+db.travel = require("./travel.model")(sequelize, Sequelize);
+//我的世界-旅游计划详情
+db.travelDetail = require("./travel_detail.model")(sequelize, Sequelize);
 
 //各个表的应用关系
 

@@ -47,7 +47,6 @@ export default {
   },
   created() {
     this.form = this.comment || {}
-    console.log(this.form)
   },
   data() {
     return {
@@ -78,8 +77,8 @@ export default {
         article_title: this.articleTitle,//文章标题
         pid: this.form.id,//父级id
         from_userId: '1',//用户ID
-        from_username: '彭于晏',//用户名称
-        from_user_logo: 'https://ci.xiaohongshu.com/9c287080-630d-33ad-a988-76a8cf21e152?imageView2/2/w/540/format/jpg',//用户头像
+        from_username: 'Jean',//用户名称
+        from_user_logo: 'https://joeschmoe.io/api/v1/male/jean',//用户头像
         content: v || '',//评论内容
         to_userId: this.form.from_userId,//回复对象ID
         to_username: this.form.from_username,//回复对象名称

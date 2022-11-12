@@ -26,7 +26,7 @@ export function fetchCategory() {
 
 export function fetchFriend() {
     return request({
-        url: '/friend',
+        url: '/record',
         method: 'get',
         params: {}
     })

@@ -68,6 +68,14 @@ export const menuHeader = supplementPath([
     ]
   },
   {
+    title: '我的世界',
+    icon: 'th-large',
+    path: '/myWorld/dir-travel-track',
+    children: [
+      {path: '/myWorld/dir-travel-track', icon: 'th-large', title: '旅游轨迹'},
+    ]
+  },
+  {
     icon: 'asterisk',
     title: '图标列表',
     path: '/icon/list',
@@ -87,7 +95,6 @@ export const menuAside = function (menus) {
     menuArr = listToTree(datas);
     resolve(supplementPath(menuArr))
   })
-
 }
 
 function fillterMenus(_this, arr, isRoot) {
@@ -114,7 +121,6 @@ function fillterMenus(_this, arr, isRoot) {
 }
 
 export const setAsideMenu = (_this) => {
-  console.log("okkk")
   let roleId = util.cookies.get('roleId')
   let token = util.cookies.get('token')
   if (token&&roleId) {

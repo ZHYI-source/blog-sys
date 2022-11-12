@@ -18,7 +18,6 @@ import Dialog from 'v-dialogs'
 import SelectPage from 'v-selectpage'
 import pluginExport from '@d2-projects/vue-table-export'
 import Directives from './libs/directives/index';
-import {dirRolesList} from "@/api/modules/sys.roles.api";
 import util from "@/libs/util";
 
 Vue.use(Directives);

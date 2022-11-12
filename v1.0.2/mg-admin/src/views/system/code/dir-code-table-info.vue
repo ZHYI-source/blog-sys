@@ -116,6 +116,9 @@ export default {
       list: ``,
       getTemp: ``,
       viewTemp: ``,
+      controllerTemp: ``,
+      routesTemp: ``,
+
       show: {
         edit: false,
         view: false
@@ -269,7 +272,6 @@ import {dir${uStr}Create, dir${uStr}Update} from "@/api/modules/sys.${str}.api";
       this.getTemp = getTemplate(obj)
 
     },
-
     generateList() {
       //字段域
       let fields = `
@@ -320,6 +322,7 @@ import View${uStr}Info from "./view-${str}-info";
         importField,
         searchField,
         fields,
+        str
       }
       this.list = dirTemplate(obj)
     },

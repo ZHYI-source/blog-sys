@@ -14,3 +14,6 @@ export const dirAboutList = (data) =>
 //关于音乐信息
 export const dirMusicList = (data) =>
   post("/mg/api/public/web/music/list", data);
+//记录访客
+export const recordVisitor = (data) =>
+  post("/mg/api/public/common/visitor/record", data);

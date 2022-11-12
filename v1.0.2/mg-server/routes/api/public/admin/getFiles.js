@@ -16,7 +16,7 @@ router.get("/",
             let id = req.query.id
             let mimetype = req.query.mimetype
             const filePath = path.resolve(process.cwd(), `uploads_files/${id}`);
-            //设置请求的返回头type,content的type类型列表见上面
+            //设置请求的返回头type,content的type类型
             res.setHeader("Content-Type", mimetype);
             //格式必须为 binary 否则会出错
             let content = fs.readFileSync(filePath, "binary");
@@ -43,6 +43,7 @@ router.get("/download",
             let name = req.query.name
             logger.debug('/download => name:', name);
             let url = path.resolve(process.cwd(), `uploads_files/${name}`);
+
             res.download(url)
         } catch (err) {
             logger.error('/download => err:', err);

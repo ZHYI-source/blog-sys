@@ -35,11 +35,6 @@
 - ⭐项目启动安装有问题可以留言，会及时解答
 
 ```
-
-    v1.0.1 前台：Gblog 
-           管理端: vue-element-admin
-           Node服务端: express + 原生sql
-
     v1.0.2 前台：Gblog 
            微信小程序：uniApp + uView 
            管理端：d2-admin 
@@ -69,6 +64,7 @@
 - [x] excel数据导入/导出 ⛷
 - [x] 生成Echart图表 ⛷
 - [x] 访客管理记录
+- [x] 🎈我的世界（新增）
 - [x] 更多...
 
 #### 🥯v1.0.2 接口文档

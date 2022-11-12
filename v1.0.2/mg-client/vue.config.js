@@ -5,13 +5,18 @@ module.exports = {
         proxy: {
             '/mg': {
                 target: 'http://localhost:5222', //本地服务器
-                ws: true,
-                secure: true,
                 changeOrigin: true,
                 pathRewrite: {
                     '^/mg': ''
                 }
+            },
+          '/req_ip': {
+            target: 'http://pv.sohu.com',
+            changeOrigin: true,
+            pathRewrite: {
+              '^/req_ip': ''
             }
+          }
         }
     },
 }

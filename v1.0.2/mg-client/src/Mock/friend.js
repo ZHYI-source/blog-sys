@@ -18,7 +18,7 @@ for (let i = 0; i < count; i++) {
 
 export default [
     {
-        url: '/friend',
+        url: '/record',
         type: 'get',
         response: config => {
             return {

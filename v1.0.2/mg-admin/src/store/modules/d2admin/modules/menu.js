@@ -108,6 +108,7 @@ export default {
      * @param {Array} menu menu setting
      */
     asideSet(state, menu) {
+      console.log('menu',menu)
       // store 赋值
       state.aside = menu
     }

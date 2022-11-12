@@ -4,13 +4,17 @@
       <section class="data-list-box">
         <el-row v-if="showMax">
           <div class="chart-box-max">
-            <div class="btnn"><i></i><el-button size="mini" type="success" @click="showMax = false;lineOption.xAxis.axisLabel.rotate='45'">关闭大图</el-button></div>
+            <div class="btnn"><i></i>
+              <el-button size="mini" type="success" @click="showMax = false;lineOption.xAxis.axisLabel.rotate='45'">
+                关闭大图
+              </el-button>
+            </div>
             <mk-chart-com :option="lineOption" :key="updataKey+2" height="650px"/>
           </div>
         </el-row>
         <el-row v-if="!showMax">
           <el-col :span="12">
-            <mk-search-form :model="query" v-if="permBtn.queryButton"  @search="goPage(1)">
+            <mk-search-form :model="query" v-if="permBtn.queryButton" @search="goPage(1)">
               <el-button style="margin-left: 5px" slot="btn" type="primary" size="mini" @click="$emit('close')">返回上一级
               </el-button>
               <el-form-item class="inline-item" prop="id">
@@ -45,7 +49,8 @@
                 @add="goEdit"
               >
                 <div style="display: flex">
-                  <el-button size="mini" icon="el-icon-delete" v-if="permBtn.deleteAllButton" @click="deleteAll">清空数据</el-button>
+                  <el-button size="mini" icon="el-icon-delete" v-if="permBtn.deleteAllButton" @click="deleteAll">清空数据
+                  </el-button>
                   <el-button size="mini" icon="el-icon-upload2" @click="exportEcx">导出</el-button>
                   <el-upload
                     class="upload-demo"
@@ -99,7 +104,11 @@
           <el-col :span="12">
             <el-row>
               <div class="chart-box">
-                <div class="btnn"><i></i><el-button  size="mini" type="success" @click="showMax = true;lineOption.xAxis.axisLabel.rotate='0'">查看大图</el-button></div>
+                <div class="btnn"><i></i>
+                  <el-button size="mini" type="success" @click="showMax = true;lineOption.xAxis.axisLabel.rotate='0'">
+                    查看大图
+                  </el-button>
+                </div>
                 <mk-chart-com :option="lineOption" :key="updataKey+3" height="450px"/>
               </div>
             </el-row>
@@ -131,37 +140,37 @@ export default {
   components: {MkChartCom, ViewAnalysisInfo, GetAnalysisInfo,},
   data() {
     return {
-      showMax:false,
+      showMax: false,
       //折线图
       lineOption: {
-        grid:{
-          top:90
+        grid: {
+          top: 90
         },
         title: {
           text: 'GST',
           x: 'center',
-          y:'20',
-          subtext:'HRLK',
-          textVerticalAlign:'middle',
-          subtextStyle:{
+          y: '20',
+          subtext: 'HRLK',
+          textVerticalAlign: 'middle',
+          subtextStyle: {
             //文字颜色
-            color:'#000',
+            color: '#000',
             //字体风格,'normal','italic','oblique'
-            fontStyle:'normal',
+            fontStyle: 'normal',
             //字体系列
-            fontFamily:'sans-serif',
+            fontFamily: 'sans-serif',
           },
-          textStyle:{
+          textStyle: {
             //文字颜色
-            color:'#000',
+            color: '#000',
             //字体风格,'normal','italic','oblique'
-            fontStyle:'normal',
+            fontStyle: 'normal',
             //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-            fontWeight:'bold',
+            fontWeight: 'bold',
             //字体系列
-            fontFamily:'sans-serif',
+            fontFamily: 'sans-serif',
             //字体大小
-            fontSize:18
+            fontSize: 18
           }
         },
         tooltip: {
@@ -171,9 +180,9 @@ export default {
           }
         },
         legend: {
-          right:'0',
-          top:'center',
-          orient:'vertical',
+          right: '0',
+          top: 'center',
+          orient: 'vertical',
 
         },
         toolbox: {
@@ -196,7 +205,7 @@ export default {
           //解决显示X轴不全
           axisLabel: {
             interval: 0,
-            rotate:"13",
+            rotate: "13",
             textStyle: { // 数值样式
               color: 'black',
               fontSize: 14
@@ -208,14 +217,14 @@ export default {
           axisLabel: {
             formatter: '{value}'
           },
-          axisLine:{
-            show:true,
+          axisLine: {
+            show: true,
           },
           //分割线
-          splitLine:{
-            show:true,
-            lineStyle:{
-              color:'#FAFBFD'
+          splitLine: {
+            show: true,
+            lineStyle: {
+              color: '#FAFBFD'
             }
           },
         },
@@ -282,7 +291,7 @@ export default {
       //查询条件
       query: {
         params: {
-          pid:''
+          pid: ''
         },
         limit: 100,//每页显示条数
         offset: 1,//页码
@@ -319,8 +328,8 @@ export default {
         templateButton: false,
         deleteAllButton: false,
       },
-      chartInfo:{
-        title:'图表'
+      chartInfo: {
+        title: '图表'
       },
       item_data: {},
       //列表渲染数据列
@@ -440,8 +449,8 @@ export default {
 
           let XData = []
           let YData = {
-            avg:[],
-            errorD:[]
+            avg: [],
+            errorD: []
           }
           for (const data of datas) {
             //时间格式化
@@ -453,11 +462,11 @@ export default {
             YData.errorD.push(data.axi_y_a)
           }
           this.datas = datas;
-          this.lineOption.xAxis.data=XData
-          this.lineOption.series[0].data=YData.avg
-          this.lineOption.series[1].data=YData.errorD
+          this.lineOption.xAxis.data = XData
+          this.lineOption.series[0].data = YData.avg
+          this.lineOption.series[1].data = YData.errorD
           this.temp.dataSize = res.count;
-          this.updataKey+=3
+          this.updataKey += 3
           this.loading.list = false;
         })
       } catch (err) {
@@ -537,6 +546,7 @@ export default {
 .upload-demo {
   margin: 0px 5px;
 }
+
 .chart-box {
   .btnn {
     display: flex;
