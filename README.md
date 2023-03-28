@@ -25,6 +25,7 @@
 
   <img src="doc/img/smwx.png" width = "400" height = "150" alt="图片名称" align=center />
 
+#### 🥯 QQ群：529675917 由于很多小伙伴对项目的启动安装有问题不明白，可以添加QQ群和大家一起交流解决相关问题哈
 
 #### 🥯 v1.0.2 介绍
 
